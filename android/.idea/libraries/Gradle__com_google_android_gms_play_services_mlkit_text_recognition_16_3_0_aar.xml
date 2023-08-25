@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.gms:play-services-mlkit-text-recognition:16.3.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/c5f274cf62b027c13d31ec4ea54e220a/transformed/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c5f274cf62b027c13d31ec4ea54e220a/transformed/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c5f274cf62b027c13d31ec4ea54e220a/transformed/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

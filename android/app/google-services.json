@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "720401254615",
+    "firebase_url": "https://innova-zones-195c2.firebaseio.com",
+    "project_id": "innova-zones-195c2",
+    "storage_bucket": "innova-zones-195c2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:720401254615:android:4ce564a63726e509f6c892",
+        "android_client_info": {
+          "package_name": "com.InnovaZones.RNTreeIZHips"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "720401254615-fgrc0r6irp7i0n93f79l9o304ikn8004.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCV3dQ8Vfpgxtn17Zif7OjRxcm6vBgT-mA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "720401254615-fgrc0r6irp7i0n93f79l9o304ikn8004.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

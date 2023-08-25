@@ -1,0 +1,6 @@
+framework module CMBCrossPlatform {
+  umbrella header "CMBCrossPlatform.h"
+
+  export *
+  module * { export * }
+}

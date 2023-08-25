@@ -1,0 +1,19 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
+// swift-module-flags: -target x86_64-apple-ios9.3-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name cmbSDK
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+@_exported import cmbSDK
+@objc @_inheritsConvenienceInitializers public class MDMAuthCredentials : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var username: Swift.String?
+  @objc public var password: Swift.String?
+  @objc public var clientID: Swift.String?
+  @objc public var clientSecret: Swift.String?
+  @objc public var tenantCode: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}

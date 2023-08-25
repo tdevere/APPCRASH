@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">720401254615-fgrc0r6irp7i0n93f79l9o304ikn8004.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://innova-zones-195c2.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">720401254615</string>
+    <string name="google_api_key" translatable="false">AIzaSyCV3dQ8Vfpgxtn17Zif7OjRxcm6vBgT-mA</string>
+    <string name="google_app_id" translatable="false">1:720401254615:android:4ce564a63726e509f6c892</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCV3dQ8Vfpgxtn17Zif7OjRxcm6vBgT-mA</string>
+    <string name="google_storage_bucket" translatable="false">innova-zones-195c2.appspot.com</string>
+    <string name="project_id" translatable="false">innova-zones-195c2</string>
+</resources>

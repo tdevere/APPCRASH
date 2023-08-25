@@ -1,0 +1,11 @@
+framework module SDM {
+  umbrella header "SDM.h"
+
+  export *
+  module * { export * }
+}
+
+module SDM.Swift {
+    header "SDM-Swift.h"
+    requires objc
+}

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.gms:play-services-cloud-messaging:16.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/0201f9044e3176db704f3f8ef0ad74f9/transformed/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0201f9044e3176db704f3f8ef0ad74f9/transformed/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0201f9044e3176db704f3f8ef0ad74f9/transformed/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

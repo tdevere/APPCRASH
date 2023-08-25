@@ -1,0 +1,1 @@
+../../../../../node_modules/cmbsdk-react-native/ios/RCTCmbEvent.h

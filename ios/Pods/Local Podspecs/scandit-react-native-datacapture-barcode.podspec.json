@@ -1,0 +1,34 @@
+{
+  "name": "scandit-react-native-datacapture-barcode",
+  "version": "6.13.1",
+  "summary": "Scandit Data Capture SDK for React Native",
+  "homepage": "https://github.com/Scandit/scandit-react-native-datacapture-barcode",
+  "license": "Apache-2.0",
+  "authors": {
+    "Scandit": "support@scandit.com"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source": {
+    "git": "https://github.com/Scandit/scandit-react-native-datacapture-barcode.git",
+    "tag": "6.13.1"
+  },
+  "swift_versions": "4.0",
+  "source_files": "ios/Sources/**/*.{h,m,swift}",
+  "requires_arc": true,
+  "module_name": "ScanditDataCaptureBarcode",
+  "header_dir": "ScanditDataCaptureBarcode",
+  "dependencies": {
+    "ScanditBarcodeCapture": [
+      "= 6.13.1"
+    ],
+    "React": [
+
+    ],
+    "scandit-react-native-datacapture-core": [
+
+    ]
+  },
+  "swift_version": "4.0"
+}

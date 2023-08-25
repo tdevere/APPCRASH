@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: :cmbcrossplatform-release:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/272a41a9ca0906f1ff0c39c997937e89/transformed/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/272a41a9ca0906f1ff0c39c997937e89/transformed/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/272a41a9ca0906f1ff0c39c997937e89/transformed/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

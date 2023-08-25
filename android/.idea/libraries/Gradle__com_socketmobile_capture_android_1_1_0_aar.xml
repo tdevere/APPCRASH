@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.socketmobile:capture-android:1.1.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/1df3bf934f2634b55a16187dc2e23a2f/transformed/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1df3bf934f2634b55a16187dc2e23a2f/transformed/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1df3bf934f2634b55a16187dc2e23a2f/transformed/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

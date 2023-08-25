@@ -1,0 +1,1 @@
+../../../../../../node_modules/scandit-react-native-datacapture-core/ios/Sources/ScanditDataCaptureCore.h

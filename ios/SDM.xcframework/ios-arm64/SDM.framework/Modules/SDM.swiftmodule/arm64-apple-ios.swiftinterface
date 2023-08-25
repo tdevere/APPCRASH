@@ -1,0 +1,1733 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SDM
+import AVFoundation
+import AudioToolbox
+import CommonCrypto
+import Compression
+import CoreBluetooth
+import CoreFoundation
+import CoreGraphics
+import ExternalAccessory
+import Foundation
+import ObjectiveC
+@_exported import SDM
+import Swift
+import SystemConfiguration
+import UIKit.UIGeometry
+import UIKit
+import os
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class SRS2Device : SDM.Device {
+  @objc override public var deviceType: SDM.DeviceType {
+    @objc get
+  }
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class IdChampNF4Device : SDM.TagReaderDevice {
+  @objc public var isTagPresented: Swift.Bool {
+    get
+  }
+  @objc public var beepOnScan: Swift.Bool
+  @objc public var constantReadMode: Swift.Bool
+  @objc public var csnOutputFormat: SDM.ScanDataFormat
+  @objc public var userdataOutputFormat: SDM.ScanDataFormat
+  @objc public var userdataLength: Swift.Int
+  @objc public var pacsProfiles: [SDM.PacsProfile]
+  public var credentialTypes: [SDM.IdChampNF4Device.CredentialType : Swift.Bool]
+  @objc public var csnBitCount: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @objc public var nfcDataFormat: SDM.NFCDataFormat
+  @objc public var appendFacilityCode: Swift.Bool
+  @objc public var facilityCodeDelimiter: Swift.String
+  @objc public var facilityCodeStartBit: Swift.Int
+  @objc public var facilityCodeBitsCount: Swift.Int
+  @objc public var isNexWatchEnabled: Swift.Bool
+  @objc override public var deviceType: SDM.DeviceType {
+    @objc get
+  }
+  @objc override public var madeBySerialIO: Swift.Bool {
+    @objc get
+  }
+  override public func applyUserOptions(complete: @escaping SDM.VoidCompletionHandler = { _ in })
+  @objc override public var options: [Swift.String : Swift.AnyObject] {
+    @objc get
+    @objc set
+  }
+  @objc override public var supportedTriggerRead: SDM.Device.TriggerReadType {
+    @objc get
+  }
+  @objc override public func triggerReading(dataType: SDM.Device.TriggerReadType)
+  @objc override public var supportsConstantReadMode: Swift.Bool {
+    @objc get
+  }
+  override public func enableConstantMode(_ enable: Swift.Bool, complete: @escaping SDM.VoidCompletionHandler)
+  override public func readUserdata(outputFormat: SDM.ScanDataFormat = .hex, offset: Swift.Int = 0, length: Swift.Int = 0, complete: @escaping SDM.ReadCompletionHandler)
+  @objc deinit
+}
+extension IdChampNF4Device {
+  public func getFac(for value: Foundation.Data) -> Swift.Int?
+}
+extension IdChampNF4Device {
+  public enum CredentialType : Swift.Int, Swift.CustomStringConvertible, Swift.CaseIterable, Swift.Codable {
+    case em4102, hitag1S, hitag2, em4150, at5555, isoFdx, em4026, hitagU
+    case em4305, hidProx, tiris, cotag, ioProx, indiTag, honeyTag, awid
+    case gProx, pyramid, keri, deister, cardax, nedap, pac, idteck
+    case ultraProx, ict, isonas
+    case iso14443a, iso14443b, iso15693, legic, iClassH10301, felica
+    case srx, nfcp2p, ble, topaz, cts
+    public var description: Swift.String {
+      get
+    }
+    public typealias AllCases = [SDM.IdChampNF4Device.CredentialType]
+    public static var allCases: [SDM.IdChampNF4Device.CredentialType] {
+      get
+    }
+    public typealias RawValue = Swift.Int
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+}
+@objc public class PacsProfile : ObjectiveC.NSObject, Swift.Codable {
+  final public let format: Swift.Int
+  final public let startBit: Swift.Int
+  final public let length: Swift.Int
+  @objc public init(format: Swift.Int, startBit: Swift.Int, length: Swift.Int)
+  @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  public var details: Swift.String {
+    get
+  }
+  public func getPac(for value: Foundation.Data) -> Swift.String?
+  public static var defaults: [SDM.PacsProfile] {
+    get
+  }
+  @objc deinit
+  @objc override dynamic public init()
+  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ScanfobUltraBB2Device : SDM.Device {
+  @objc public var beepOnScan: Swift.Bool
+  @objc public var autoOff: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @objc public var outputPower: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @objc public var constantReadMode: Swift.Bool
+  @objc public var epcOutputFormat: SDM.ScanDataFormat
+  @objc public var tidOutputFormat: SDM.ScanDataFormat
+  @objc public var tidLength: Swift.Int
+  @objc public var userdataOutputFormat: SDM.ScanDataFormat
+  @objc public var userdataLength: Swift.Int
+  @objc public var scanningTime: Swift.Double
+  @objc public var intervalTime: Swift.Double
+  @objc override public var deviceType: SDM.DeviceType {
+    @objc get
+  }
+  @objc override public var madeBySerialIO: Swift.Bool {
+    @objc get
+  }
+  @objc override public var options: [Swift.String : Swift.AnyObject] {
+    @objc get
+    @objc set
+  }
+  override public func applyUserOptions(complete: @escaping SDM.VoidCompletionHandler)
+  override public func readEPC(outputFormat: SDM.ScanDataFormat, complete: @escaping SDM.ReadCompletionHandler)
+  override public func readTagID(outputFormat: SDM.ScanDataFormat, complete: @escaping SDM.ReadCompletionHandler)
+  override public func readUserdata(outputFormat: SDM.ScanDataFormat, offset: Swift.Int, length: Swift.Int, complete: @escaping SDM.ReadCompletionHandler)
+  override public func write(epc: Swift.String, complete: @escaping SDM.VoidCompletionHandler)
+  override public func write(userdata: Swift.String, format: SDM.ScanDataFormat, offset: Swift.Int, complete: @escaping SDM.VoidCompletionHandler)
+  @objc override public var supportsConstantReadMode: Swift.Bool {
+    @objc get
+  }
+  override public func enableConstantMode(_ enable: Swift.Bool, complete: @escaping SDM.VoidCompletionHandler)
+  @objc override public var supportedTriggerRead: SDM.Device.TriggerReadType {
+    @objc get
+  }
+  @objc override public func triggerReading(dataType: SDM.Device.TriggerReadType)
+  @objc deinit
+}
+extension CBManagerState : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension String {
+  public func convertedToHexFrom(format: SDM.ScanDataFormat) -> Swift.String
+  public func convertedHexTo(format: SDM.ScanDataFormat) -> Swift.String
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class DistoDevice : SDM.Device {
+  @objc public var unitFormat: SDM.DistoDevice.Unit
+  @objc public var roundDownRange: SDM.DistoDevice.RoundDown
+  @objc public var displayUnits: Swift.Bool
+  @objc override public var deviceType: SDM.DeviceType {
+    @objc get
+  }
+  @objc override public var options: [Swift.String : Swift.AnyObject] {
+    @objc get
+    @objc set
+  }
+  @objc override public var supportsConstantReadMode: Swift.Bool {
+    @objc get
+  }
+  override public func enableConstantMode(_ enable: Swift.Bool, complete: @escaping SDM.VoidCompletionHandler)
+  @objc override public var supportedTriggerRead: SDM.Device.TriggerReadType {
+    @objc get
+  }
+  @objc override public func triggerReading(dataType: SDM.Device.TriggerReadType)
+  override public func applyUserOptions(complete: @escaping SDM.VoidCompletionHandler)
+  @objc public enum Unit : Swift.Int {
+    case feet = 0, inch, metric
+    public typealias RawValue = Swift.Int
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @objc public enum RoundDown : Swift.Int {
+    case no = 0, half, oneFourth, oneEighth
+    public typealias RawValue = Swift.Int
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @objc deinit
+}
+extension DistoDevice.Unit : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+  public var short: Swift.String {
+    get
+  }
+  public func from(metric: Swift.Float) -> Swift.Float
+}
+extension DistoDevice.RoundDown : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+  public var divisor: Swift.Float {
+    get
+  }
+  public var stringFormat: Swift.String {
+    get
+  }
+}
+public typealias VoidCompletionHandler = (Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void
+public typealias AnyCompletionHandler = (Swift.Result<Any?, Swift.Error>) -> Swift.Void
+public typealias ReadCompletionHandler = (Swift.Result<SDM.Scan, Swift.Error>) -> Swift.Void
+public typealias CheckResponseHandler = () -> Swift.Bool
+extension SerialioDeviceManager {
+  @objc public static func createWriteNDEFViewController(device: SDM.Device) -> UIKit.UIViewController
+}
+extension SerialioDeviceManager {
+  @objc public static func createWriteUserdataViewController(device: SDM.Device) -> UIKit.UIViewController
+}
+@objc @_hasMissingDesignatedInitializers public class BatteryLevelView : UIKit.UIView, SDM.EventsObserver {
+  @objc public static func show(in view: UIKit.UIView)
+  @objc public static func hide()
+  @objc deinit
+  public func handleSerialDeviceManager(event: SDM.Event)
+  @objc override dynamic public func layoutSubviews()
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+}
+@objc @_inheritsConvenienceInitializers public class Helper : ObjectiveC.NSObject {
+  @objc public static func string(tagType: SDM.TagType) -> Swift.String
+  @objc public static func string(deviceType: SDM.DeviceType) -> Swift.String
+  @objc public static func string(dataType: SDM.ScanDataType) -> Swift.String
+  @objc public static func string(dataFormat: SDM.ScanDataFormat) -> Swift.String
+  @objc public static func string(cbState: CoreBluetooth.CBManagerState) -> Swift.String
+  @objc deinit
+  @objc override dynamic public init()
+}
+extension NSString {
+  @objc dynamic public func convertedToHexStringFrom(format: SDM.ScanDataFormat) -> Foundation.NSString
+  @objc dynamic public func convertedHexStringTo(format: SDM.ScanDataFormat) -> Foundation.NSString
+}
+extension SerialioDeviceManager {
+  @objc final public var keepAwakeTimeInterval: Foundation.TimeInterval {
+    @objc get
+    @objc set
+  }
+  @objc final public var allowedDeviceType: SDM.DeviceType {
+    @objc get
+    @objc set
+  }
+}
+extension SerialioDeviceManager {
+  @objc final public func readEPC(_ device: SDM.Device, outputFormat: SDM.ScanDataFormat, complete: @escaping (SDM.Scan?, Foundation.NSError?) -> Swift.Void)
+  @objc final public func readTagID(_ device: SDM.Device, outputFormat: SDM.ScanDataFormat, complete: @escaping (SDM.Scan?, Foundation.NSError?) -> Swift.Void)
+  @objc final public func readUserdata(_ device: SDM.Device, outputFormat: SDM.ScanDataFormat, offset: Swift.Int, length: Swift.Int, complete: @escaping (SDM.Scan?, Foundation.NSError?) -> Swift.Void)
+  @objc final public func write(_ device: SDM.Device, epc: Swift.String, complete: @escaping (Foundation.NSError?) -> Swift.Void)
+  @objc final public func write(_ device: SDM.Device, userdata: Swift.String, format: SDM.ScanDataFormat, offset: Swift.Int, complete: @escaping (Foundation.NSError?) -> Swift.Void)
+  @objc final public func write(_ device: SDM.Device, ndef: SDM.NDEFMessage, complete: @escaping (Foundation.NSError?) -> Swift.Void)
+  @objc final public func enableConstantMode(_ device: SDM.Device, enable: Swift.Bool, complete: @escaping (Foundation.NSError?) -> Swift.Void)
+  @objc final public func send(data: Foundation.Data, device: SDM.Device)
+  @objc final public func send(data: Foundation.Data, device: SDM.Device, complete: @escaping (Foundation.NSError?) -> Swift.Void)
+  @objc final public func send(data: Foundation.Data, device: SDM.Device, checkResponse: @escaping (Foundation.Data) -> Swift.Bool, complete: @escaping (Foundation.Data?, Foundation.NSError?) -> Swift.Void)
+  @objc final public func applyUserOptions(_ device: SDM.Device, complete: @escaping (Foundation.NSError?) -> Swift.Void)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class IdChampRS3Device : SDM.Device {
+  @objc public var epcOutputFormat: SDM.ScanDataFormat
+  @objc override public var options: [Swift.String : Swift.AnyObject] {
+    @objc get
+    @objc set
+  }
+  @objc override public var deviceType: SDM.DeviceType {
+    @objc get
+  }
+  @objc override public var madeBySerialIO: Swift.Bool {
+    @objc get
+  }
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Scanfob2006Device : SDM.Device {
+  @objc public var downloadScansOnConnect: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public var keepBatchTimestamp: Swift.Bool
+  @objc public var askToCleanScansAfterDownloading: Swift.Bool
+  @objc public var batchModeEnabled: Swift.Bool
+  @objc override public var deviceType: SDM.DeviceType {
+    @objc get
+  }
+  @objc override public var options: [Swift.String : Swift.AnyObject] {
+    @objc get
+    @objc set
+  }
+  override public func applyUserOptions(complete: @escaping SDM.VoidCompletionHandler)
+  @objc override public var supportedTriggerRead: SDM.Device.TriggerReadType {
+    @objc get
+  }
+  @objc override public func triggerReading(dataType: SDM.Device.TriggerReadType)
+  public func clearScannerMemory(complete: @escaping SDM.VoidCompletionHandler)
+  public func readScansFromDeviceMemory(complete: @escaping SDM.VoidCompletionHandler)
+  @objc deinit
+}
+@objc public protocol SimpleLoggerDataSource : AnyObject {
+  @objc var simpleLoggerZipData: [Foundation.Data] { get }
+  @objc var simpleLoggerZipName: [Swift.String] { get }
+  @objc func simpleLoggerClean()
+}
+@_inheritsConvenienceInitializers @objc public class SimpleLogger : ObjectiveC.NSObject {
+  @objc public var daysToKeepLogFiles: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @objc public var folderURL: Foundation.URL {
+    get
+  }
+  @objc public var filenameSuffix: Swift.String?
+  @objc override dynamic public init()
+  @objc public init(folder: Foundation.URL)
+  @objc deinit
+  @objc public func addDataSource(_ dataSource: SDM.SimpleLoggerDataSource)
+  @objc public func removeDataSource(_ dataSource: SDM.SimpleLoggerDataSource)
+  @objc public func flushCurrentFile()
+  @objc public func makeZippedData(progress parentProgress: Foundation.Progress? = nil) -> Foundation.Data?
+  @objc public func log(_ text: Swift.String, file: Swift.String, function: Swift.String, line: Swift.UInt)
+  @objc public func cleanLogFolder()
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class IdChampNF2Device : SDM.TagReaderDevice {
+  @objc public var csnOutputFormat: SDM.ScanDataFormat
+  @objc public var userdataOutputFormat: SDM.ScanDataFormat
+  @objc public var userdataLength: Swift.Int
+  @objc public var nfcDataFormat: SDM.NFCDataFormat
+  @objc override public var deviceType: SDM.DeviceType {
+    @objc get
+  }
+  @objc override public var madeBySerialIO: Swift.Bool {
+    @objc get
+  }
+  @objc override public var options: [Swift.String : Swift.AnyObject] {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+public enum SDMError : Swift.Error {
+  public enum JobResult {
+    case failed, tagLocked, readPacsNotActive, cardRemoved, cantGetTagInfo, lockNotSupported, notSupported
+    public static func == (a: SDM.SDMError.JobResult, b: SDM.SDMError.JobResult) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+  }
+  case bluetooth(error: SDM.BluetoothError)
+  case characteristicNotInitialized(label: Swift.String)
+  case transportError(message: Swift.String)
+  case deviceNotConnected
+  case deviceNoCurrentTag
+  case deviceInvalidAddressOrLength
+  case deviceLockedAddress
+  case deviceInventoryError
+  case deviceInvalidParameter
+  case deviceOperationTimeout
+  case deviceUnknownCommand
+  case deviceInvalidCommand
+  case deviceIncompleteData
+  case deviceBadResponse(_: Swift.String)
+  case deviceCommandFailed(message: Swift.String)
+  case deviceOptionsFailure(_: Swift.String?)
+  case deviceBadCRC
+  case deviceIncompleteFrame(_: Swift.String)
+  case deviceJobFailure(_: SDM.SDMError.JobResult, _: Swift.String?)
+  case ndefParseFailed(_: Swift.String)
+  case deviceWasTurnedOff
+  case other(_: Swift.String)
+  case notSupported(message: Swift.String)
+  case notImplemented(file: Swift.String, function: Swift.String, line: Swift.Int)
+}
+extension SDMError : Foundation.LocalizedError, Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+extension SDMError.JobResult {
+  public var localizedDescription: Swift.String {
+    get
+  }
+}
+extension SDMError : Foundation.CustomNSError {
+  public static var errorDomain: Swift.String {
+    get
+  }
+  public var errorCode: Swift.Int {
+    get
+  }
+  public var errorUserInfo: [Swift.String : Any] {
+    get
+  }
+}
+@objc public enum SDMErrorCode : Swift.Int {
+  case bluetoothUnsupported = 1001
+  case bluetoothUnauthorized
+  case bluetoothUnknown
+  case bluetoothPoweredOff
+  case scanningEndedUnexpectedly
+  case operationTimedOut
+  case invalidPeripheral
+  case peripheralFailedToConnectReasonUnknown
+  case peripheralServiceNotFound
+  case peripheralCharacteristicNotFound
+  case peripheralDescriptorsNotFound
+  case invalidDescriptorValue
+  case characteristicNotInitialized
+  case transportError
+  case deviceNotConnected
+  case deviceNoCurrentTag
+  case deviceInvalidAddressOrLength
+  case deviceLockedAddress
+  case deviceInventoryError
+  case deviceInvalidParameter
+  case deviceOperationTimeout
+  case deviceUnknownCommand
+  case deviceInvalidCommand
+  case deviceIncompleteData
+  case deviceBadResponse
+  case deviceCommandFailed
+  case deviceOptionsFailure
+  case deviceBadCRC
+  case deviceIncompleteFrame
+  case deviceJobFailure
+  case ndefParseFailed
+  case deviceWasTurnedOff
+  case other
+  case notSupported
+  case notImplemented
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DeviceType : Swift.Int, Swift.Hashable, Swift.Codable, Swift.CaseIterable, Swift.CustomStringConvertible {
+  case unknown
+  case wisnapM1, wisnapM2
+  case chs7Ci, chs7Xi
+  case scanfob3002, scanfob4000
+  case tsl1128
+  case qid, eua, eub4
+  case scanfobBB2nfc, scanfobBB2ultra
+  case idChampRS3
+  case blueSnapDB9
+  case scanfob2006
+  case smart3101
+  case cipher1800
+  case disto
+  case idChampRS4
+  case idChampNF2
+  case idChampNF4
+  case srs2
+  case allflex
+  case posiTector
+  public var description: Swift.String {
+    get
+  }
+  public typealias AllCases = [SDM.DeviceType]
+  public static var allCases: [SDM.DeviceType] {
+    get
+  }
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DeviceTransportType : Swift.Int {
+  case unknown
+  case wisnap
+  case mfi
+  case ble
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum DeviceIdentifier : Swift.Hashable, Swift.CustomStringConvertible {
+  case ble(uuid: Foundation.UUID)
+  case mfi(connectionId: Swift.Int)
+  case wisnap(host: Swift.String)
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+  public var description: Swift.String {
+    get
+  }
+  public static func == (a: SDM.DeviceIdentifier, b: SDM.DeviceIdentifier) -> Swift.Bool
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class Device : ObjectiveC.NSObject {
+  @objc public enum ConnectionState : Swift.Int, Swift.CustomStringConvertible {
+    public var description: Swift.String {
+      get
+    }
+    case disconnected, connecting, connected
+    public typealias RawValue = Swift.Int
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @objc public enum TriggerReadType : Swift.Int, Swift.CustomStringConvertible {
+    case nothing, barcode, rfid, barcodeAndRfid
+    public var description: Swift.String {
+      get
+    }
+    public typealias RawValue = Swift.Int
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @objc public var transportType: SDM.DeviceTransportType {
+    @objc get
+  }
+  @objc public var options: [Swift.String : Swift.AnyObject] {
+    @objc get
+    @objc set
+  }
+  @objc public var optionsRestored: Swift.Bool
+  @objc public var currentTag: SDM.Scan?
+  @objc public var readTimeout: Foundation.TimeInterval {
+    @objc get
+    @objc set
+  }
+  @objc public var lastError: Swift.Error?
+  @objc public var state: SDM.Device.ConnectionState {
+    get
+  }
+  @objc public var name: Swift.String {
+    @objc get
+  }
+  @objc public var serialNumber: Swift.String {
+    get
+  }
+  @objc public var firmwareVersion: Swift.String? {
+    get
+  }
+  @objc public var hardwareVersion: Swift.String? {
+    get
+  }
+  @objc public var bluetoothAddress: Swift.String? {
+    get
+  }
+  @objc public var madeBySerialIO: Swift.Bool {
+    @objc get
+  }
+  @objc public var isGenuine: Swift.Bool {
+    get
+  }
+  @objc public var fixedSymbolsCount: Swift.Int
+  @objc public var clipAtStart: Swift.Int
+  @objc public var clipAtEnd: Swift.Int
+  @objc public var clipLeadingZeros: Swift.Bool
+  @objc public var clipCsn: Swift.Bool
+  @objc public var clipTid: Swift.Bool
+  @objc public var clipUserdata: Swift.Bool
+  @objc public var clipNdefText: Swift.Bool
+  @objc public var supportBatteryService: Swift.Bool {
+    @objc get
+  }
+  @objc public var batteryPercentage: Swift.Int {
+    @objc get
+  }
+  @objc public var batteryPowerState: SDM.BatteryPowerState {
+    @objc get
+  }
+  @objc public var deviceType: SDM.DeviceType {
+    @objc get
+  }
+  @objc deinit
+  @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc override dynamic public var hash: Swift.Int {
+    @objc get
+  }
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  public func disconnect(complete: @escaping SDM.VoidCompletionHandler = { _ in })
+  public func applyUserOptions(complete: @escaping SDM.VoidCompletionHandler = { _ in })
+  @objc public var supportedTriggerRead: SDM.Device.TriggerReadType {
+    @objc get
+  }
+  @objc public func triggerReading(dataType: SDM.Device.TriggerReadType)
+  public func send(data: Foundation.Data)
+  public func send(data: Foundation.Data, complete: SDM.VoidCompletionHandler?)
+  public func send(data: Foundation.Data, checkResponse: @escaping (Foundation.Data) -> Swift.Bool, complete: @escaping (Swift.Result<Foundation.Data, Swift.Error>) -> Swift.Void)
+  @objc public var supportsConstantReadMode: Swift.Bool {
+    @objc get
+  }
+  @objc public var constantModeEnabled: Swift.Bool {
+    get
+  }
+  public func enableConstantMode(_ enable: Swift.Bool, complete: @escaping SDM.VoidCompletionHandler)
+  public func readEPC(outputFormat: SDM.ScanDataFormat, complete: @escaping SDM.ReadCompletionHandler)
+  public func readTagID(outputFormat: SDM.ScanDataFormat, complete: @escaping SDM.ReadCompletionHandler)
+  public func readUserdata(outputFormat: SDM.ScanDataFormat, offset: Swift.Int = 0, length: Swift.Int = 0, complete: @escaping SDM.ReadCompletionHandler)
+  public func write(epc: Swift.String, complete: @escaping SDM.VoidCompletionHandler)
+  public func write(userdata: Swift.String, format: SDM.ScanDataFormat, offset: Swift.Int = 0, complete: @escaping SDM.VoidCompletionHandler)
+  public func write(ndef: SDM.NDEFMessage, complete: @escaping SDM.VoidCompletionHandler)
+}
+@objc public enum StringSeparator : Swift.Int, Swift.CaseIterable, Swift.CustomStringConvertible {
+  case nothing, comma, commaAndSpace, space, carriageReturn, linefeed, crlf, tab
+  public var value: Swift.String {
+    get
+  }
+  public var description: Swift.String {
+    get
+  }
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public typealias AllCases = [SDM.StringSeparator]
+  public static var allCases: [SDM.StringSeparator] {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class TSL1128Device : SDM.Device {
+  @objc public var outputPower: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @objc public var constantReadMode: Swift.Bool
+  @objc public var epcOutputFormat: SDM.ScanDataFormat
+  @objc public var tidOutputFormat: SDM.ScanDataFormat
+  @objc public var tidLength: Swift.Int
+  @objc public var userdataOutputFormat: SDM.ScanDataFormat
+  @objc public var userdataLength: Swift.Int
+  @objc public var shouldMergeTagsData: Swift.Bool
+  @objc public var mergeTagsSeparator: SDM.StringSeparator
+  @objc override public var deviceType: SDM.DeviceType {
+    @objc get
+  }
+  @objc override public var options: [Swift.String : Swift.AnyObject] {
+    @objc get
+    @objc set
+  }
+  @objc override public var supportedTriggerRead: SDM.Device.TriggerReadType {
+    @objc get
+  }
+  @objc override public func triggerReading(dataType: SDM.Device.TriggerReadType)
+  @objc override public var supportsConstantReadMode: Swift.Bool {
+    @objc get
+  }
+  override public func enableConstantMode(_ enable: Swift.Bool, complete: @escaping SDM.VoidCompletionHandler)
+  override public func write(userdata: Swift.String, format: SDM.ScanDataFormat, offset: Swift.Int, complete: @escaping SDM.VoidCompletionHandler)
+  override public func readUserdata(outputFormat: SDM.ScanDataFormat, offset: Swift.Int, length: Swift.Int, complete: @escaping SDM.ReadCompletionHandler)
+  override public func readTagID(outputFormat: SDM.ScanDataFormat, complete: @escaping SDM.ReadCompletionHandler)
+  @objc deinit
+}
+public enum Event {
+  case changedBluetoothState(_: CoreBluetooth.CBManagerState)
+  case foundDevice(device: SDM.DeviceInfo)
+  case lostDevices(devices: [SDM.DeviceInfo])
+  case updateDevice(device: SDM.DeviceInfo)
+  case connecting(device: SDM.Device)
+  case connected(device: SDM.Device)
+  case disconnected(device: SDM.Device)
+  case detected(tag: SDM.TagType, device: SDM.Device)
+  case lost(tag: SDM.TagType, device: SDM.Device)
+  case recieved(scan: SDM.Scan, device: SDM.Device)
+  case updatedBatteryInfo(device: SDM.Device)
+  case notify(message: Swift.String, details: Swift.String?)
+  case notifyIndeterminate(message: Swift.String?, details: Swift.String?)
+  case notifyDeterminate(message: Swift.String?, details: Swift.String?, progress: Swift.Float)
+  case notifyHide
+  case failure(error: Swift.Error, device: SDM.Device?)
+  case viewControllerClosed
+  case deviceOptionsUpdate(device: SDM.Device)
+  case showPrompt(title: Swift.String?, message: Swift.String?, cancelTitle: Swift.String?, cencelHandler: () -> Swift.Void, button: Swift.String?, style: UIKit.UIAlertAction.Style, handler: () -> Swift.Void)
+}
+public protocol EventsObserver : AnyObject {
+  func handleSerialDeviceManager(event: SDM.Event)
+}
+extension SerialioDeviceManager {
+  @objc public static let UserInfoStateKey: Swift.String
+  @objc public static let UserInfoDeviceKey: Swift.String
+  @objc public static let UserInfoDevicesKey: Swift.String
+  @objc public static let UserInfoErrorKey: Swift.String
+  @objc public static let UserInfoScanKey: Swift.String
+  @objc public static let UserInfoTagTypeKey: Swift.String
+  @objc public static let UserInfoTextKey: Swift.String
+  @objc public static let UserInfoDetailsKey: Swift.String
+  @objc public static let UserInfoProgressKey: Swift.String
+  @objc public static let BLEStateChanged: Foundation.Notification.Name
+  @objc public static let FoundDevice: Foundation.Notification.Name
+  @objc public static let LostDevice: Foundation.Notification.Name
+  @objc public static let UpdateDeviceInfo: Foundation.Notification.Name
+  @objc public static let ConnectingToDevice: Foundation.Notification.Name
+  @objc public static let ConnectedToDevice: Foundation.Notification.Name
+  @objc public static let DisconnectedDevice: Foundation.Notification.Name
+  @objc public static let DetectedTag: Foundation.Notification.Name
+  @objc public static let LostTag: Foundation.Notification.Name
+  @objc public static let ReceivedScan: Foundation.Notification.Name
+  @objc public static let UpdatedBatteryInfo: Foundation.Notification.Name
+  @objc public static let NotifyIndeterminate: Foundation.Notification.Name
+  @objc public static let NotifyDeterminate: Foundation.Notification.Name
+  @objc public static let NotifyHide: Foundation.Notification.Name
+  @objc public static let NotifyText: Foundation.Notification.Name
+  @objc public static let ErrorNotification: Foundation.Notification.Name
+  @objc public static let SDMViewControllerDismissed: Foundation.Notification.Name
+  @objc public static let DeviceOptionsUpdated: Foundation.Notification.Name
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class AllflexDevice : SDM.Device {
+  @objc override public var deviceType: SDM.DeviceType {
+    @objc get
+  }
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ScanfobNfcBB2Device : SDM.Device {
+  @objc public var beepOnScan: Swift.Bool
+  @objc public var autoOff: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @objc public var outputPower: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @objc public var constantReadMode: Swift.Bool
+  @objc public var epcOutputFormat: SDM.ScanDataFormat
+  @objc public var userdataOutputFormat: SDM.ScanDataFormat
+  @objc public var userdataLength: Swift.Int
+  @objc public var scanningTime: Swift.Double
+  @objc public var intervalTime: Swift.Double
+  @objc public var isoStandard: SDM.TagType {
+    @objc get
+    @objc set
+  }
+  @objc override public var deviceType: SDM.DeviceType {
+    @objc get
+  }
+  @objc override public var madeBySerialIO: Swift.Bool {
+    @objc get
+  }
+  @objc override public var options: [Swift.String : Swift.AnyObject] {
+    @objc get
+    @objc set
+  }
+  override public func applyUserOptions(complete: @escaping SDM.VoidCompletionHandler)
+  override public func readEPC(outputFormat: SDM.ScanDataFormat, complete: @escaping SDM.ReadCompletionHandler)
+  override public func readUserdata(outputFormat: SDM.ScanDataFormat, offset: Swift.Int, length: Swift.Int, complete: @escaping SDM.ReadCompletionHandler)
+  override public func write(userdata: Swift.String, format: SDM.ScanDataFormat, offset: Swift.Int, complete: @escaping SDM.VoidCompletionHandler)
+  @objc override public var supportsConstantReadMode: Swift.Bool {
+    @objc get
+  }
+  override public func enableConstantMode(_ enable: Swift.Bool, complete: @escaping SDM.VoidCompletionHandler)
+  @objc override public var supportedTriggerRead: SDM.Device.TriggerReadType {
+    @objc get
+  }
+  @objc override public func triggerReading(dataType: SDM.Device.TriggerReadType)
+  @objc deinit
+}
+public enum NDEFError : Swift.Error {
+  case payloadIncomplete, emptyType, badRecordType, emptyPayload, notFoundMessageBegin, unexpectedMessageBegin, unexpectedIdLengthInNonLeadingChunk, unexpectedMessageEndInNonTrailingChunk, notFoundTnfUnchangedInNonLeadingChunk, unexpectedTnfUnchangedInFirstChunk, nonZeroTypeLengthInNonLeadingChunk, payloadLengthTooBig, badRecordPayloadLangth
+  public static func == (a: SDM.NDEFError, b: SDM.NDEFError) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+@objc @_inheritsConvenienceInitializers public class NDEFMessage : ObjectiveC.NSObject, Swift.Codable {
+  public static let MaxPayloadSize: Swift.Int
+  @objc public var records: [SDM.NDEFRecord] {
+    get
+  }
+  public static func parse(data byteBuffer: Foundation.Data?, ignoreBeginEnd: Swift.Bool = false) -> Swift.Result<SDM.NDEFMessage, Swift.Error>
+  @objc convenience public init(records: [SDM.NDEFRecord])
+  @objc convenience public init(text: Swift.String)
+  @objc convenience public init(url: Foundation.URL)
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public var debugDescription: Swift.String {
+    @objc get
+  }
+  public var dump: Foundation.Data? {
+    get
+  }
+  @objc override dynamic public init()
+  required public init(from decoder: Swift.Decoder) throws
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class NDEFRecord : ObjectiveC.NSObject, Swift.Codable {
+  @objc public enum TypeNameField : Swift.UInt8 {
+    case empty = 0
+    case wellKnown = 1
+    case mimeMedia = 2
+    case absoluteURI = 3
+    case externalType = 4
+    case unknown = 5
+    case unchanged = 6
+    public typealias RawValue = Swift.UInt8
+    public init?(rawValue: Swift.UInt8)
+    public var rawValue: Swift.UInt8 {
+      get
+    }
+  }
+  @objc public enum WellKnownType : Swift.Int, Swift.CustomStringConvertible {
+    case unknown = 0, text, uri, action, smartPost, alternativeCarrier, handoverCarrier, handoverRequest, handoverSelect
+    public var description: Swift.String {
+      get
+    }
+    public typealias RawValue = Swift.Int
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @objc final public var tnf: SDM.NDEFRecord.TypeNameField {
+    get
+  }
+  @objc final public var type: Foundation.Data {
+    get
+  }
+  @objc final public var recId: Foundation.Data? {
+    get
+  }
+  @objc final public var payload: Foundation.Data {
+    get
+  }
+  @objc final public var wellKnownType: SDM.NDEFRecord.WellKnownType {
+    @objc get
+  }
+  @objc public static var empty: SDM.NDEFRecord {
+    @objc get
+  }
+  @objc convenience public init(tnf: SDM.NDEFRecord.TypeNameField, type: Foundation.Data, recId: Foundation.Data? = nil, payload: Foundation.Data)
+  convenience public init?(wellKnown: SDM.NDEFRecord.WellKnownType, payload: Foundation.Data)
+  convenience public init?(url: Foundation.URL)
+  convenience public init?(url: Swift.String)
+  convenience public init?(text: Swift.String, encoding: Swift.String.Encoding = .utf8, language: Swift.String = "en")
+  public static func == (lhs: SDM.NDEFRecord, rhs: SDM.NDEFRecord) -> Swift.Bool
+  @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc override final public var hash: Swift.Int {
+    @objc get
+  }
+  public init(from decoder: Swift.Decoder) throws
+  final public func encode(to encoder: Swift.Encoder) throws
+  @objc final public func urlFromPayload() -> Foundation.URL?
+  final public func textAndLangFromPayload() -> (lang: Swift.String?, text: Swift.String?)
+  @objc final public func textFromPayload() -> Swift.String?
+  @objc override final public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BlueSnapDB9Device : SDM.Device {
+  @objc public var postScanTriggerOnly: Swift.Bool
+  @objc public var postAsHex: Swift.Bool
+  @objc public var needParseReadBuffer: Swift.Bool
+  @objc public var readBuffer: Foundation.Data {
+    @objc get
+    @objc set
+  }
+  @objc override public var options: [Swift.String : Swift.AnyObject] {
+    @objc get
+    @objc set
+  }
+  @objc override public var deviceType: SDM.DeviceType {
+    @objc get
+  }
+  @objc override public var madeBySerialIO: Swift.Bool {
+    @objc get
+  }
+  @objc override public var supportedTriggerRead: SDM.Device.TriggerReadType {
+    @objc get
+  }
+  @objc override public func triggerReading(dataType: SDM.Device.TriggerReadType)
+  @objc deinit
+}
+@objc public enum ScanDataFormat : Swift.Int, Swift.CustomStringConvertible {
+  case none
+  case ascii
+  case hex
+  case decimal
+  case decimalBytewise
+  case rfidJournal2013
+  case ndef
+  public var description: Swift.String {
+    get
+  }
+  public init?(string stringValue: Swift.String)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+}
+@objc public enum NFCDataFormat : Swift.Int, Swift.CustomStringConvertible {
+  case scanfob
+  case littleEndian
+  public init?(string stringValue: Swift.String)
+  public var description: Swift.String {
+    get
+  }
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+}
+@objc public enum Frequency : Swift.Int {
+  case none
+  case ultraHigh
+  case high
+  case low
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum TagType : Swift.Int, Swift.CustomStringConvertible, Swift.CaseIterable {
+  case unknown
+  case barcode
+  case magStripe
+  case epcGenII
+  case iso14443a
+  case iso14443b
+  case iso14444a
+  case iso15693
+  case mifareClassic1K
+  case mifareClassic4K
+  case mifareUltrlight
+  case mifareUltrlightC
+  case mifare2kS
+  case iClassH10301
+  case nxpDesfire
+  case ntag216
+  case seos
+  case legic
+  case felica
+  case srx
+  case nfcp2p
+  case ble
+  case topaz
+  case cts
+  case hidProx
+  case em4102
+  case hitag1S
+  case hitag2
+  case em4150
+  case at5555
+  case isoFdx
+  case em4026
+  case hitagU
+  case em4305
+  case tiris
+  case cotag
+  case ioProx
+  case indiTag
+  case honeyTag
+  case awid
+  case gProx
+  case pyramid
+  case keri
+  case deister
+  case cardax
+  case nedap
+  case pac
+  case idteck
+  case ultraProx
+  case ict
+  case isonas
+  public init?(fromString: Swift.String)
+  public var description: Swift.String {
+    get
+  }
+  public var frequency: SDM.Frequency {
+    get
+  }
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [SDM.TagType]
+  public static var allCases: [SDM.TagType] {
+    get
+  }
+}
+@objc public enum ScanDataType : Swift.Int, Swift.CustomStringConvertible {
+  case barcode, epc, csn, pacs
+  public var description: Swift.String {
+    get
+  }
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class Scan : ObjectiveC.NSObject, Swift.Codable, Foundation.NSCoding {
+  @objc public var timestamp: Foundation.TimeInterval {
+    get
+  }
+  @objc public var tagType: SDM.TagType {
+    get
+  }
+  @objc public var data: Swift.String? {
+    get
+  }
+  @objc public var dataLabel: SDM.ScanDataType {
+    get
+  }
+  @objc public var tid: Swift.String? {
+    get
+  }
+  @objc public var userdata: Swift.String? {
+    get
+  }
+  @objc public var ndef: SDM.NDEFMessage? {
+    get
+  }
+  @objc public var getText: Swift.String {
+    @objc get
+  }
+  public init(barcode: Swift.String)
+  public init(csn: Swift.String, tagType: SDM.TagType = .unknown)
+  public init(magStripe: Swift.String)
+  @objc public init(records: [SDM.NDEFRecord])
+  @objc public static func scan(barcode: Swift.String) -> SDM.Scan
+  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  @objc public func encode(with coder: Foundation.NSCoder)
+  @objc required public init?(coder: Foundation.NSCoder)
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc public subscript(key: Swift.String) -> Any? {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class WiSnapDevice : SDM.Device {
+  public enum PacketPrefix : Swift.String, Swift.CustomStringConvertible, Swift.CaseIterable {
+    case empty
+    case stx
+    case tab
+    public var description: Swift.String {
+      get
+    }
+    public typealias RawValue = Swift.String
+    public init?(rawValue: Swift.String)
+    public var rawValue: Swift.String {
+      get
+    }
+    public typealias AllCases = [SDM.WiSnapDevice.PacketPrefix]
+    public static var allCases: [SDM.WiSnapDevice.PacketPrefix] {
+      get
+    }
+  }
+  public enum PacketSuffix : Swift.String, Swift.CustomStringConvertible, Swift.CaseIterable {
+    case etx
+    case carriageReturn
+    case linefeed
+    case crlf
+    case tab
+    public var description: Swift.String {
+      get
+    }
+    public typealias RawValue = Swift.String
+    public init?(rawValue: Swift.String)
+    public var rawValue: Swift.String {
+      get
+    }
+    public typealias AllCases = [SDM.WiSnapDevice.PacketSuffix]
+    public static var allCases: [SDM.WiSnapDevice.PacketSuffix] {
+      get
+    }
+  }
+  public var packetPrefix: SDM.WiSnapDevice.PacketPrefix
+  public var packetSuffix: SDM.WiSnapDevice.PacketSuffix
+  @objc override public var deviceType: SDM.DeviceType {
+    @objc get
+  }
+  @objc override public var madeBySerialIO: Swift.Bool {
+    @objc get
+  }
+  @objc override public var options: [Swift.String : Swift.AnyObject] {
+    @objc get
+    @objc set
+  }
+  @objc public func readECRType6Weight(complete: @escaping () -> Swift.Void)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class TagReaderDevice : SDM.Device {
+  override public func readTagID(outputFormat: SDM.ScanDataFormat, complete: @escaping SDM.ReadCompletionHandler)
+  override public func readUserdata(outputFormat: SDM.ScanDataFormat = .hex, offset: Swift.Int = 0, length: Swift.Int = 0, complete: @escaping SDM.ReadCompletionHandler)
+  override public func write(userdata: Swift.String, format: SDM.ScanDataFormat, offset: Swift.Int, complete: @escaping SDM.VoidCompletionHandler)
+  override public func write(ndef: SDM.NDEFMessage, complete: @escaping SDM.VoidCompletionHandler)
+  public func lock(complete: @escaping SDM.VoidCompletionHandler)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class IdChampRS4Device : SDM.TagReaderDevice {
+  @objc public var credentialOutputFormat: SDM.ScanDataFormat
+  @objc public var credentialType: SDM.IdChampRS4Device.CredentialType
+  @objc public var userdataOutputFormat: SDM.ScanDataFormat
+  @objc public var userdataLength: Swift.Int
+  @objc public var nfcDataFormat: SDM.NFCDataFormat
+  @objc public var isTagPresented: Swift.Bool {
+    get
+  }
+  @objc public enum ConfigParameter : Swift.Int, Swift.CaseIterable, Swift.CustomStringConvertible {
+    case iso14443a, iso14443b, iso15693, iclass14443b, iclass15693, felica, prox, ble, configCard
+    public var description: Swift.String {
+      get
+    }
+    public typealias RawValue = Swift.Int
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int {
+      get
+    }
+    public typealias AllCases = [SDM.IdChampRS4Device.ConfigParameter]
+    public static var allCases: [SDM.IdChampRS4Device.ConfigParameter] {
+      get
+    }
+  }
+  @objc public enum CredentialType : Swift.Int, Swift.CustomStringConvertible {
+    case csn, pacs35Bit, pacs48Bit, pacs26Bit, pacsHID37Or40BitOrIClass
+    public var description: Swift.String {
+      get
+    }
+    public init?(fromString: Swift.String)
+    public typealias RawValue = Swift.Int
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @objc override public var deviceType: SDM.DeviceType {
+    @objc get
+  }
+  @objc override public var madeBySerialIO: Swift.Bool {
+    @objc get
+  }
+  @objc override public var options: [Swift.String : Swift.AnyObject] {
+    @objc get
+    @objc set
+  }
+  override public func readEPC(outputFormat: SDM.ScanDataFormat, complete: @escaping SDM.ReadCompletionHandler)
+  public func readTagID(credentialType: SDM.IdChampRS4Device.CredentialType, outputFormat: SDM.ScanDataFormat = .hex, complete: @escaping SDM.ReadCompletionHandler)
+  @objc deinit
+}
+extension IdChampRS4Device {
+  public func write(contactlessConfiguration: [SDM.IdChampRS4Device.ConfigParameter : Swift.Bool], complete: @escaping SDM.VoidCompletionHandler)
+  public func readContactlessConfiguration(complete: @escaping (Swift.Result<[SDM.IdChampRS4Device.ConfigParameter : Swift.Bool], Swift.Error>) -> Swift.Void)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class CipherLab1800Device : SDM.Device {
+  @objc public var autoOff: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @objc public var outputPower: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @objc public var constantReadMode: Swift.Bool
+  @objc public var epcOutputFormat: SDM.ScanDataFormat
+  @objc public var userdataOutputFormat: SDM.ScanDataFormat
+  @objc override public var options: [Swift.String : Swift.AnyObject] {
+    @objc get
+    @objc set
+  }
+  @objc override public var deviceType: SDM.DeviceType {
+    @objc get
+  }
+  @objc override public var supportsConstantReadMode: Swift.Bool {
+    @objc get
+  }
+  override public func enableConstantMode(_ enable: Swift.Bool, complete: @escaping SDM.VoidCompletionHandler)
+  override public func applyUserOptions(complete: @escaping SDM.VoidCompletionHandler)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class SerialioDeviceManager : ObjectiveC.NSObject {
+  @objc override final public var description: Swift.String {
+    @objc get
+  }
+  @objc public static let shared: SDM.SerialioDeviceManager
+  @objc final public var version: Swift.String {
+    @objc get
+  }
+  @objc final public var logger: SDM.SimpleLogger?
+  @objc final public var userDefaults: Foundation.UserDefaults
+  @objc final public var storeOnlyRecentDevices: Swift.Bool
+  final public var keepiOSAwake: SDM.KeepiOSAwake {
+    get
+    set
+  }
+  @objc final public var currentBluetoothState: CoreBluetooth.CBManagerState {
+    @objc get
+  }
+  @objc final public var forceBleDeviceScanning: Swift.Bool
+  @objc final public func start()
+  @objc final public var batteryServiceEnabled: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc final public var batteryPollTimeout: Foundation.TimeInterval {
+    @objc get
+    @objc set
+  }
+  @objc final public var batteryImages: [UIKit.UIImage] {
+    @objc get
+    @objc set
+  }
+  @objc final public var viewController: UIKit.UIViewController {
+    @objc get
+    @objc set
+  }
+  @objc final public var isViewControllerVisible: Swift.Bool {
+    @objc get
+  }
+  @objc final public var autoCloseTimeout: Foundation.TimeInterval {
+    @objc get
+    @objc set
+  }
+  @objc final public var isOptionsVisible: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc final public var useNotifications: Swift.Bool
+  final public func addEventObserver(_ observer: SDM.EventsObserver)
+  final public func removeEventObserver(_ observer: SDM.EventsObserver)
+  @objc final public var foundDevices: [SDM.DeviceInfo] {
+    @objc get
+  }
+  @objc final public var connectedDevices: [SDM.Device] {
+    @objc get
+  }
+  @objc final public func connectedDevice(options: [Swift.String : Swift.AnyObject]) -> SDM.Device?
+  @objc final public func connectedDevice(byName: Swift.String) -> SDM.Device?
+  @objc final public func foundDevice(byName: Swift.String) -> SDM.DeviceInfo?
+  final public func connect(deviceInfo: SDM.DeviceInfo, complete: @escaping SDM.VoidCompletionHandler)
+  @objc final public func connect(deviceInfo: SDM.DeviceInfo)
+  @objc final public func disconnect(device: SDM.Device)
+  @objc final public func disconnectAll(mfi: Swift.Bool, ble: Swift.Bool, wisnap: Swift.Bool)
+  @objc final public func disconnectAll()
+  final public var scanSound: SDM.PlaySoundOption {
+    get
+    set
+  }
+  final public var tagPresentSound: SDM.PlaySoundOption {
+    get
+    set
+  }
+  final public func addCustomPlaySound(sound: SDM.PlaySoundOption, fileURL: Foundation.URL)
+  final public func removeCustomPlaySound(sound: SDM.PlaySoundOption)
+  @objc final public var connectToLastRecentDevicesEnabled: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc final public var enableSavingDeviceOptions: Swift.Bool
+  @objc final public var maxRecentDevices: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @objc final public var recentDeviceUniqueNames: [Swift.String] {
+    @objc get
+  }
+  @objc final public var recentDeviceNames: [Swift.String] {
+    @objc get
+  }
+  @objc final public func recentDeviceName(_ uniqueName: Swift.String) -> Swift.String?
+  @objc final public func removeDeviceOptions(device: SDM.Device? = nil)
+  @objc final public var showUnknownDevices: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc final public var deviceTypeFilterEnabled: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  final public var deviceTypeFilter: [SDM.DeviceType] {
+    get
+    set
+  }
+  @objc deinit
+}
+extension SerialioDeviceManager {
+  @objc final public func createDevice(name: Swift.String) -> SDM.Device
+}
+extension SerialioDeviceManager {
+  final public func set(featureKey: Swift.String)
+}
+extension UIViewController {
+  @objc dynamic public func presentSerialioDeviceManager()
+}
+public enum PlaySoundOption : Swift.Hashable, Swift.CustomStringConvertible {
+  case none, vibrate, tock, beep, click, custom(name: Swift.String)
+  public var description: Swift.String {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: SDM.PlaySoundOption, b: SDM.PlaySoundOption) -> Swift.Bool
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Scanfob3002Device : SDM.Device {
+  @objc public var constantReadMode: Swift.Bool
+  public var dataEncoding: Swift.String.Encoding
+  @objc override public var deviceType: SDM.DeviceType {
+    @objc get
+  }
+  @objc override public var madeBySerialIO: Swift.Bool {
+    @objc get
+  }
+  @objc override public var options: [Swift.String : Swift.AnyObject] {
+    @objc get
+    @objc set
+  }
+  override public func applyUserOptions(complete: @escaping SDM.VoidCompletionHandler = { _ in })
+  @objc override public var supportsConstantReadMode: Swift.Bool {
+    @objc get
+  }
+  @objc override public var supportedTriggerRead: SDM.Device.TriggerReadType {
+    @objc get
+  }
+  @objc override public func triggerReading(dataType: SDM.Device.TriggerReadType)
+  @objc deinit
+}
+@objc public class BatteryPowerState : ObjectiveC.NSObject {
+  @objc public enum ParameterValue : Swift.UInt8, Swift.CustomStringConvertible {
+    case unknown, unsupported, no, yes
+    public var description: Swift.String {
+      get
+    }
+    public typealias RawValue = Swift.UInt8
+    public init?(rawValue: Swift.UInt8)
+    public var rawValue: Swift.UInt8 {
+      get
+    }
+  }
+  @objc public var batteryPresent: SDM.BatteryPowerState.ParameterValue
+  @objc public var discharging: SDM.BatteryPowerState.ParameterValue
+  @objc public var charging: SDM.BatteryPowerState.ParameterValue
+  @objc public var criticalLowLevel: SDM.BatteryPowerState.ParameterValue
+  public init(rawValue: Swift.UInt8)
+  @objc public static let unknown: SDM.BatteryPowerState
+  public static func != (lhs: SDM.BatteryPowerState, rhs: SDM.BatteryPowerState) -> Swift.Bool
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Smart3101Device : SDM.Device {
+  @objc public var constantReadMode: Swift.Bool
+  @objc override public var deviceType: SDM.DeviceType {
+    @objc get
+  }
+  @objc override public var madeBySerialIO: Swift.Bool {
+    @objc get
+  }
+  override public func applyUserOptions(complete: @escaping SDM.VoidCompletionHandler)
+  @objc override public var options: [Swift.String : Swift.AnyObject] {
+    @objc get
+    @objc set
+  }
+  @objc override public var supportsConstantReadMode: Swift.Bool {
+    @objc get
+  }
+  override public func enableConstantMode(_ enable: Swift.Bool, complete: @escaping SDM.VoidCompletionHandler)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class PosiTector6000Device : SDM.Device {
+  @objc override public var deviceType: SDM.DeviceType {
+    @objc get
+  }
+  public var postOnlyNumbers: Swift.Bool
+  @objc override public var options: [Swift.String : Swift.AnyObject] {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@objc public class DriverLicenseDecoder : ObjectiveC.NSObject {
+  @objc @_hasMissingDesignatedInitializers public class DriverLicenseDataItem : ObjectiveC.NSObject {
+    @objc final public let abbr: Swift.String
+    @objc final public let value: Swift.String
+    @objc final public let text: Swift.String?
+    @objc override dynamic public var description: Swift.String {
+      @objc get
+    }
+    @objc deinit
+    @objc override dynamic public init()
+  }
+  @objc public init?(string: Swift.String)
+  @objc public subscript(key: Swift.String) -> Swift.String? {
+    @objc get
+  }
+  @objc public var fields: [SDM.DriverLicenseDecoder.DriverLicenseDataItem] {
+    @objc get
+  }
+  @objc public var firstName: Swift.String? {
+    @objc get
+  }
+  @objc public var middleName: Swift.String? {
+    @objc get
+  }
+  @objc public var lastName: Swift.String? {
+    @objc get
+  }
+  @objc public var fullName: Swift.String? {
+    @objc get
+  }
+  @objc public var nameSuffix: Swift.String? {
+    @objc get
+  }
+  @objc public var namePrefix: Swift.String? {
+    @objc get
+  }
+  @objc public var licenseNumber: Swift.String? {
+    @objc get
+  }
+  @objc public var licenseExpirationDate: Swift.String? {
+    @objc get
+  }
+  @objc public var licenseIssueDate: Swift.String? {
+    @objc get
+  }
+  @objc public var streetAddress1: Swift.String? {
+    @objc get
+  }
+  @objc public var streetAddress2: Swift.String? {
+    @objc get
+  }
+  @objc public var city: Swift.String? {
+    @objc get
+  }
+  @objc public var state: Swift.String? {
+    @objc get
+  }
+  @objc public var zipcode: Swift.String? {
+    @objc get
+  }
+  @objc public var dateOfBirth: Swift.String? {
+    @objc get
+  }
+  @objc public var sex: Swift.String? {
+    @objc get
+  }
+  @objc public var height: Swift.String? {
+    @objc get
+  }
+  @objc public var weight: Swift.String? {
+    @objc get
+  }
+  @objc public var eyeColor: Swift.String? {
+    @objc get
+  }
+  @objc public var hairColor: Swift.String? {
+    @objc get
+  }
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class IdChampEUADevice : SDM.Device {
+  @objc public var outputPower: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @objc public var constantReadMode: Swift.Bool
+  @objc public var epcOutputFormat: SDM.ScanDataFormat
+  @objc public var tidOutputFormat: SDM.ScanDataFormat
+  @objc public var tidLength: Swift.Int
+  @objc public var userdataOutputFormat: SDM.ScanDataFormat
+  @objc public var userdataLength: Swift.Int
+  @objc public var antennas: Swift.Set<Swift.Int> {
+    @objc get
+    @objc set
+  }
+  @objc override public var madeBySerialIO: Swift.Bool {
+    @objc get
+  }
+  @objc override public var deviceType: SDM.DeviceType {
+    @objc get
+  }
+  @objc override public var options: [Swift.String : Swift.AnyObject] {
+    @objc get
+    @objc set
+  }
+  override public func disconnect(complete: @escaping SDM.VoidCompletionHandler = { _ in })
+  override public func applyUserOptions(complete: @escaping SDM.VoidCompletionHandler)
+  @objc override public var supportsConstantReadMode: Swift.Bool {
+    @objc get
+  }
+  override public func enableConstantMode(_ enable: Swift.Bool, complete: @escaping SDM.VoidCompletionHandler)
+  @objc override public var supportedTriggerRead: SDM.Device.TriggerReadType {
+    @objc get
+  }
+  @objc override public func triggerReading(dataType: SDM.Device.TriggerReadType)
+  override public func write(userdata: Swift.String, format: SDM.ScanDataFormat, offset: Swift.Int, complete: @escaping SDM.VoidCompletionHandler)
+  override public func readUserdata(outputFormat: SDM.ScanDataFormat, offset: Swift.Int, length: Swift.Int, complete: @escaping SDM.ReadCompletionHandler)
+  override public func readTagID(outputFormat: SDM.ScanDataFormat, complete: @escaping SDM.ReadCompletionHandler)
+  @objc deinit
+}
+precedencegroup ExponentiationPrecedence {
+  associativity: left
+  higherThan: MultiplicationPrecedence
+  lowerThan: BitwiseShiftPrecedence
+}
+infix operator ** : ExponentiationPrecedence
+extension UINavigationController {
+  @objc override dynamic open var preferredStatusBarStyle: UIKit.UIStatusBarStyle {
+    @objc get
+  }
+}
+extension NSAttributedString {
+}
+extension NSAttributedString {
+}
+extension URL {
+}
+extension Result {
+  public var isSuccess: Swift.Bool {
+    get
+  }
+  public var isFailure: Swift.Bool {
+    get
+  }
+  public var value: Success? {
+    get
+  }
+  public var error: Swift.Error? {
+    get
+  }
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+infix operator ~> : DefaultPrecedence
+infix operator ≠> : DefaultPrecedence
+public enum BluetoothError : Swift.Error {
+  public enum BluetoothUnavailbleFailureReason {
+    case unsupported
+    case unauthorized
+    case poweredOff
+    case unknown
+    public static func == (a: SDM.BluetoothError.BluetoothUnavailbleFailureReason, b: SDM.BluetoothError.BluetoothUnavailbleFailureReason) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+  }
+  public enum BluetoothOperation : Swift.String {
+    case connectPeripheral
+    case disconnectPeripheral
+    case readRSSI
+    case discoverServices
+    case discoverIncludedServices
+    case discoverCharacteristics
+    case discoverDescriptors
+    case readCharacteristic
+    case readDescriptor
+    case writeCharacteristic
+    case writeDescriptor
+    case updateNotificationStatus
+    public typealias RawValue = Swift.String
+    public init?(rawValue: Swift.String)
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  case bluetoothUnavailable(reason: SDM.BluetoothError.BluetoothUnavailbleFailureReason)
+  case scanningEndedUnexpectedly
+  case operationTimedOut(operation: SDM.BluetoothError.BluetoothOperation)
+  case invalidPeripheral
+  case peripheralFailedToConnectReasonUnknown
+  case peripheralServiceNotFound(missingServicesUUIDs: [CoreBluetooth.CBUUID])
+  case peripheralCharacteristicNotFound(missingCharacteristicsUUIDs: [CoreBluetooth.CBUUID])
+  case peripheralDescriptorsNotFound(missingDescriptorsUUIDs: [CoreBluetooth.CBUUID])
+  case invalidDescriptorValue(descriptor: CoreBluetooth.CBDescriptor)
+}
+extension BluetoothError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+extension BluetoothError.BluetoothUnavailbleFailureReason {
+  public var localizedDescription: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DeviceInfo : ObjectiveC.NSObject {
+  final public let identifier: SDM.DeviceIdentifier
+  @objc final public let deviceType: SDM.DeviceType
+  @objc public var displayName: Swift.String
+  @objc final public let deviceName: Swift.String
+  @objc public var serialNumber: Swift.String
+  @objc public var optionsExists: Swift.Bool
+  @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+  @objc override dynamic public init()
+}
+@_hasMissingDesignatedInitializers @objc public class BleDeviceInfo : SDM.DeviceInfo {
+  public var rssi: Swift.Int?
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class MfiDeviceInfo : SDM.DeviceInfo {
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class WiSnapDeviceInfo : SDM.DeviceInfo {
+  @objc deinit
+}
+precedencegroup FormPrecedence {
+  associativity: left
+  higherThan: LogicalConjunctionPrecedence
+}
+precedencegroup SectionPrecedence {
+  associativity: left
+  higherThan: FormPrecedence
+}
+infix operator +++ : FormPrecedence
+infix operator <<< : SectionPrecedence
+public enum KeepiOSAwake : Swift.CaseIterable, Swift.Equatable, Swift.CustomStringConvertible {
+  case off
+  case minutes(value: Swift.Int)
+  case alwaysOn
+  public static var allCases: [SDM.KeepiOSAwake] {
+    get
+  }
+  public var description: Swift.String {
+    get
+  }
+  public typealias AllCases = [SDM.KeepiOSAwake]
+  public static func == (a: SDM.KeepiOSAwake, b: SDM.KeepiOSAwake) -> Swift.Bool
+}
+extension SDM.IdChampNF4Device.CredentialType : Swift.Equatable {}
+extension SDM.IdChampNF4Device.CredentialType : Swift.Hashable {}
+extension SDM.IdChampNF4Device.CredentialType : Swift.RawRepresentable {}
+extension SDM.DistoDevice.Unit : Swift.Equatable {}
+extension SDM.DistoDevice.Unit : Swift.Hashable {}
+extension SDM.DistoDevice.Unit : Swift.RawRepresentable {}
+extension SDM.DistoDevice.RoundDown : Swift.Equatable {}
+extension SDM.DistoDevice.RoundDown : Swift.Hashable {}
+extension SDM.DistoDevice.RoundDown : Swift.RawRepresentable {}
+extension SDM.SDMError.JobResult : Swift.Equatable {}
+extension SDM.SDMError.JobResult : Swift.Hashable {}
+extension SDM.SDMErrorCode : Swift.Equatable {}
+extension SDM.SDMErrorCode : Swift.Hashable {}
+extension SDM.SDMErrorCode : Swift.RawRepresentable {}
+extension SDM.DeviceType : Swift.RawRepresentable {}
+extension SDM.DeviceTransportType : Swift.Equatable {}
+extension SDM.DeviceTransportType : Swift.Hashable {}
+extension SDM.DeviceTransportType : Swift.RawRepresentable {}
+extension SDM.Device.ConnectionState : Swift.Equatable {}
+extension SDM.Device.ConnectionState : Swift.Hashable {}
+extension SDM.Device.ConnectionState : Swift.RawRepresentable {}
+extension SDM.Device.TriggerReadType : Swift.Equatable {}
+extension SDM.Device.TriggerReadType : Swift.Hashable {}
+extension SDM.Device.TriggerReadType : Swift.RawRepresentable {}
+extension SDM.StringSeparator : Swift.Equatable {}
+extension SDM.StringSeparator : Swift.Hashable {}
+extension SDM.StringSeparator : Swift.RawRepresentable {}
+extension SDM.NDEFError : Swift.Equatable {}
+extension SDM.NDEFError : Swift.Hashable {}
+extension SDM.NDEFRecord.TypeNameField : Swift.Equatable {}
+extension SDM.NDEFRecord.TypeNameField : Swift.Hashable {}
+extension SDM.NDEFRecord.TypeNameField : Swift.RawRepresentable {}
+extension SDM.NDEFRecord.WellKnownType : Swift.Equatable {}
+extension SDM.NDEFRecord.WellKnownType : Swift.Hashable {}
+extension SDM.NDEFRecord.WellKnownType : Swift.RawRepresentable {}
+extension SDM.ScanDataFormat : Swift.Equatable {}
+extension SDM.ScanDataFormat : Swift.Hashable {}
+extension SDM.ScanDataFormat : Swift.RawRepresentable {}
+extension SDM.NFCDataFormat : Swift.Equatable {}
+extension SDM.NFCDataFormat : Swift.Hashable {}
+extension SDM.NFCDataFormat : Swift.RawRepresentable {}
+extension SDM.Frequency : Swift.Equatable {}
+extension SDM.Frequency : Swift.Hashable {}
+extension SDM.Frequency : Swift.RawRepresentable {}
+extension SDM.TagType : Swift.Equatable {}
+extension SDM.TagType : Swift.Hashable {}
+extension SDM.TagType : Swift.RawRepresentable {}
+extension SDM.ScanDataType : Swift.Equatable {}
+extension SDM.ScanDataType : Swift.Hashable {}
+extension SDM.ScanDataType : Swift.RawRepresentable {}
+extension SDM.WiSnapDevice.PacketPrefix : Swift.Equatable {}
+extension SDM.WiSnapDevice.PacketPrefix : Swift.Hashable {}
+extension SDM.WiSnapDevice.PacketPrefix : Swift.RawRepresentable {}
+extension SDM.WiSnapDevice.PacketSuffix : Swift.Equatable {}
+extension SDM.WiSnapDevice.PacketSuffix : Swift.Hashable {}
+extension SDM.WiSnapDevice.PacketSuffix : Swift.RawRepresentable {}
+extension SDM.IdChampRS4Device.ConfigParameter : Swift.Equatable {}
+extension SDM.IdChampRS4Device.ConfigParameter : Swift.Hashable {}
+extension SDM.IdChampRS4Device.ConfigParameter : Swift.RawRepresentable {}
+extension SDM.IdChampRS4Device.CredentialType : Swift.Equatable {}
+extension SDM.IdChampRS4Device.CredentialType : Swift.Hashable {}
+extension SDM.IdChampRS4Device.CredentialType : Swift.RawRepresentable {}
+extension SDM.BatteryPowerState.ParameterValue : Swift.Equatable {}
+extension SDM.BatteryPowerState.ParameterValue : Swift.Hashable {}
+extension SDM.BatteryPowerState.ParameterValue : Swift.RawRepresentable {}
+extension SDM.BluetoothError.BluetoothUnavailbleFailureReason : Swift.Equatable {}
+extension SDM.BluetoothError.BluetoothUnavailbleFailureReason : Swift.Hashable {}
+extension SDM.BluetoothError.BluetoothOperation : Swift.Equatable {}
+extension SDM.BluetoothError.BluetoothOperation : Swift.Hashable {}
+extension SDM.BluetoothError.BluetoothOperation : Swift.RawRepresentable {}

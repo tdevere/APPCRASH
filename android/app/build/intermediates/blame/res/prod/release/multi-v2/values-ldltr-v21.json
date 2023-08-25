@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/karthinalliyappan/Documents/Bucket/Project Update/PVU_Work/android/app/build/intermediates/incremental/mergeProdReleaseResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml",
+            "map": [
+                {
+                    "source": "/Users/karthinalliyappan/.gradle/caches/transforms-3/089d2bb635377aad7b8d54de01b8ee2b/transformed/res/values-ldltr-v21/values-ldltr-v21.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "112",
+                        "endOffsets": "163"
+                    }
+                }
+            ]
+        }
+    ]
+}

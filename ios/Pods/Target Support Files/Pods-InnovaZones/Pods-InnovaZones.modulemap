@@ -1,0 +1,6 @@
+module Pods_InnovaZones {
+  umbrella header "Pods-InnovaZones-umbrella.h"
+
+  export *
+  module * { export * }
+}

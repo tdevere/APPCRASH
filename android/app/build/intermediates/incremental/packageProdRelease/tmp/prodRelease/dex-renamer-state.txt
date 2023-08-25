@@ -1,0 +1,10 @@
+#Thu Aug 24 12:51:57 IST 2023
+base.0=/Users/karthinalliyappan/Documents/Bucket/Project Update/PVU_Work/android/app/build/intermediates/transforms/dexMerger/prod/release/0
+base.1=/Users/karthinalliyappan/Documents/Bucket/Project Update/PVU_Work/android/app/build/intermediates/transforms/dexMerger/prod/release/0
+base.2=/Users/karthinalliyappan/Documents/Bucket/Project Update/PVU_Work/android/app/build/intermediates/transforms/dexMerger/prod/release/0
+path.0=classes.dex
+path.1=classes2.dex
+path.2=classes3.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex
+renamed.2=classes3.dex

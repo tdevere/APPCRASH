@@ -1,0 +1,1614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00E356F31AD99517003FC87E /* InnovaZonesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* InnovaZonesTests.m */; };
+		128307F10A24779E86616AA5 /* libPods-InnovaZones-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC15077ABACDFE1A9993D32 /* libPods-InnovaZones-tvOS.a */; };
+		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		25C3E8DD26F86F0C00D8FA93 /* sentry.properties in Resources */ = {isa = PBXBuildFile; fileRef = 25C3E8DC26F86F0C00D8FA93 /* sentry.properties */; };
+		25C8D27823F54BCE00B2476E /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 25C8D27723F54BCE00B2476E /* Settings.bundle */; };
+		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E6891FA4F8E400B85C8A /* libReact.a */; };
+		2DCD954D1E0B4F2C00145EB5 /* InnovaZonesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* InnovaZonesTests.m */; };
+		34953D7C27F7359E002BFD8C /* QuantumSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34953D7A27F7359E002BFD8C /* QuantumSDK.xcframework */; };
+		34953D7D27F7359E002BFD8C /* QuantumSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 34953D7A27F7359E002BFD8C /* QuantumSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		34953D7F27F735A5002BFD8C /* SDM.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D213F424B6AD4300ACF4D9 /* SDM.xcframework */; };
+		34953D8027F735A5002BFD8C /* SDM.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 25D213F424B6AD4300ACF4D9 /* SDM.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3B0E21EA22ED5E9C0028D111 /* ScanditBarcodeScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B0E21E922ED5E9C0028D111 /* ScanditBarcodeScanner.framework */; };
+		3B0E21EC22ED5EB70028D111 /* ScanditBarcodeScanner.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3B0E21EB22ED5EB70028D111 /* ScanditBarcodeScanner.bundle */; };
+		3B0E21EF22ED60680028D111 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B0E21EE22ED60680028D111 /* libc++.tbd */; };
+		3B0E21F122ED60710028D111 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B0E21F022ED60710028D111 /* libiconv.tbd */; };
+		3B0E21F322ED608A0028D111 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B0E21F222ED608A0028D111 /* CoreText.framework */; };
+		3B0E21F722ED60A50028D111 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B0E21F622ED60A50028D111 /* MessageUI.framework */; };
+		3B0E21F922ED60B90028D111 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B0E21F822ED60B90028D111 /* CoreVideo.framework */; };
+		3B0E21FB22ED60E80028D111 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B0E21FA22ED60E80028D111 /* AudioToolbox.framework */; };
+		3B0E21FD22ED60FE0028D111 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B0E21FC22ED60FE0028D111 /* AVFoundation.framework */; };
+		3B0E21FF22ED611B0028D111 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B0E21FE22ED611B0028D111 /* CoreMedia.framework */; };
+		3B0E220122ED612D0028D111 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B0E220022ED612C0028D111 /* QuartzCore.framework */; };
+		3B0E220322ED613F0028D111 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B0E220222ED613E0028D111 /* SystemConfiguration.framework */; };
+		3B0E220522ED61530028D111 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B0E220422ED61530028D111 /* MediaPlayer.framework */; };
+		3B14D48C22D742BE00A7B033 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B14D48B22D742BE00A7B033 /* Utility.m */; };
+		3B415A77232F6A4B00842613 /* Helvetica-Neue-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B415A3A232F6A4B00842613 /* Helvetica-Neue-Light.ttf */; };
+		3B45CCCE23879CDC00A3275E /* Scan_Beep.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3B45CCCD23879CDC00A3275E /* Scan_Beep.wav */; };
+		3B7AF5E822CC7CC8008E25AF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7AF5B022CC7CC8008E25AF /* CoreLocation.framework */; };
+		3B7AF5EA22CC7CDB008E25AF /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7AF5E922CC7CDB008E25AF /* ExternalAccessory.framework */; };
+		3B7AF5EC22CC7CED008E25AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7AF5EB22CC7CED008E25AF /* Foundation.framework */; };
+		3BB8F3A022E5B484004BBC62 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB8F39F22E5B484004BBC62 /* MBProgressHUD.m */; };
+		3BF005F822E071F100698E02 /* TSLAsciiCommands.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF005F722E071F000698E02 /* TSLAsciiCommands.framework */; };
+		3BF005FA22E0728400698E02 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF005F922E0728400698E02 /* CoreGraphics.framework */; };
+		3BF005FC22E0729400698E02 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF005FB22E0729300698E02 /* UIKit.framework */; };
+		4413DD07D7F54B8EB8C40ECE /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 901FE860A0F74EA68AEA551A /* libsqlite3.0.tbd */; };
+		586D172BB3CB4C95AE81C70B /* AppCenter-Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3509AD6AEA04DAA9A0645B0 /* AppCenter-Config.plist */; };
+		6531966C6259B3E050AC31A3 /* libPods-InnovaZonesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8458EBCCC087FF688561BA74 /* libPods-InnovaZonesTests.a */; };
+		66BA2D1A7AEF4A789E93691B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3729FCDA66F04DF2907D2D1E /* libz.tbd */; };
+		861B1AAE41E7D915621BEBDB /* libPods-InnovaZones.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F01CF495EB34B450988A209A /* libPods-InnovaZones.a */; };
+		9223FF22BBD64F6BB4834177 /* libRNDeviceInfo-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14DFCBE6A9FA49B687FD7655 /* libRNDeviceInfo-tvOS.a */; };
+		AC1745E620BC0AAB00164451 /* UIColorMake.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1745E420BC0AAB00164451 /* UIColorMake.m */; };
+		AC46C2852072217F00B91D39 /* HelveticaNeue-Condensed Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC46C2822072217B00B91D39 /* HelveticaNeue-Condensed Bold.ttf */; };
+		AC46C2862072217F00B91D39 /* HelveticaNeue-Condensed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC46C2832072217D00B91D39 /* HelveticaNeue-Condensed.ttf */; };
+		AC46C2872072217F00B91D39 /* HelveticaNeue-Condensed Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC46C2842072217E00B91D39 /* HelveticaNeue-Condensed Thin.ttf */; };
+		ACAEA6A5207CA7B500BB7ABD /* Helvetica-Condensed Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACAEA671207CA7B400BB7ABD /* Helvetica-Condensed Medium.ttf */; };
+		ACFEB69920BBC278004D6CFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACFEB69820BBC278004D6CFC /* Main.storyboard */; };
+		ACFEB6A220BBD653004D6CFC /* imgRadioActiveRed.png in Resources */ = {isa = PBXBuildFile; fileRef = ACFEB6A120BBD653004D6CFC /* imgRadioActiveRed.png */; };
+		ACFEB6A520BBDB8D004D6CFC /* imgBack.png in Resources */ = {isa = PBXBuildFile; fileRef = ACFEB6A420BBDB8D004D6CFC /* imgBack.png */; };
+		ACFEB6BA20BBE90B004D6CFC /* imgSearchIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = ACFEB6B920BBE90A004D6CFC /* imgSearchIcon.png */; };
+		AE33654322E99226003EA33B /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE33650322E99226003EA33B /* JavaScriptCore.framework */; };
+		F4E8D59FA7D01F35417CEC3F /* libPods-InnovaZones-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A56B45D1D69B1DA6422D15A7 /* libPods-InnovaZones-tvOSTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
+			remoteInfo = InnovaZones;
+		};
+		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
+			remoteInfo = "InnovaZones-tvOS";
+		};
+		7285A16520A59C1B0049640A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 603F37E6F79346DAA109603E /* LRDRCTSimpleToast.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 15209BEF1D250F63000D0F44;
+			remoteInfo = LRDRCTSimpleToast;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		34953D7E27F7359F002BFD8C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				34953D8027F735A5002BFD8C /* SDM.xcframework in Embed Frameworks */,
+				34953D7D27F7359E002BFD8C /* QuantumSDK.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		00623541DD8D1F2ABD1F92F2 /* Pods-InnovaZonesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InnovaZonesTests.debug.xcconfig"; path = "Target Support Files/Pods-InnovaZonesTests/Pods-InnovaZonesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		00E356EE1AD99517003FC87E /* InnovaZonesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InnovaZonesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* InnovaZonesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InnovaZonesTests.m; sourceTree = "<group>"; };
+		01C4910B4160437DB9D240BE /* libRNSoundPlayer.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNSoundPlayer.a; sourceTree = "<group>"; };
+		0B97B4860199474DAC679FE2 /* libRNZipArchive.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNZipArchive.a; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* InnovaZones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InnovaZones.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = InnovaZones/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = InnovaZones/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = InnovaZones/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = InnovaZones/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = InnovaZones/main.m; sourceTree = "<group>"; };
+		14DFCBE6A9FA49B687FD7655 /* libRNDeviceInfo-tvOS.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = "libRNDeviceInfo-tvOS.a"; sourceTree = "<group>"; };
+		1D93A3AA2D214495912007D0 /* libKCKeepAwake.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libKCKeepAwake.a; sourceTree = "<group>"; };
+		23B14FF4EB634E2DAE6513D6 /* libRNFS.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNFS.a; sourceTree = "<group>"; };
+		2491166B9C1B471B8563B3EE /* libRSSignatureCapture.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRSSignatureCapture.a; sourceTree = "<group>"; };
+		25C3E8DC26F86F0C00D8FA93 /* sentry.properties */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sentry.properties; sourceTree = "<group>"; };
+		25C8D27723F54BCE00B2476E /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		25D0185B24B6A53800D0FA4C /* ios-armv7_arm64 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "ios-armv7_arm64"; path = "../../../../WorkSpace/SDM /SDM_2.1.1/SDM.xcframework/ios-armv7_arm64"; sourceTree = "<group>"; };
+		25D213F424B6AD4300ACF4D9 /* SDM.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SDM.xcframework; sourceTree = "<group>"; };
+		26BDA6668A1146749855D2FE /* libRNSpinkit.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNSpinkit.a; sourceTree = "<group>"; };
+		2D02E47B1E0B4A5D006451C7 /* InnovaZones-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "InnovaZones-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* InnovaZones-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "InnovaZones-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		33AAD2969D33575684BBC256 /* Pods-InnovaZones-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InnovaZones-tvOS.release.xcconfig"; path = "Target Support Files/Pods-InnovaZones-tvOS/Pods-InnovaZones-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		34904BA527E465E600A2BA08 /* InnovaZones-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InnovaZones-Bridging-Header.h"; sourceTree = "<group>"; };
+		34953D7A27F7359E002BFD8C /* QuantumSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = QuantumSDK.xcframework; sourceTree = "<group>"; };
+		34A497C127E85EB900CCEED5 /* InfineaSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InfineaSDK.framework; sourceTree = "<group>"; };
+		3729FCDA66F04DF2907D2D1E /* libz.tbd */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		38664E0FF9094E8C8D6B5BB0 /* libRNDeviceInfo.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNDeviceInfo.a; sourceTree = "<group>"; };
+		39D38B47E7E142CEA1413D4E /* libAppCenterReactNativeAnalytics.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libAppCenterReactNativeAnalytics.a; sourceTree = "<group>"; };
+		39E30062EEEC6474D493BE5A /* Pods-InnovaZones.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InnovaZones.debug.xcconfig"; path = "Target Support Files/Pods-InnovaZones/Pods-InnovaZones.debug.xcconfig"; sourceTree = "<group>"; };
+		3B0E21E922ED5E9C0028D111 /* ScanditBarcodeScanner.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScanditBarcodeScanner.framework; path = ScanditSDK/ScanditBarcodeScanner.framework; sourceTree = "<group>"; };
+		3B0E21EB22ED5EB70028D111 /* ScanditBarcodeScanner.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ScanditBarcodeScanner.bundle; path = ScanditSDK/ScanditBarcodeScanner.framework/Resources/ScanditBarcodeScanner.bundle; sourceTree = "<group>"; };
+		3B0E21EE22ED60680028D111 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		3B0E21F022ED60710028D111 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		3B0E21F222ED608A0028D111 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		3B0E21F422ED609A0028D111 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		3B0E21F622ED60A50028D111 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		3B0E21F822ED60B90028D111 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		3B0E21FA22ED60E80028D111 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		3B0E21FC22ED60FE0028D111 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3B0E21FE22ED611B0028D111 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		3B0E220022ED612C0028D111 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3B0E220222ED613E0028D111 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3B0E220422ED61530028D111 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		3B14D48A22D742BE00A7B033 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utility.h; path = InnovaZones/Utility.h; sourceTree = "<group>"; };
+		3B14D48B22D742BE00A7B033 /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utility.m; path = InnovaZones/Utility.m; sourceTree = "<group>"; };
+		3B14D48D22D7438700A7B033 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = InnovaZones/Constants.h; sourceTree = "<group>"; };
+		3B415A3A232F6A4B00842613 /* Helvetica-Neue-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Helvetica-Neue-Light.ttf"; sourceTree = "<group>"; };
+		3B45CCCD23879CDC00A3275E /* Scan_Beep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Scan_Beep.wav; sourceTree = "<group>"; };
+		3B489DEA230AB42B000010C1 /* InnovaZones.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = InnovaZones.entitlements; path = InnovaZones/InnovaZones.entitlements; sourceTree = "<group>"; };
+		3B7AF5B022CC7CC8008E25AF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3B7AF5E922CC7CDB008E25AF /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		3B7AF5EB22CC7CED008E25AF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3BB8F36722E5B484004BBC62 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		3BB8F39F22E5B484004BBC62 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		3BF005BD22E068EB00698E02 /* TSLAsciiCommands.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TSLAsciiCommands.framework; sourceTree = "<group>"; };
+		3BF005F722E071F000698E02 /* TSLAsciiCommands.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TSLAsciiCommands.framework; path = "../../../Projects/Innova Zone/Device Integration/UHF-RFID/TSL UHF ASCII 2.0 SDK v1.4.1/TSLAsciiCommands.framework"; sourceTree = "<group>"; };
+		3BF005F922E0728400698E02 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3BF005FB22E0729300698E02 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		562E15486E6744269C7CEB2F /* libRNSensitiveInfo.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNSensitiveInfo.a; sourceTree = "<group>"; };
+		572166EDC196403995E1AE58 /* libReactNativePermissions.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libReactNativePermissions.a; sourceTree = "<group>"; };
+		5BC5390E2AE4418AA2481BFE /* libimageCropPicker.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libimageCropPicker.a; sourceTree = "<group>"; };
+		603F37E6F79346DAA109603E /* LRDRCTSimpleToast.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = LRDRCTSimpleToast.xcodeproj; path = "../node_modules/react-native-simple-toast/ios/LRDRCTSimpleToast.xcodeproj"; sourceTree = "<group>"; };
+		60DC2DE2D9BCF950359F9BF2 /* Pods-InnovaZones-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InnovaZones-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-InnovaZones-tvOS/Pods-InnovaZones-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		6185B518E96D454EB097E64E /* libSQLite.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libSQLite.a; sourceTree = "<group>"; };
+		61DB7CCF30F148B5A8A82D6C /* libRNLocalNotifications.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNLocalNotifications.a; sourceTree = "<group>"; };
+		7250C745F0E14449A50B291E /* libRNUUIDGenerator.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNUUIDGenerator.a; sourceTree = "<group>"; };
+		73D865A2DB194A128B8478C0 /* libRCTBarcode.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTBarcode.a; sourceTree = "<group>"; };
+		7A7A6316129F4B428DA59B37 /* Pods-InnovaZones.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InnovaZones.release.xcconfig"; path = "Target Support Files/Pods-InnovaZones/Pods-InnovaZones.release.xcconfig"; sourceTree = "<group>"; };
+		8346034FB61640FDACBCCDAD /* libRCTScanditBarcodeScanner.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTScanditBarcodeScanner.a; sourceTree = "<group>"; };
+		8458EBCCC087FF688561BA74 /* libPods-InnovaZonesTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InnovaZonesTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		89774E5973BB4C04B08A2EEC /* libAppCenterReactNativeCrashes.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libAppCenterReactNativeCrashes.a; sourceTree = "<group>"; };
+		8C1E3DBC38D0449A88B4C4A6 /* libRNFetchBlob.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNFetchBlob.a; sourceTree = "<group>"; };
+		901FE860A0F74EA68AEA551A /* libsqlite3.0.tbd */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		941B6ACC04E29E5EFE28AC88 /* Pods-InnovaZonesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InnovaZonesTests.release.xcconfig"; path = "Target Support Files/Pods-InnovaZonesTests/Pods-InnovaZonesTests.release.xcconfig"; sourceTree = "<group>"; };
+		9922C3A2E6BE41128882E8B4 /* libRNToastNative.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNToastNative.a; sourceTree = "<group>"; };
+		A140E1C7EE4C474493BCE84A /* libRCTVideo.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTVideo.a; sourceTree = "<group>"; };
+		A56B45D1D69B1DA6422D15A7 /* libPods-InnovaZones-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InnovaZones-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A74B35DB4EDC40ACB3BD57B9 /* libRNCAsyncStorage.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNCAsyncStorage.a; sourceTree = "<group>"; };
+		AC1745E120BC0AAB00164451 /* UIColorMake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIColorMake.h; path = InnovaZones/UIColorMake.h; sourceTree = "<group>"; };
+		AC1745E420BC0AAB00164451 /* UIColorMake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIColorMake.m; path = InnovaZones/UIColorMake.m; sourceTree = "<group>"; };
+		AC46C2822072217B00B91D39 /* HelveticaNeue-Condensed Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaNeue-Condensed Bold.ttf"; sourceTree = "<group>"; };
+		AC46C2832072217D00B91D39 /* HelveticaNeue-Condensed.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaNeue-Condensed.ttf"; sourceTree = "<group>"; };
+		AC46C2842072217E00B91D39 /* HelveticaNeue-Condensed Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaNeue-Condensed Thin.ttf"; sourceTree = "<group>"; };
+		ACAEA671207CA7B400BB7ABD /* Helvetica-Condensed Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Helvetica-Condensed Medium.ttf"; sourceTree = "<group>"; };
+		ACFEB69820BBC278004D6CFC /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = InnovaZones/Main.storyboard; sourceTree = "<group>"; };
+		ACFEB6A120BBD653004D6CFC /* imgRadioActiveRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imgRadioActiveRed.png; sourceTree = "<group>"; };
+		ACFEB6A420BBDB8D004D6CFC /* imgBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imgBack.png; sourceTree = "<group>"; };
+		ACFEB6B920BBE90A004D6CFC /* imgSearchIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imgSearchIcon.png; sourceTree = "<group>"; };
+		AE33650322E99226003EA33B /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		B3509AD6AEA04DAA9A0645B0 /* AppCenter-Config.plist */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.plist.xml; name = "AppCenter-Config.plist"; path = "InnovaZones/AppCenter-Config.plist"; sourceTree = "<group>"; };
+		B9430FC640124D33BAAE6C84 /* libAppCenterReactNative.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libAppCenterReactNative.a; sourceTree = "<group>"; };
+		DCC15077ABACDFE1A9993D32 /* libPods-InnovaZones-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InnovaZones-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE413B48B47801893781BE12 /* Pods-InnovaZones-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InnovaZones-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-InnovaZones-tvOSTests/Pods-InnovaZones-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		F01CF495EB34B450988A209A /* libPods-InnovaZones.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InnovaZones.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE38BC68944EBC1F3CAA64C8 /* Pods-InnovaZones-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InnovaZones-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-InnovaZones-tvOSTests/Pods-InnovaZones-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00E356EB1AD99517003FC87E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6531966C6259B3E050AC31A3 /* libPods-InnovaZonesTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B0E220522ED61530028D111 /* MediaPlayer.framework in Frameworks */,
+				3B0E220322ED613F0028D111 /* SystemConfiguration.framework in Frameworks */,
+				34953D7F27F735A5002BFD8C /* SDM.xcframework in Frameworks */,
+				3B0E220122ED612D0028D111 /* QuartzCore.framework in Frameworks */,
+				3B0E21FF22ED611B0028D111 /* CoreMedia.framework in Frameworks */,
+				3B0E21FD22ED60FE0028D111 /* AVFoundation.framework in Frameworks */,
+				3B0E21FB22ED60E80028D111 /* AudioToolbox.framework in Frameworks */,
+				3B0E21F922ED60B90028D111 /* CoreVideo.framework in Frameworks */,
+				3B0E21F722ED60A50028D111 /* MessageUI.framework in Frameworks */,
+				3B0E21F322ED608A0028D111 /* CoreText.framework in Frameworks */,
+				3B0E21F122ED60710028D111 /* libiconv.tbd in Frameworks */,
+				3B0E21EF22ED60680028D111 /* libc++.tbd in Frameworks */,
+				3B0E21EA22ED5E9C0028D111 /* ScanditBarcodeScanner.framework in Frameworks */,
+				AE33654322E99226003EA33B /* JavaScriptCore.framework in Frameworks */,
+				3BF005FC22E0729400698E02 /* UIKit.framework in Frameworks */,
+				3BF005FA22E0728400698E02 /* CoreGraphics.framework in Frameworks */,
+				3BF005F822E071F100698E02 /* TSLAsciiCommands.framework in Frameworks */,
+				3B7AF5EC22CC7CED008E25AF /* Foundation.framework in Frameworks */,
+				3B7AF5EA22CC7CDB008E25AF /* ExternalAccessory.framework in Frameworks */,
+				34953D7C27F7359E002BFD8C /* QuantumSDK.xcframework in Frameworks */,
+				3B7AF5E822CC7CC8008E25AF /* CoreLocation.framework in Frameworks */,
+				4413DD07D7F54B8EB8C40ECE /* libsqlite3.0.tbd in Frameworks */,
+				66BA2D1A7AEF4A789E93691B /* libz.tbd in Frameworks */,
+				861B1AAE41E7D915621BEBDB /* libPods-InnovaZones.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E4781E0B4A5D006451C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */,
+				9223FF22BBD64F6BB4834177 /* libRNDeviceInfo-tvOS.a in Frameworks */,
+				128307F10A24779E86616AA5 /* libPods-InnovaZones-tvOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E48D1E0B4A5D006451C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4E8D59FA7D01F35417CEC3F /* libPods-InnovaZones-tvOSTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00E356EF1AD99517003FC87E /* InnovaZonesTests */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F21AD99517003FC87E /* InnovaZonesTests.m */,
+				00E356F01AD99517003FC87E /* Supporting Files */,
+			);
+			path = InnovaZonesTests;
+			sourceTree = "<group>";
+		};
+		00E356F01AD99517003FC87E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F11AD99517003FC87E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13B07FAE1A68108700A75B9A /* InnovaZones */ = {
+			isa = PBXGroup;
+			children = (
+				3B489DEA230AB42B000010C1 /* InnovaZones.entitlements */,
+				3BF0062022E08C8B00698E02 /* Common */,
+				AC46C2812072214C00B91D39 /* Fonts */,
+				ACAEA6A6207CB85900BB7ABD /* Image */,
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.m */,
+				ACFEB69820BBC278004D6CFC /* Main.storyboard */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
+				13B07FB71A68108700A75B9A /* main.m */,
+				34904BA527E465E600A2BA08 /* InnovaZones-Bridging-Header.h */,
+			);
+			name = InnovaZones;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34953D7A27F7359E002BFD8C /* QuantumSDK.xcframework */,
+				34A497C127E85EB900CCEED5 /* InfineaSDK.framework */,
+				25D213F424B6AD4300ACF4D9 /* SDM.xcframework */,
+				25D0185B24B6A53800D0FA4C /* ios-armv7_arm64 */,
+				3B0E220422ED61530028D111 /* MediaPlayer.framework */,
+				3B0E220222ED613E0028D111 /* SystemConfiguration.framework */,
+				3B0E220022ED612C0028D111 /* QuartzCore.framework */,
+				3B0E21FE22ED611B0028D111 /* CoreMedia.framework */,
+				3B0E21FC22ED60FE0028D111 /* AVFoundation.framework */,
+				3B0E21FA22ED60E80028D111 /* AudioToolbox.framework */,
+				3B0E21F822ED60B90028D111 /* CoreVideo.framework */,
+				3B0E21F622ED60A50028D111 /* MessageUI.framework */,
+				3B0E21F422ED609A0028D111 /* OpenGLES.framework */,
+				3B0E21F222ED608A0028D111 /* CoreText.framework */,
+				3B0E21F022ED60710028D111 /* libiconv.tbd */,
+				3B0E21EE22ED60680028D111 /* libc++.tbd */,
+				3B0E21EB22ED5EB70028D111 /* ScanditBarcodeScanner.bundle */,
+				3B0E21E922ED5E9C0028D111 /* ScanditBarcodeScanner.framework */,
+				AE33650322E99226003EA33B /* JavaScriptCore.framework */,
+				3BF005FB22E0729300698E02 /* UIKit.framework */,
+				3BF005F922E0728400698E02 /* CoreGraphics.framework */,
+				3BF005F722E071F000698E02 /* TSLAsciiCommands.framework */,
+				3B7AF5EB22CC7CED008E25AF /* Foundation.framework */,
+				3B7AF5E922CC7CDB008E25AF /* ExternalAccessory.framework */,
+				3B7AF5B022CC7CC8008E25AF /* CoreLocation.framework */,
+				2D16E6891FA4F8E400B85C8A /* libReact.a */,
+				901FE860A0F74EA68AEA551A /* libsqlite3.0.tbd */,
+				3729FCDA66F04DF2907D2D1E /* libz.tbd */,
+				F01CF495EB34B450988A209A /* libPods-InnovaZones.a */,
+				DCC15077ABACDFE1A9993D32 /* libPods-InnovaZones-tvOS.a */,
+				A56B45D1D69B1DA6422D15A7 /* libPods-InnovaZones-tvOSTests.a */,
+				8458EBCCC087FF688561BA74 /* libPods-InnovaZonesTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3BF0062022E08C8B00698E02 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AC1745E120BC0AAB00164451 /* UIColorMake.h */,
+				AC1745E420BC0AAB00164451 /* UIColorMake.m */,
+				3B14D48D22D7438700A7B033 /* Constants.h */,
+				3B14D48A22D742BE00A7B033 /* Utility.h */,
+				3B14D48B22D742BE00A7B033 /* Utility.m */,
+				3BB8F36722E5B484004BBC62 /* MBProgressHUD.h */,
+				3BB8F39F22E5B484004BBC62 /* MBProgressHUD.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		7285A16220A59C1A0049640A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7285A16620A59C1B0049640A /* libLRDRCTSimpleToast.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				25C8D27723F54BCE00B2476E /* Settings.bundle */,
+				3BF005BD22E068EB00698E02 /* TSLAsciiCommands.framework */,
+				3B45CCCD23879CDC00A3275E /* Scan_Beep.wav */,
+				13B07FAE1A68108700A75B9A /* InnovaZones */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				00E356EF1AD99517003FC87E /* InnovaZonesTests */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				8DAC48BC20331BE9005FD08E /* Recovered References */,
+				B3509AD6AEA04DAA9A0645B0 /* AppCenter-Config.plist */,
+				25C3E8DC26F86F0C00D8FA93 /* sentry.properties */,
+				F1B10DAEDAEAB2051E779936 /* Pods */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* InnovaZones.app */,
+				00E356EE1AD99517003FC87E /* InnovaZonesTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* InnovaZones-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* InnovaZones-tvOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8DAC48BC20331BE9005FD08E /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				73D865A2DB194A128B8478C0 /* libRCTBarcode.a */,
+				1D93A3AA2D214495912007D0 /* libKCKeepAwake.a */,
+				2491166B9C1B471B8563B3EE /* libRSSignatureCapture.a */,
+				6185B518E96D454EB097E64E /* libSQLite.a */,
+				5BC5390E2AE4418AA2481BFE /* libimageCropPicker.a */,
+				7250C745F0E14449A50B291E /* libRNUUIDGenerator.a */,
+				0B97B4860199474DAC679FE2 /* libRNZipArchive.a */,
+				9922C3A2E6BE41128882E8B4 /* libRNToastNative.a */,
+				572166EDC196403995E1AE58 /* libReactNativePermissions.a */,
+				23B14FF4EB634E2DAE6513D6 /* libRNFS.a */,
+				8C1E3DBC38D0449A88B4C4A6 /* libRNFetchBlob.a */,
+				A74B35DB4EDC40ACB3BD57B9 /* libRNCAsyncStorage.a */,
+				26BDA6668A1146749855D2FE /* libRNSpinkit.a */,
+				61DB7CCF30F148B5A8A82D6C /* libRNLocalNotifications.a */,
+				8346034FB61640FDACBCCDAD /* libRCTScanditBarcodeScanner.a */,
+				562E15486E6744269C7CEB2F /* libRNSensitiveInfo.a */,
+				38664E0FF9094E8C8D6B5BB0 /* libRNDeviceInfo.a */,
+				14DFCBE6A9FA49B687FD7655 /* libRNDeviceInfo-tvOS.a */,
+				A140E1C7EE4C474493BCE84A /* libRCTVideo.a */,
+				01C4910B4160437DB9D240BE /* libRNSoundPlayer.a */,
+				B9430FC640124D33BAAE6C84 /* libAppCenterReactNative.a */,
+				39D38B47E7E142CEA1413D4E /* libAppCenterReactNativeAnalytics.a */,
+				89774E5973BB4C04B08A2EEC /* libAppCenterReactNativeCrashes.a */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		AC46C2812072214C00B91D39 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AC46C2822072217B00B91D39 /* HelveticaNeue-Condensed Bold.ttf */,
+				AC46C2842072217E00B91D39 /* HelveticaNeue-Condensed Thin.ttf */,
+				ACAEA671207CA7B400BB7ABD /* Helvetica-Condensed Medium.ttf */,
+				AC46C2832072217D00B91D39 /* HelveticaNeue-Condensed.ttf */,
+				3B415A3A232F6A4B00842613 /* Helvetica-Neue-Light.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		ACAEA6A6207CB85900BB7ABD /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				ACFEB6A120BBD653004D6CFC /* imgRadioActiveRed.png */,
+				ACFEB6A420BBDB8D004D6CFC /* imgBack.png */,
+				ACFEB6B920BBE90A004D6CFC /* imgSearchIcon.png */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+		F1B10DAEDAEAB2051E779936 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39E30062EEEC6474D493BE5A /* Pods-InnovaZones.debug.xcconfig */,
+				7A7A6316129F4B428DA59B37 /* Pods-InnovaZones.release.xcconfig */,
+				60DC2DE2D9BCF950359F9BF2 /* Pods-InnovaZones-tvOS.debug.xcconfig */,
+				33AAD2969D33575684BBC256 /* Pods-InnovaZones-tvOS.release.xcconfig */,
+				FE38BC68944EBC1F3CAA64C8 /* Pods-InnovaZones-tvOSTests.debug.xcconfig */,
+				EE413B48B47801893781BE12 /* Pods-InnovaZones-tvOSTests.release.xcconfig */,
+				00623541DD8D1F2ABD1F92F2 /* Pods-InnovaZonesTests.debug.xcconfig */,
+				941B6ACC04E29E5EFE28AC88 /* Pods-InnovaZonesTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00E356ED1AD99517003FC87E /* InnovaZonesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "InnovaZonesTests" */;
+			buildPhases = (
+				6A69B9B12165B72973689549 /* [CP] Check Pods Manifest.lock */,
+				00E356EA1AD99517003FC87E /* Sources */,
+				00E356EB1AD99517003FC87E /* Frameworks */,
+				00E356EC1AD99517003FC87E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00E356F51AD99517003FC87E /* PBXTargetDependency */,
+			);
+			name = InnovaZonesTests;
+			productName = InnovaZonesTests;
+			productReference = 00E356EE1AD99517003FC87E /* InnovaZonesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13B07F861A680F5B00A75B9A /* InnovaZones */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "InnovaZones" */;
+			buildPhases = (
+				23AA885DACC50208E08B69F3 /* [CP] Check Pods Manifest.lock */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				3BA3253A22CA495200B6734F /* ShellScript */,
+				FE9E5F3475224D10BDE52C0C /* Upload Debug Symbols to Sentry */,
+				093710F3DA3DD9408A3A5CFE /* [CP] Embed Pods Frameworks */,
+				051C527E845DDC2FC231CC09 /* [CP] Copy Pods Resources */,
+				34953D7E27F7359F002BFD8C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InnovaZones;
+			productName = "Hello World";
+			productReference = 13B07F961A680F5B00A75B9A /* InnovaZones.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D02E47A1E0B4A5D006451C7 /* InnovaZones-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "InnovaZones-tvOS" */;
+			buildPhases = (
+				1FE36382F4A1A8F1F473AFA0 /* [CP] Check Pods Manifest.lock */,
+				2D02E4771E0B4A5D006451C7 /* Sources */,
+				2D02E4781E0B4A5D006451C7 /* Frameworks */,
+				2D02E4791E0B4A5D006451C7 /* Resources */,
+				2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "InnovaZones-tvOS";
+			productName = "InnovaZones-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* InnovaZones-tvOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D02E48F1E0B4A5D006451C7 /* InnovaZones-tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "InnovaZones-tvOSTests" */;
+			buildPhases = (
+				3AD192505167004AF5AB3A58 /* [CP] Check Pods Manifest.lock */,
+				2D02E48C1E0B4A5D006451C7 /* Sources */,
+				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
+				2D02E48E1E0B4A5D006451C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
+			);
+			name = "InnovaZones-tvOSTests";
+			productName = "InnovaZones-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* InnovaZones-tvOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+				ORGANIZATIONNAME = InnovaZones;
+				TargetAttributes = {
+					00E356ED1AD99517003FC87E = {
+						CreatedOnToolsVersion = 6.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1250;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.WAC = {
+								enabled = 0;
+							};
+						};
+					};
+					2D02E47A1E0B4A5D006451C7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = KTZW86ZUGS;
+						ProvisioningStyle = Automatic;
+					};
+					2D02E48F1E0B4A5D006451C7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = KTZW86ZUGS;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2D02E47A1E0B4A5D006451C7;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "InnovaZones" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7285A16220A59C1A0049640A /* Products */;
+					ProjectRef = 603F37E6F79346DAA109603E /* LRDRCTSimpleToast.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* InnovaZones */,
+				00E356ED1AD99517003FC87E /* InnovaZonesTests */,
+				2D02E47A1E0B4A5D006451C7 /* InnovaZones-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* InnovaZones-tvOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7285A16620A59C1B0049640A /* libLRDRCTSimpleToast.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLRDRCTSimpleToast.a;
+			remoteRef = 7285A16520A59C1B0049640A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00E356EC1AD99517003FC87E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B415A77232F6A4B00842613 /* Helvetica-Neue-Light.ttf in Resources */,
+				ACFEB6A520BBDB8D004D6CFC /* imgBack.png in Resources */,
+				25C3E8DD26F86F0C00D8FA93 /* sentry.properties in Resources */,
+				ACFEB6BA20BBE90B004D6CFC /* imgSearchIcon.png in Resources */,
+				AC46C2852072217F00B91D39 /* HelveticaNeue-Condensed Bold.ttf in Resources */,
+				AC46C2862072217F00B91D39 /* HelveticaNeue-Condensed.ttf in Resources */,
+				ACAEA6A5207CA7B500BB7ABD /* Helvetica-Condensed Medium.ttf in Resources */,
+				AC46C2872072217F00B91D39 /* HelveticaNeue-Condensed Thin.ttf in Resources */,
+				25C8D27823F54BCE00B2476E /* Settings.bundle in Resources */,
+				3B45CCCE23879CDC00A3275E /* Scan_Beep.wav in Resources */,
+				ACFEB6A220BBD653004D6CFC /* imgRadioActiveRed.png in Resources */,
+				ACFEB69920BBC278004D6CFC /* Main.storyboard in Resources */,
+				3B0E21EC22ED5EB70028D111 /* ScanditBarcodeScanner.bundle in Resources */,
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				586D172BB3CB4C95AE81C70B /* AppCenter-Config.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E4791E0B4A5D006451C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E48E1E0B4A5D006451C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export SENTRY_PROPERTIES=sentry.properties\nexport EXTRA_PACKAGER_ARGS=\"--sourcemap-output $DERIVED_FILE_DIR/main.jsbundle.map\"\nexport NODE_BINARY=node\n../node_modules/@sentry/cli/bin/sentry-cli react-native xcode ../node_modules/react-native/scripts/react-native-xcode.sh\n";
+		};
+		051C527E845DDC2FC231CC09 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InnovaZones/Pods-InnovaZones-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/RNImageCropPicker/QBImagePicker.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+				"${PODS_ROOT}/SKTCaptureObjC/socketmobilepublickey.pem",
+				"${PODS_ROOT}/SKTCaptureObjC/softScanBeep.wav",
+				"${PODS_CONFIGURATION_BUILD_DIR}/TOCropViewController/TOCropViewControllerBundle.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/QBImagePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socketmobilepublickey.pem",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/softScanBeep.wav",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TOCropViewControllerBundle.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InnovaZones/Pods-InnovaZones-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		093710F3DA3DD9408A3A5CFE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InnovaZones/Pods-InnovaZones-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL-Universal/OpenSSL.framework/OpenSSL",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/RNCmbSdk/cmbSDK.framework/cmbSDK",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/RNCmbSdk/CMBCrossPlatform.framework/CMBCrossPlatform",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/ScanditBarcodeCapture/ScanditBarcodeCapture.framework/ScanditBarcodeCapture",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/ScanditCaptureCore/ScanditCaptureCore.framework/ScanditCaptureCore",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/cmbSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CMBCrossPlatform.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ScanditBarcodeCapture.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ScanditCaptureCore.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InnovaZones/Pods-InnovaZones-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1FE36382F4A1A8F1F473AFA0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InnovaZones-tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		23AA885DACC50208E08B69F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InnovaZones-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native Code And Images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export SENTRY_PROPERTIES=sentry.properties\nexport EXTRA_PACKAGER_ARGS=\"--sourcemap-output $DERIVED_FILE_DIR/main.jsbundle.map\"\nexport NODE_BINARY=node\n../node_modules/@sentry/cli/bin/sentry-cli react-native xcode ../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		3AD192505167004AF5AB3A58 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InnovaZones-tvOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3BA3253A22CA495200B6734F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "#if [ \"$CONFIGURATION\" == \"Release\" ]; then\n#rm -Rf $BUILD_APP_DIR/Settings.bundle\n#fi\n\n";
+		};
+		6A69B9B12165B72973689549 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InnovaZonesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE9E5F3475224D10BDE52C0C /* Upload Debug Symbols to Sentry */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Upload Debug Symbols to Sentry";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export SENTRY_PROPERTIES=sentry.properties\n../node_modules/@sentry/cli/bin/sentry-cli upload-dsym\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00E356EA1AD99517003FC87E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E356F31AD99517003FC87E /* InnovaZonesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B14D48C22D742BE00A7B033 /* Utility.m in Sources */,
+				AC1745E620BC0AAB00164451 /* UIColorMake.m in Sources */,
+				3BB8F3A022E5B484004BBC62 /* MBProgressHUD.m in Sources */,
+				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E4771E0B4A5D006451C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */,
+				2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E48C1E0B4A5D006451C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DCD954D1E0B4F2C00145EB5 /* InnovaZonesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13B07F861A680F5B00A75B9A /* InnovaZones */;
+			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D02E47A1E0B4A5D006451C7 /* InnovaZones-tvOS */;
+			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		13B07FB11A68108700A75B9A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13B07FB21A68108700A75B9A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			path = InnovaZones;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00E356F61AD99517003FC87E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00623541DD8D1F2ABD1F92F2 /* Pods-InnovaZonesTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KTZW86ZUGS;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-device-info/RNDeviceInfo",
+					"$(SRCROOT)/../node_modules/react-native-smart-barcode/ios/RCTBarcode/RCTBarcode",
+					"$(SRCROOT)/../node_modules/react-native-keep-awake/ios",
+					"$(SRCROOT)/../node_modules/react-native-signature-capture/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-sqlite-storage/src/ios",
+					"$(SRCROOT)/../node_modules/react-native-image-crop-picker/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-uuid-generator/ios",
+					"$(SRCROOT)/../node_modules/react-native-zip-archive/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-toast-native/ios",
+					"$(SRCROOT)/../node_modules/react-native-simple-toast/ios/LRDRCTSimpleToast",
+					"$(SRCROOT)/../node_modules/react-native-permissions/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-fs/**",
+					"$(SRCROOT)/../node_modules/react-native-fetch-blob/ios/**",
+					"$(SRCROOT)/../node_modules/@react-native-community/async-storage/ios",
+					"$(SRCROOT)/../node_modules/react-native-spinkit/ios/**",
+					"$(SRCROOT)/../node_modules/scandit-react-native/ios/ScanditBarcodeScanner/**",
+					"$(SRCROOT)/../node_modules/react-native-sensitive-info/ios/RNSensitiveInfo/**",
+					"$(SRCROOT)/../node_modules/react-native-device-info/ios/RNDeviceInfo",
+					"$(SRCROOT)/../node_modules/react-native-video/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-sound-player/ios",
+					"$(SRCROOT)/../node_modules/appcenter/ios/AppCenterReactNative",
+					"$(SRCROOT)/../node_modules/appcenter-analytics/ios/AppCenterReactNativeAnalytics",
+					"$(SRCROOT)/../node_modules/appcenter-crashes/ios/AppCenterReactNativeCrashes",
+				);
+				INFOPLIST_FILE = InnovaZonesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InnovaZones.app/InnovaZones";
+			};
+			name = Debug;
+		};
+		00E356F71AD99517003FC87E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 941B6ACC04E29E5EFE28AC88 /* Pods-InnovaZonesTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = KTZW86ZUGS;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-device-info/RNDeviceInfo",
+					"$(SRCROOT)/../node_modules/react-native-smart-barcode/ios/RCTBarcode/RCTBarcode",
+					"$(SRCROOT)/../node_modules/react-native-keep-awake/ios",
+					"$(SRCROOT)/../node_modules/react-native-signature-capture/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-sqlite-storage/src/ios",
+					"$(SRCROOT)/../node_modules/react-native-image-crop-picker/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-uuid-generator/ios",
+					"$(SRCROOT)/../node_modules/react-native-zip-archive/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-toast-native/ios",
+					"$(SRCROOT)/../node_modules/react-native-simple-toast/ios/LRDRCTSimpleToast",
+					"$(SRCROOT)/../node_modules/react-native-permissions/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-fs/**",
+					"$(SRCROOT)/../node_modules/react-native-fetch-blob/ios/**",
+					"$(SRCROOT)/../node_modules/@react-native-community/async-storage/ios",
+					"$(SRCROOT)/../node_modules/react-native-spinkit/ios/**",
+					"$(SRCROOT)/../node_modules/scandit-react-native/ios/ScanditBarcodeScanner/**",
+					"$(SRCROOT)/../node_modules/react-native-sensitive-info/ios/RNSensitiveInfo/**",
+					"$(SRCROOT)/../node_modules/react-native-device-info/ios/RNDeviceInfo",
+					"$(SRCROOT)/../node_modules/react-native-video/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-sound-player/ios",
+					"$(SRCROOT)/../node_modules/appcenter/ios/AppCenterReactNative",
+					"$(SRCROOT)/../node_modules/appcenter-analytics/ios/AppCenterReactNativeAnalytics",
+					"$(SRCROOT)/../node_modules/appcenter-crashes/ios/AppCenterReactNativeCrashes",
+				);
+				INFOPLIST_FILE = InnovaZonesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InnovaZones.app/InnovaZones";
+			};
+			name = Release;
+		};
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39E30062EEEC6474D493BE5A /* Pods-InnovaZones.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = InnovaZones/InnovaZones.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = KTZW86ZUGS;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ScanditSDK",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-device-info/RNDeviceInfo",
+					"$(SRCROOT)/../node_modules/react-native-smart-barcode/ios/RCTBarcode/RCTBarcode",
+					"$(SRCROOT)/../node_modules/react-native-keep-awake/ios",
+					"$(SRCROOT)/../node_modules/react-native-signature-capture/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-sqlite-storage/src/ios",
+					"$(SRCROOT)/../node_modules/react-native-image-crop-picker/ios/**",
+					"$(SRCROOT)/../../React/**",
+					"$(SRCROOT)/../react-native/React/**",
+					"$(SRCROOT)/../node_modules/react-native-uuid-generator/ios",
+					"$(SRCROOT)/../node_modules/react-native-toast-native/ios",
+					"$(SRCROOT)/../node_modules/react-native-simple-toast/ios/LRDRCTSimpleToast",
+					"$(SRCROOT)/../node_modules/react-native-permissions/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-fs/**",
+					"$(SRCROOT)/../node_modules/react-native-fetch-blob/ios/**",
+					"$(SRCROOT)/../node_modules/@react-native-community/async-storage/ios",
+					"$(SRCROOT)/../node_modules/react-native-spinkit/ios/**",
+					"$(SRCROOT)/../node_modules/scandit-react-native/ios/ScanditBarcodeScanner/**",
+					"$(SRCROOT)/../node_modules/react-native-sensitive-info/ios/RNSensitiveInfo/**",
+					"$(SRCROOT)/../node_modules/react-native-device-info/ios/RNDeviceInfo",
+					"$(SRCROOT)/../node_modules/react-native-video/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-sound-player/ios",
+					"$(SRCROOT)/../node_modules/appcenter/ios/AppCenterReactNative",
+					"$(SRCROOT)/../node_modules/appcenter-analytics/ios/AppCenterReactNativeAnalytics",
+					"$(SRCROOT)/../node_modules/appcenter-crashes/ios/AppCenterReactNativeCrashes",
+				);
+				INFOPLIST_FILE = InnovaZones/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.app;
+				PRODUCT_NAME = InnovaZones;
+				PROVISIONING_PROFILE = "f17fec70-0403-4f75-ad47-8006792c96c9";
+				PROVISIONING_PROFILE_SPECIFIER = EnterpriseRNProdDev;
+				SWIFT_OBJC_BRIDGING_HEADER = "InnovaZones-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_WORKSPACE = YES;
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A7A6316129F4B428DA59B37 /* Pods-InnovaZones.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = InnovaZones/InnovaZones.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KTZW86ZUGS;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ScanditSDK",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-device-info/RNDeviceInfo",
+					"$(SRCROOT)/../node_modules/react-native-smart-barcode/ios/RCTBarcode/RCTBarcode",
+					"$(SRCROOT)/../node_modules/react-native-keep-awake/ios",
+					"$(SRCROOT)/../node_modules/react-native-signature-capture/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-sqlite-storage/src/ios",
+					"$(SRCROOT)/../node_modules/react-native-image-crop-picker/ios/**",
+					"$(SRCROOT)/../../React",
+					"$(SRCROOT)/../react-native/React",
+					"$(SRCROOT)/../node_modules/react-native-uuid-generator/ios",
+					"$(SRCROOT)/../node_modules/react-native-zip-archive/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-toast-native/ios",
+					"$(SRCROOT)/../node_modules/react-native-simple-toast/ios/LRDRCTSimpleToast",
+					"$(SRCROOT)/../node_modules/react-native-permissions/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-fs/**",
+					"$(SRCROOT)/../node_modules/react-native-fetch-blob/ios/**",
+					"$(SRCROOT)/../node_modules/@react-native-community/async-storage/ios",
+					"$(SRCROOT)/../node_modules/react-native-spinkit/ios/**",
+					"$(SRCROOT)/../node_modules/scandit-react-native/ios/ScanditBarcodeScanner/**",
+					"$(SRCROOT)/../node_modules/react-native-sensitive-info/ios/RNSensitiveInfo/**",
+					"$(SRCROOT)/../node_modules/react-native-device-info/ios/RNDeviceInfo",
+					"$(SRCROOT)/../node_modules/react-native-video/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-sound-player/ios",
+					"$(SRCROOT)/../node_modules/appcenter/ios/AppCenterReactNative",
+					"$(SRCROOT)/../node_modules/appcenter-analytics/ios/AppCenterReactNativeAnalytics",
+					"$(SRCROOT)/../node_modules/appcenter-crashes/ios/AppCenterReactNativeCrashes",
+				);
+				INFOPLIST_FILE = InnovaZones/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.app;
+				PRODUCT_NAME = InnovaZones;
+				PROVISIONING_PROFILE = "ae83c44f-a181-422a-aeb8-5267c63e5e2f";
+				PROVISIONING_PROFILE_SPECIFIER = EnterpriseRNProdAdhoc;
+				SWIFT_OBJC_BRIDGING_HEADER = "InnovaZones-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_WORKSPACE = YES;
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		2D02E4971E0B4A5E006451C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60DC2DE2D9BCF950359F9BF2 /* Pods-InnovaZones-tvOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = KTZW86ZUGS;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-device-info/RNDeviceInfo",
+					"$(SRCROOT)/../node_modules/react-native-smart-barcode/ios/RCTBarcode/RCTBarcode",
+					"$(SRCROOT)/../node_modules/react-native-keep-awake/ios",
+					"$(SRCROOT)/../node_modules/react-native-signature-capture/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-sqlite-storage/src/ios",
+					"$(SRCROOT)/../node_modules/react-native-image-crop-picker/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-uuid-generator/ios",
+					"$(SRCROOT)/../node_modules/react-native-zip-archive/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-toast-native/ios",
+					"$(SRCROOT)/../node_modules/react-native-simple-toast/ios/LRDRCTSimpleToast",
+					"$(SRCROOT)/../node_modules/react-native-permissions/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-fs/**",
+					"$(SRCROOT)/../node_modules/react-native-fetch-blob/ios/**",
+					"$(SRCROOT)/../node_modules/@react-native-community/async-storage/ios",
+					"$(SRCROOT)/../node_modules/react-native-spinkit/ios/**",
+					"$(SRCROOT)/../node_modules/scandit-react-native/ios/ScanditBarcodeScanner/**",
+					"$(SRCROOT)/../node_modules/react-native-sensitive-info/ios/RNSensitiveInfo/**",
+					"$(SRCROOT)/../node_modules/react-native-device-info/ios/RNDeviceInfo",
+					"$(SRCROOT)/../node_modules/react-native-video/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-sound-player/ios",
+					"$(SRCROOT)/../node_modules/appcenter/ios/AppCenterReactNative",
+					"$(SRCROOT)/../node_modules/appcenter-analytics/ios/AppCenterReactNativeAnalytics",
+					"$(SRCROOT)/../node_modules/appcenter-crashes/ios/AppCenterReactNativeCrashes",
+				);
+				INFOPLIST_FILE = "InnovaZones-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.InnovaZones-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = Debug;
+		};
+		2D02E4981E0B4A5E006451C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33AAD2969D33575684BBC256 /* Pods-InnovaZones-tvOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = KTZW86ZUGS;
+				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-device-info/RNDeviceInfo",
+					"$(SRCROOT)/../node_modules/react-native-smart-barcode/ios/RCTBarcode/RCTBarcode",
+					"$(SRCROOT)/../node_modules/react-native-keep-awake/ios",
+					"$(SRCROOT)/../node_modules/react-native-signature-capture/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-sqlite-storage/src/ios",
+					"$(SRCROOT)/../node_modules/react-native-image-crop-picker/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-uuid-generator/ios",
+					"$(SRCROOT)/../node_modules/react-native-zip-archive/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-toast-native/ios",
+					"$(SRCROOT)/../node_modules/react-native-simple-toast/ios/LRDRCTSimpleToast",
+					"$(SRCROOT)/../node_modules/react-native-permissions/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-fs/**",
+					"$(SRCROOT)/../node_modules/react-native-fetch-blob/ios/**",
+					"$(SRCROOT)/../node_modules/@react-native-community/async-storage/ios",
+					"$(SRCROOT)/../node_modules/react-native-spinkit/ios/**",
+					"$(SRCROOT)/../node_modules/scandit-react-native/ios/ScanditBarcodeScanner/**",
+					"$(SRCROOT)/../node_modules/react-native-sensitive-info/ios/RNSensitiveInfo/**",
+					"$(SRCROOT)/../node_modules/react-native-device-info/ios/RNDeviceInfo",
+					"$(SRCROOT)/../node_modules/react-native-video/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-sound-player/ios",
+					"$(SRCROOT)/../node_modules/appcenter/ios/AppCenterReactNative",
+					"$(SRCROOT)/../node_modules/appcenter-analytics/ios/AppCenterReactNativeAnalytics",
+					"$(SRCROOT)/../node_modules/appcenter-crashes/ios/AppCenterReactNativeCrashes",
+				);
+				INFOPLIST_FILE = "InnovaZones-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.InnovaZones-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = Release;
+		};
+		2D02E4991E0B4A5E006451C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE38BC68944EBC1F3CAA64C8 /* Pods-InnovaZones-tvOSTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = KTZW86ZUGS;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "InnovaZones-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.InnovaZones-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InnovaZones-tvOS.app/InnovaZones-tvOS";
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = Debug;
+		};
+		2D02E49A1E0B4A5E006451C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE413B48B47801893781BE12 /* Pods-InnovaZones-tvOSTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = KTZW86ZUGS;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "InnovaZones-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.InnovaZones-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InnovaZones-tvOS.app/InnovaZones-tvOS";
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "InnovaZonesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E356F61AD99517003FC87E /* Debug */,
+				00E356F71AD99517003FC87E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "InnovaZones" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "InnovaZones-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D02E4971E0B4A5E006451C7 /* Debug */,
+				2D02E4981E0B4A5E006451C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "InnovaZones-tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D02E4991E0B4A5E006451C7 /* Debug */,
+				2D02E49A1E0B4A5E006451C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "InnovaZones" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}

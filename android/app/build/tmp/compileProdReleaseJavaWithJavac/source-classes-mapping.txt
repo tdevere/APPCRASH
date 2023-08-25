@@ -1,0 +1,1311 @@
+androidx/transition/R.java
+ androidx.transition.R
+ androidx.transition.R$attr
+ androidx.transition.R$color
+ androidx.transition.R$dimen
+ androidx.transition.R$drawable
+ androidx.transition.R$id
+ androidx.transition.R$integer
+ androidx.transition.R$layout
+ androidx.transition.R$string
+ androidx.transition.R$style
+ androidx.transition.R$styleable
+androidx/print/R.java
+ androidx.print.R
+com/InnovaZones/RNTreeIZHips/MainActivity.java
+ com.InnovaZones.RNTreeIZHips.MainActivity
+ com.InnovaZones.RNTreeIZHips.MainActivity$1
+com/brentvatne/react/R.java
+ com.brentvatne.react.R
+ com.brentvatne.react.R$anim
+ com.brentvatne.react.R$attr
+ com.brentvatne.react.R$bool
+ com.brentvatne.react.R$color
+ com.brentvatne.react.R$dimen
+ com.brentvatne.react.R$drawable
+ com.brentvatne.react.R$id
+ com.brentvatne.react.R$integer
+ com.brentvatne.react.R$layout
+ com.brentvatne.react.R$string
+ com.brentvatne.react.R$style
+ com.brentvatne.react.R$styleable
+androidx/lifecycle/livedata/core/R.java
+ androidx.lifecycle.livedata.core.R
+com/facebook/imagepipeline/R.java
+ com.facebook.imagepipeline.R
+org/pgsqlite/R.java
+ org.pgsqlite.R
+ org.pgsqlite.R$anim
+ org.pgsqlite.R$attr
+ org.pgsqlite.R$bool
+ org.pgsqlite.R$color
+ org.pgsqlite.R$dimen
+ org.pgsqlite.R$drawable
+ org.pgsqlite.R$id
+ org.pgsqlite.R$integer
+ org.pgsqlite.R$layout
+ org.pgsqlite.R$string
+ org.pgsqlite.R$style
+ org.pgsqlite.R$styleable
+ org.pgsqlite.R$xml
+org/wonday/pdf/R.java
+ org.wonday.pdf.R
+ org.wonday.pdf.R$anim
+ org.wonday.pdf.R$attr
+ org.wonday.pdf.R$bool
+ org.wonday.pdf.R$color
+ org.wonday.pdf.R$dimen
+ org.wonday.pdf.R$drawable
+ org.wonday.pdf.R$id
+ org.wonday.pdf.R$integer
+ org.wonday.pdf.R$layout
+ org.wonday.pdf.R$string
+ org.wonday.pdf.R$style
+ org.wonday.pdf.R$styleable
+ org.wonday.pdf.R$xml
+androidx/appcompat/resources/R.java
+ androidx.appcompat.resources.R
+ androidx.appcompat.resources.R$attr
+ androidx.appcompat.resources.R$color
+ androidx.appcompat.resources.R$dimen
+ androidx.appcompat.resources.R$drawable
+ androidx.appcompat.resources.R$id
+ androidx.appcompat.resources.R$integer
+ androidx.appcompat.resources.R$layout
+ androidx.appcompat.resources.R$string
+ androidx.appcompat.resources.R$style
+ androidx.appcompat.resources.R$styleable
+com/facebook/drawee/backends/pipeline/R.java
+ com.facebook.drawee.backends.pipeline.R
+ com.facebook.drawee.backends.pipeline.R$attr
+ com.facebook.drawee.backends.pipeline.R$id
+ com.facebook.drawee.backends.pipeline.R$styleable
+com/InnovaZones/RNTreeIZHips/BuildConfig.java
+ com.InnovaZones.RNTreeIZHips.BuildConfig
+com/masteratul/R.java
+ com.masteratul.R
+ com.masteratul.R$anim
+ com.masteratul.R$attr
+ com.masteratul.R$bool
+ com.masteratul.R$color
+ com.masteratul.R$dimen
+ com.masteratul.R$drawable
+ com.masteratul.R$id
+ com.masteratul.R$integer
+ com.masteratul.R$layout
+ com.masteratul.R$string
+ com.masteratul.R$style
+ com.masteratul.R$styleable
+ com.masteratul.R$xml
+androidx/arch/core/R.java
+ androidx.arch.core.R
+androidx/fragment/R.java
+ androidx.fragment.R
+ androidx.fragment.R$attr
+ androidx.fragment.R$color
+ androidx.fragment.R$dimen
+ androidx.fragment.R$drawable
+ androidx.fragment.R$id
+ androidx.fragment.R$integer
+ androidx.fragment.R$layout
+ androidx.fragment.R$string
+ androidx.fragment.R$style
+ androidx.fragment.R$styleable
+com/cubicphuse/RCTTorch/R.java
+ com.cubicphuse.RCTTorch.R
+ com.cubicphuse.RCTTorch.R$anim
+ com.cubicphuse.RCTTorch.R$attr
+ com.cubicphuse.RCTTorch.R$bool
+ com.cubicphuse.RCTTorch.R$color
+ com.cubicphuse.RCTTorch.R$dimen
+ com.cubicphuse.RCTTorch.R$drawable
+ com.cubicphuse.RCTTorch.R$id
+ com.cubicphuse.RCTTorch.R$integer
+ com.cubicphuse.RCTTorch.R$layout
+ com.cubicphuse.RCTTorch.R$string
+ com.cubicphuse.RCTTorch.R$style
+ com.cubicphuse.RCTTorch.R$styleable
+ com.cubicphuse.RCTTorch.R$xml
+androidx/savedstate/R.java
+ androidx.savedstate.R
+com/google/android/gms/measurement_base/R.java
+ com.google.android.gms.measurement_base.R
+com/facebook/react/R.java
+ com.facebook.react.R
+ com.facebook.react.R$anim
+ com.facebook.react.R$attr
+ com.facebook.react.R$bool
+ com.facebook.react.R$color
+ com.facebook.react.R$dimen
+ com.facebook.react.R$drawable
+ com.facebook.react.R$id
+ com.facebook.react.R$integer
+ com.facebook.react.R$layout
+ com.facebook.react.R$string
+ com.facebook.react.R$style
+ com.facebook.react.R$styleable
+ com.facebook.react.R$xml
+com/google/firebase/R.java
+ com.google.firebase.R
+ com.google.firebase.R$attr
+ com.google.firebase.R$color
+ com.google.firebase.R$dimen
+ com.google.firebase.R$drawable
+ com.google.firebase.R$id
+ com.google.firebase.R$integer
+ com.google.firebase.R$layout
+ com.google.firebase.R$string
+ com.google.firebase.R$style
+ com.google.firebase.R$styleable
+androidx/asynclayoutinflater/R.java
+ androidx.asynclayoutinflater.R
+ androidx.asynclayoutinflater.R$attr
+ androidx.asynclayoutinflater.R$color
+ androidx.asynclayoutinflater.R$dimen
+ androidx.asynclayoutinflater.R$drawable
+ androidx.asynclayoutinflater.R$id
+ androidx.asynclayoutinflater.R$integer
+ androidx.asynclayoutinflater.R$layout
+ androidx.asynclayoutinflater.R$string
+ androidx.asynclayoutinflater.R$style
+ androidx.asynclayoutinflater.R$styleable
+com/github/barteksc/pdfviewer/R.java
+ com.github.barteksc.pdfviewer.R
+ com.github.barteksc.pdfviewer.R$attr
+ com.github.barteksc.pdfviewer.R$bool
+ com.github.barteksc.pdfviewer.R$color
+ com.github.barteksc.pdfviewer.R$dimen
+ com.github.barteksc.pdfviewer.R$drawable
+ com.github.barteksc.pdfviewer.R$id
+ com.github.barteksc.pdfviewer.R$integer
+ com.github.barteksc.pdfviewer.R$layout
+ com.github.barteksc.pdfviewer.R$string
+ com.github.barteksc.pdfviewer.R$style
+ com.github.barteksc.pdfviewer.R$styleable
+com/reactnativecommunity/rnpermissions/R.java
+ com.reactnativecommunity.rnpermissions.R
+ com.reactnativecommunity.rnpermissions.R$anim
+ com.reactnativecommunity.rnpermissions.R$attr
+ com.reactnativecommunity.rnpermissions.R$bool
+ com.reactnativecommunity.rnpermissions.R$color
+ com.reactnativecommunity.rnpermissions.R$dimen
+ com.reactnativecommunity.rnpermissions.R$drawable
+ com.reactnativecommunity.rnpermissions.R$id
+ com.reactnativecommunity.rnpermissions.R$integer
+ com.reactnativecommunity.rnpermissions.R$layout
+ com.reactnativecommunity.rnpermissions.R$string
+ com.reactnativecommunity.rnpermissions.R$style
+ com.reactnativecommunity.rnpermissions.R$styleable
+ com.reactnativecommunity.rnpermissions.R$xml
+io/github/traviskn/rnuuidgenerator/R.java
+ io.github.traviskn.rnuuidgenerator.R
+ io.github.traviskn.rnuuidgenerator.R$anim
+ io.github.traviskn.rnuuidgenerator.R$attr
+ io.github.traviskn.rnuuidgenerator.R$bool
+ io.github.traviskn.rnuuidgenerator.R$color
+ io.github.traviskn.rnuuidgenerator.R$dimen
+ io.github.traviskn.rnuuidgenerator.R$drawable
+ io.github.traviskn.rnuuidgenerator.R$id
+ io.github.traviskn.rnuuidgenerator.R$integer
+ io.github.traviskn.rnuuidgenerator.R$layout
+ io.github.traviskn.rnuuidgenerator.R$string
+ io.github.traviskn.rnuuidgenerator.R$style
+ io.github.traviskn.rnuuidgenerator.R$styleable
+ io.github.traviskn.rnuuidgenerator.R$xml
+androidx/interpolator/R.java
+ androidx.interpolator.R
+com/google/android/gms/measurement/sdk/api/R.java
+ com.google.android.gms.measurement.sdk.api.R
+androidx/core/R.java
+ androidx.core.R
+ androidx.core.R$attr
+ androidx.core.R$color
+ androidx.core.R$dimen
+ androidx.core.R$drawable
+ androidx.core.R$id
+ androidx.core.R$integer
+ androidx.core.R$layout
+ androidx.core.R$string
+ androidx.core.R$style
+ androidx.core.R$styleable
+com/InnovaZones/RNTreeIZHips/UHFRFID/ReaderViewAdapter.java
+ com.InnovaZones.RNTreeIZHips.UHFRFID.ReaderViewAdapter
+ com.InnovaZones.RNTreeIZHips.UHFRFID.ReaderViewAdapter$ReaderViewHolder
+com/google/firebase/analytics/connector/R.java
+ com.google.firebase.analytics.connector.R
+com/google/android/gms/common/R.java
+ com.google.android.gms.common.R
+ com.google.android.gms.common.R$integer
+ com.google.android.gms.common.R$string
+com/google/mlkit/vision/text/R.java
+ com.google.mlkit.vision.text.R
+com/InnovaZones/RNTreeIZHips/UHFRFID/ReaderMedia.java
+ com.InnovaZones.RNTreeIZHips.UHFRFID.ReaderMedia
+com/microsoft/codepush/react/R.java
+ com.microsoft.codepush.react.R
+ com.microsoft.codepush.react.R$anim
+ com.microsoft.codepush.react.R$attr
+ com.microsoft.codepush.react.R$bool
+ com.microsoft.codepush.react.R$color
+ com.microsoft.codepush.react.R$dimen
+ com.microsoft.codepush.react.R$drawable
+ com.microsoft.codepush.react.R$id
+ com.microsoft.codepush.react.R$integer
+ com.microsoft.codepush.react.R$layout
+ com.microsoft.codepush.react.R$string
+ com.microsoft.codepush.react.R$style
+ com.microsoft.codepush.react.R$styleable
+ com.microsoft.codepush.react.R$xml
+com/google/android/gms/base/R.java
+ com.google.android.gms.base.R
+ com.google.android.gms.base.R$attr
+ com.google.android.gms.base.R$color
+ com.google.android.gms.base.R$drawable
+ com.google.android.gms.base.R$id
+ com.google.android.gms.base.R$string
+ com.google.android.gms.base.R$styleable
+io/sentry/android/R.java
+ io.sentry.android.R
+ io.sentry.android.R$attr
+ io.sentry.android.R$color
+ io.sentry.android.R$dimen
+ io.sentry.android.R$drawable
+ io.sentry.android.R$id
+ io.sentry.android.R$integer
+ io.sentry.android.R$layout
+ io.sentry.android.R$string
+ io.sentry.android.R$style
+ io.sentry.android.R$styleable
+com/google/firebase/installations/R.java
+ com.google.firebase.installations.R
+ com.google.firebase.installations.R$attr
+ com.google.firebase.installations.R$color
+ com.google.firebase.installations.R$dimen
+ com.google.firebase.installations.R$drawable
+ com.google.firebase.installations.R$id
+ com.google.firebase.installations.R$integer
+ com.google.firebase.installations.R$layout
+ com.google.firebase.installations.R$string
+ com.google.firebase.installations.R$style
+ com.google.firebase.installations.R$styleable
+com/InnovaZones/RNTreeIZHips/nativemodules/UHFRFIDModule.java
+ com.InnovaZones.RNTreeIZHips.nativemodules.UHFRFIDModule
+ com.InnovaZones.RNTreeIZHips.nativemodules.UHFRFIDModule$1
+ com.InnovaZones.RNTreeIZHips.nativemodules.UHFRFIDModule$2
+ com.InnovaZones.RNTreeIZHips.nativemodules.UHFRFIDModule$3
+ com.InnovaZones.RNTreeIZHips.nativemodules.UHFRFIDModule$4
+ com.InnovaZones.RNTreeIZHips.nativemodules.UHFRFIDModule$5
+com/yqritc/scalablevideoview/R.java
+ com.yqritc.scalablevideoview.R
+ com.yqritc.scalablevideoview.R$anim
+ com.yqritc.scalablevideoview.R$attr
+ com.yqritc.scalablevideoview.R$bool
+ com.yqritc.scalablevideoview.R$color
+ com.yqritc.scalablevideoview.R$dimen
+ com.yqritc.scalablevideoview.R$drawable
+ com.yqritc.scalablevideoview.R$id
+ com.yqritc.scalablevideoview.R$integer
+ com.yqritc.scalablevideoview.R$layout
+ com.yqritc.scalablevideoview.R$string
+ com.yqritc.scalablevideoview.R$style
+ com.yqritc.scalablevideoview.R$styleable
+com/microsoft/appcenter/R.java
+ com.microsoft.appcenter.R
+com/restock/serialdevicemanager/R.java
+ com.restock.serialdevicemanager.R
+ com.restock.serialdevicemanager.R$anim
+ com.restock.serialdevicemanager.R$animator
+ com.restock.serialdevicemanager.R$array
+ com.restock.serialdevicemanager.R$attr
+ com.restock.serialdevicemanager.R$bool
+ com.restock.serialdevicemanager.R$color
+ com.restock.serialdevicemanager.R$dimen
+ com.restock.serialdevicemanager.R$drawable
+ com.restock.serialdevicemanager.R$id
+ com.restock.serialdevicemanager.R$integer
+ com.restock.serialdevicemanager.R$interpolator
+ com.restock.serialdevicemanager.R$layout
+ com.restock.serialdevicemanager.R$menu
+ com.restock.serialdevicemanager.R$plurals
+ com.restock.serialdevicemanager.R$raw
+ com.restock.serialdevicemanager.R$string
+ com.restock.serialdevicemanager.R$style
+ com.restock.serialdevicemanager.R$styleable
+ com.restock.serialdevicemanager.R$xml
+com/facebook/soloader/R.java
+ com.facebook.soloader.R
+com/InnovaZones/RNTreeIZHips/MainApplication.java
+ com.InnovaZones.RNTreeIZHips.MainApplication
+ com.InnovaZones.RNTreeIZHips.MainApplication$MyReactNativeHost
+com/socketmobile/capture/client/android/R.java
+ com.socketmobile.capture.client.android.R
+ com.socketmobile.capture.client.android.R$string
+androidx/dynamicanimation/R.java
+ androidx.dynamicanimation.R
+ androidx.dynamicanimation.R$attr
+ androidx.dynamicanimation.R$color
+ androidx.dynamicanimation.R$dimen
+ androidx.dynamicanimation.R$drawable
+ androidx.dynamicanimation.R$id
+ androidx.dynamicanimation.R$integer
+ androidx.dynamicanimation.R$layout
+ androidx.dynamicanimation.R$string
+ androidx.dynamicanimation.R$style
+ androidx.dynamicanimation.R$styleable
+androidx/multidex/R.java
+ androidx.multidex.R
+com/InnovaZones/RNTreeIZHips/R.java
+ com.InnovaZones.RNTreeIZHips.R
+ com.InnovaZones.RNTreeIZHips.R$anim
+ com.InnovaZones.RNTreeIZHips.R$animator
+ com.InnovaZones.RNTreeIZHips.R$array
+ com.InnovaZones.RNTreeIZHips.R$attr
+ com.InnovaZones.RNTreeIZHips.R$bool
+ com.InnovaZones.RNTreeIZHips.R$color
+ com.InnovaZones.RNTreeIZHips.R$dimen
+ com.InnovaZones.RNTreeIZHips.R$drawable
+ com.InnovaZones.RNTreeIZHips.R$id
+ com.InnovaZones.RNTreeIZHips.R$integer
+ com.InnovaZones.RNTreeIZHips.R$interpolator
+ com.InnovaZones.RNTreeIZHips.R$layout
+ com.InnovaZones.RNTreeIZHips.R$menu
+ com.InnovaZones.RNTreeIZHips.R$mipmap
+ com.InnovaZones.RNTreeIZHips.R$plurals
+ com.InnovaZones.RNTreeIZHips.R$raw
+ com.InnovaZones.RNTreeIZHips.R$string
+ com.InnovaZones.RNTreeIZHips.R$style
+ com.InnovaZones.RNTreeIZHips.R$styleable
+ com.InnovaZones.RNTreeIZHips.R$xml
+com/facebook/imagepipeline/backends/okhttp3/R.java
+ com.facebook.imagepipeline.backends.okhttp3.R
+com/InnovaZones/RNTreeIZHips/CustomReactPackage.java
+ com.InnovaZones.RNTreeIZHips.CustomReactPackage
+com/microsoft/appcenter/analytics/R.java
+ com.microsoft.appcenter.analytics.R
+androidx/media/R.java
+ androidx.media.R
+ androidx.media.R$attr
+ androidx.media.R$color
+ androidx.media.R$dimen
+ androidx.media.R$drawable
+ androidx.media.R$id
+ androidx.media.R$integer
+ androidx.media.R$layout
+ androidx.media.R$string
+ androidx.media.R$style
+ androidx.media.R$styleable
+com/google/firebase/messaging/R.java
+ com.google.firebase.messaging.R
+ com.google.firebase.messaging.R$string
+com/react/rnspinkit/R.java
+ com.react.rnspinkit.R
+ com.react.rnspinkit.R$anim
+ com.react.rnspinkit.R$attr
+ com.react.rnspinkit.R$bool
+ com.react.rnspinkit.R$color
+ com.react.rnspinkit.R$dimen
+ com.react.rnspinkit.R$drawable
+ com.react.rnspinkit.R$id
+ com.react.rnspinkit.R$integer
+ com.react.rnspinkit.R$layout
+ com.react.rnspinkit.R$string
+ com.react.rnspinkit.R$style
+ com.react.rnspinkit.R$styleable
+ com.react.rnspinkit.R$xml
+com/microsoft/appcenter/reactnative/appcenter/R.java
+ com.microsoft.appcenter.reactnative.appcenter.R
+ com.microsoft.appcenter.reactnative.appcenter.R$anim
+ com.microsoft.appcenter.reactnative.appcenter.R$attr
+ com.microsoft.appcenter.reactnative.appcenter.R$bool
+ com.microsoft.appcenter.reactnative.appcenter.R$color
+ com.microsoft.appcenter.reactnative.appcenter.R$dimen
+ com.microsoft.appcenter.reactnative.appcenter.R$drawable
+ com.microsoft.appcenter.reactnative.appcenter.R$id
+ com.microsoft.appcenter.reactnative.appcenter.R$integer
+ com.microsoft.appcenter.reactnative.appcenter.R$layout
+ com.microsoft.appcenter.reactnative.appcenter.R$string
+ com.microsoft.appcenter.reactnative.appcenter.R$style
+ com.microsoft.appcenter.reactnative.appcenter.R$styleable
+ com.microsoft.appcenter.reactnative.appcenter.R$xml
+com/InnovaZones/RNTreeIZHips/UHFRFID/ItemClickSupport.java
+ com.InnovaZones.RNTreeIZHips.UHFRFID.ItemClickSupport
+ com.InnovaZones.RNTreeIZHips.UHFRFID.ItemClickSupport$1
+ com.InnovaZones.RNTreeIZHips.UHFRFID.ItemClickSupport$2
+ com.InnovaZones.RNTreeIZHips.UHFRFID.ItemClickSupport$3
+ com.InnovaZones.RNTreeIZHips.UHFRFID.ItemClickSupport$OnItemClickListener
+ com.InnovaZones.RNTreeIZHips.UHFRFID.ItemClickSupport$OnItemLongClickListener
+androidx/swiperefreshlayout/R.java
+ androidx.swiperefreshlayout.R
+ androidx.swiperefreshlayout.R$attr
+ androidx.swiperefreshlayout.R$color
+ androidx.swiperefreshlayout.R$dimen
+ androidx.swiperefreshlayout.R$drawable
+ androidx.swiperefreshlayout.R$id
+ androidx.swiperefreshlayout.R$integer
+ androidx.swiperefreshlayout.R$layout
+ androidx.swiperefreshlayout.R$string
+ androidx.swiperefreshlayout.R$style
+ androidx.swiperefreshlayout.R$styleable
+io/sentry/android/ndk/R.java
+ io.sentry.android.ndk.R
+ io.sentry.android.ndk.R$attr
+ io.sentry.android.ndk.R$color
+ io.sentry.android.ndk.R$dimen
+ io.sentry.android.ndk.R$drawable
+ io.sentry.android.ndk.R$id
+ io.sentry.android.ndk.R$integer
+ io.sentry.android.ndk.R$layout
+ io.sentry.android.ndk.R$string
+ io.sentry.android.ndk.R$style
+ io.sentry.android.ndk.R$styleable
+androidx/appcompat/R.java
+ androidx.appcompat.R
+ androidx.appcompat.R$anim
+ androidx.appcompat.R$attr
+ androidx.appcompat.R$bool
+ androidx.appcompat.R$color
+ androidx.appcompat.R$dimen
+ androidx.appcompat.R$drawable
+ androidx.appcompat.R$id
+ androidx.appcompat.R$integer
+ androidx.appcompat.R$interpolator
+ androidx.appcompat.R$layout
+ androidx.appcompat.R$string
+ androidx.appcompat.R$style
+ androidx.appcompat.R$styleable
+com/reactnativecommunity/slider/R.java
+ com.reactnativecommunity.slider.R
+ com.reactnativecommunity.slider.R$anim
+ com.reactnativecommunity.slider.R$attr
+ com.reactnativecommunity.slider.R$bool
+ com.reactnativecommunity.slider.R$color
+ com.reactnativecommunity.slider.R$dimen
+ com.reactnativecommunity.slider.R$drawable
+ com.reactnativecommunity.slider.R$id
+ com.reactnativecommunity.slider.R$integer
+ com.reactnativecommunity.slider.R$layout
+ com.reactnativecommunity.slider.R$string
+ com.reactnativecommunity.slider.R$style
+ com.reactnativecommunity.slider.R$styleable
+ com.reactnativecommunity.slider.R$xml
+com/InnovaZones/RNTreeIZHips/Constant.java
+ com.InnovaZones.RNTreeIZHips.Constant
+androidx/legacy/coreui/R.java
+ androidx.legacy.coreui.R
+ androidx.legacy.coreui.R$attr
+ androidx.legacy.coreui.R$color
+ androidx.legacy.coreui.R$dimen
+ androidx.legacy.coreui.R$drawable
+ androidx.legacy.coreui.R$id
+ androidx.legacy.coreui.R$integer
+ androidx.legacy.coreui.R$layout
+ androidx.legacy.coreui.R$string
+ androidx.legacy.coreui.R$style
+ androidx.legacy.coreui.R$styleable
+com/mirasense/scanditsdk/R.java
+ com.mirasense.scanditsdk.R
+ com.mirasense.scanditsdk.R$raw
+androidx/customview/R.java
+ androidx.customview.R
+ androidx.customview.R$attr
+ androidx.customview.R$color
+ androidx.customview.R$dimen
+ androidx.customview.R$drawable
+ androidx.customview.R$id
+ androidx.customview.R$integer
+ androidx.customview.R$layout
+ androidx.customview.R$string
+ androidx.customview.R$style
+ androidx.customview.R$styleable
+com/google/firebase/iid/R.java
+ com.google.firebase.iid.R
+com/shockwave/pdfium/R.java
+ com.shockwave.pdfium.R
+ com.shockwave.pdfium.R$attr
+ com.shockwave.pdfium.R$bool
+ com.shockwave.pdfium.R$color
+ com.shockwave.pdfium.R$dimen
+ com.shockwave.pdfium.R$drawable
+ com.shockwave.pdfium.R$id
+ com.shockwave.pdfium.R$integer
+ com.shockwave.pdfium.R$layout
+ com.shockwave.pdfium.R$string
+ com.shockwave.pdfium.R$style
+ com.shockwave.pdfium.R$styleable
+com/reactnativecommunity/netinfo/R.java
+ com.reactnativecommunity.netinfo.R
+ com.reactnativecommunity.netinfo.R$anim
+ com.reactnativecommunity.netinfo.R$attr
+ com.reactnativecommunity.netinfo.R$bool
+ com.reactnativecommunity.netinfo.R$color
+ com.reactnativecommunity.netinfo.R$dimen
+ com.reactnativecommunity.netinfo.R$drawable
+ com.reactnativecommunity.netinfo.R$id
+ com.reactnativecommunity.netinfo.R$integer
+ com.reactnativecommunity.netinfo.R$layout
+ com.reactnativecommunity.netinfo.R$string
+ com.reactnativecommunity.netinfo.R$style
+ com.reactnativecommunity.netinfo.R$styleable
+ com.reactnativecommunity.netinfo.R$xml
+androidx/exifinterface/R.java
+ androidx.exifinterface.R
+com/google/android/gms/stats/R.java
+ com.google.android.gms.stats.R
+androidx/legacy/coreutils/R.java
+ androidx.legacy.coreutils.R
+ androidx.legacy.coreutils.R$attr
+ androidx.legacy.coreutils.R$color
+ androidx.legacy.coreutils.R$dimen
+ androidx.legacy.coreutils.R$drawable
+ androidx.legacy.coreutils.R$id
+ androidx.legacy.coreutils.R$integer
+ androidx.legacy.coreutils.R$layout
+ androidx.legacy.coreutils.R$string
+ androidx.legacy.coreutils.R$style
+ androidx.legacy.coreutils.R$styleable
+com/google/android/gms/cloudmessaging/R.java
+ com.google.android.gms.cloudmessaging.R
+com/google/firebase/components/R.java
+ com.google.firebase.components.R
+com/yalantis/ucrop/R.java
+ com.yalantis.ucrop.R
+ com.yalantis.ucrop.R$anim
+ com.yalantis.ucrop.R$attr
+ com.yalantis.ucrop.R$bool
+ com.yalantis.ucrop.R$color
+ com.yalantis.ucrop.R$dimen
+ com.yalantis.ucrop.R$drawable
+ com.yalantis.ucrop.R$id
+ com.yalantis.ucrop.R$integer
+ com.yalantis.ucrop.R$interpolator
+ com.yalantis.ucrop.R$layout
+ com.yalantis.ucrop.R$menu
+ com.yalantis.ucrop.R$string
+ com.yalantis.ucrop.R$style
+ com.yalantis.ucrop.R$styleable
+com/facebook/drawee/R.java
+ com.facebook.drawee.R
+ com.facebook.drawee.R$attr
+ com.facebook.drawee.R$id
+ com.facebook.drawee.R$styleable
+com/rnfs/R.java
+ com.rnfs.R
+ com.rnfs.R$anim
+ com.rnfs.R$attr
+ com.rnfs.R$bool
+ com.rnfs.R$color
+ com.rnfs.R$dimen
+ com.rnfs.R$drawable
+ com.rnfs.R$id
+ com.rnfs.R$integer
+ com.rnfs.R$layout
+ com.rnfs.R$string
+ com.rnfs.R$style
+ com.rnfs.R$styleable
+ com.rnfs.R$xml
+com/google/android/gms/measurement/sdk/R.java
+ com.google.android.gms.measurement.sdk.R
+com/InnovaZones/RNTreeIZHips/nativemodules/RFIDModule.java
+ com.InnovaZones.RNTreeIZHips.nativemodules.RFIDModule
+ com.InnovaZones.RNTreeIZHips.nativemodules.RFIDModule$1
+ com.InnovaZones.RNTreeIZHips.nativemodules.RFIDModule$2
+ com.InnovaZones.RNTreeIZHips.nativemodules.RFIDModule$3
+ com.InnovaZones.RNTreeIZHips.nativemodules.RFIDModule$4
+ com.InnovaZones.RNTreeIZHips.nativemodules.RFIDModule$MyCustomRFIDListener
+ com.InnovaZones.RNTreeIZHips.nativemodules.RFIDModule$SdmBcastReceiver
+ com.InnovaZones.RNTreeIZHips.nativemodules.RFIDModule$SdmCallbacks
+ com.InnovaZones.RNTreeIZHips.nativemodules.RFIDModule$TYPE_LOG
+com/socketmobile/tools/jewel/R.java
+ com.socketmobile.tools.jewel.R
+com/reactcommunity/rndatetimepicker/R.java
+ com.reactcommunity.rndatetimepicker.R
+ com.reactcommunity.rndatetimepicker.R$anim
+ com.reactcommunity.rndatetimepicker.R$attr
+ com.reactcommunity.rndatetimepicker.R$bool
+ com.reactcommunity.rndatetimepicker.R$color
+ com.reactcommunity.rndatetimepicker.R$dimen
+ com.reactcommunity.rndatetimepicker.R$drawable
+ com.reactcommunity.rndatetimepicker.R$id
+ com.reactcommunity.rndatetimepicker.R$integer
+ com.reactcommunity.rndatetimepicker.R$layout
+ com.reactcommunity.rndatetimepicker.R$string
+ com.reactcommunity.rndatetimepicker.R$style
+ com.reactcommunity.rndatetimepicker.R$styleable
+ com.reactcommunity.rndatetimepicker.R$xml
+com/google/mlkit/vision/common/R.java
+ com.google.mlkit.vision.common.R
+com/google/firebase/iid/internal/R.java
+ com.google.firebase.iid.internal.R
+me/leolin/shortcutbadger/R.java
+ me.leolin.shortcutbadger.R
+androidx/localbroadcastmanager/R.java
+ androidx.localbroadcastmanager.R
+com/github/ybq/android/spinkit/R.java
+ com.github.ybq.android.spinkit.R
+ com.github.ybq.android.spinkit.R$attr
+ com.github.ybq.android.spinkit.R$id
+ com.github.ybq.android.spinkit.R$style
+ com.github.ybq.android.spinkit.R$styleable
+com/microsoft/appcenter/reactnative/shared/R.java
+ com.microsoft.appcenter.reactnative.shared.R
+com/google/firebase/installations/interop/R.java
+ com.google.firebase.installations.interop.R
+ com.google.firebase.installations.interop.R$attr
+ com.google.firebase.installations.interop.R$color
+ com.google.firebase.installations.interop.R$dimen
+ com.google.firebase.installations.interop.R$drawable
+ com.google.firebase.installations.interop.R$id
+ com.google.firebase.installations.interop.R$integer
+ com.google.firebase.installations.interop.R$layout
+ com.google.firebase.installations.interop.R$string
+ com.google.firebase.installations.interop.R$style
+ com.google.firebase.installations.interop.R$styleable
+androidx/webkit/R.java
+ androidx.webkit.R
+ androidx.webkit.R$attr
+ androidx.webkit.R$color
+ androidx.webkit.R$dimen
+ androidx.webkit.R$drawable
+ androidx.webkit.R$id
+ androidx.webkit.R$integer
+ androidx.webkit.R$layout
+ androidx.webkit.R$string
+ androidx.webkit.R$style
+ androidx.webkit.R$styleable
+com/poppop/RNReactNativeSharedGroupPreferences/R.java
+ com.poppop.RNReactNativeSharedGroupPreferences.R
+ com.poppop.RNReactNativeSharedGroupPreferences.R$anim
+ com.poppop.RNReactNativeSharedGroupPreferences.R$attr
+ com.poppop.RNReactNativeSharedGroupPreferences.R$bool
+ com.poppop.RNReactNativeSharedGroupPreferences.R$color
+ com.poppop.RNReactNativeSharedGroupPreferences.R$dimen
+ com.poppop.RNReactNativeSharedGroupPreferences.R$drawable
+ com.poppop.RNReactNativeSharedGroupPreferences.R$id
+ com.poppop.RNReactNativeSharedGroupPreferences.R$integer
+ com.poppop.RNReactNativeSharedGroupPreferences.R$layout
+ com.poppop.RNReactNativeSharedGroupPreferences.R$string
+ com.poppop.RNReactNativeSharedGroupPreferences.R$style
+ com.poppop.RNReactNativeSharedGroupPreferences.R$styleable
+ com.poppop.RNReactNativeSharedGroupPreferences.R$xml
+com/google/android/gms/ads_identifier/R.java
+ com.google.android.gms.ads_identifier.R
+androidx/viewpager2/R.java
+ androidx.viewpager2.R
+ androidx.viewpager2.R$attr
+ androidx.viewpager2.R$color
+ androidx.viewpager2.R$dimen
+ androidx.viewpager2.R$drawable
+ androidx.viewpager2.R$id
+ androidx.viewpager2.R$integer
+ androidx.viewpager2.R$layout
+ androidx.viewpager2.R$string
+ androidx.viewpager2.R$style
+ androidx.viewpager2.R$styleable
+androidx/vectordrawable/animated/R.java
+ androidx.vectordrawable.animated.R
+ androidx.vectordrawable.animated.R$attr
+ androidx.vectordrawable.animated.R$color
+ androidx.vectordrawable.animated.R$dimen
+ androidx.vectordrawable.animated.R$drawable
+ androidx.vectordrawable.animated.R$id
+ androidx.vectordrawable.animated.R$integer
+ androidx.vectordrawable.animated.R$layout
+ androidx.vectordrawable.animated.R$string
+ androidx.vectordrawable.animated.R$style
+ androidx.vectordrawable.animated.R$styleable
+com/facebook/fbcore/R.java
+ com.facebook.fbcore.R
+com/rnziparchive/R.java
+ com.rnziparchive.R
+ com.rnziparchive.R$anim
+ com.rnziparchive.R$attr
+ com.rnziparchive.R$bool
+ com.rnziparchive.R$color
+ com.rnziparchive.R$dimen
+ com.rnziparchive.R$drawable
+ com.rnziparchive.R$id
+ com.rnziparchive.R$integer
+ com.rnziparchive.R$layout
+ com.rnziparchive.R$string
+ com.rnziparchive.R$style
+ com.rnziparchive.R$styleable
+ com.rnziparchive.R$xml
+com/google/android/datatransport/backend/cct/R.java
+ com.google.android.datatransport.backend.cct.R
+com/learnium/RNDeviceInfo/R.java
+ com.learnium.RNDeviceInfo.R
+ com.learnium.RNDeviceInfo.R$anim
+ com.learnium.RNDeviceInfo.R$attr
+ com.learnium.RNDeviceInfo.R$bool
+ com.learnium.RNDeviceInfo.R$color
+ com.learnium.RNDeviceInfo.R$dimen
+ com.learnium.RNDeviceInfo.R$drawable
+ com.learnium.RNDeviceInfo.R$id
+ com.learnium.RNDeviceInfo.R$integer
+ com.learnium.RNDeviceInfo.R$layout
+ com.learnium.RNDeviceInfo.R$string
+ com.learnium.RNDeviceInfo.R$style
+ com.learnium.RNDeviceInfo.R$styleable
+ com.learnium.RNDeviceInfo.R$xml
+com/facebook/imagepipelinebase/R.java
+ com.facebook.imagepipelinebase.R
+androidx/vectordrawable/R.java
+ androidx.vectordrawable.R
+ androidx.vectordrawable.R$attr
+ androidx.vectordrawable.R$color
+ androidx.vectordrawable.R$dimen
+ androidx.vectordrawable.R$drawable
+ androidx.vectordrawable.R$id
+ androidx.vectordrawable.R$integer
+ androidx.vectordrawable.R$layout
+ androidx.vectordrawable.R$string
+ androidx.vectordrawable.R$style
+ androidx.vectordrawable.R$styleable
+com/google/android/gms/measurement/api/R.java
+ com.google.android.gms.measurement.api.R
+com/facebook/nativefilters/R.java
+ com.facebook.nativefilters.R
+br/com/classapp/RNSensitiveInfo/R.java
+ br.com.classapp.RNSensitiveInfo.R
+ br.com.classapp.RNSensitiveInfo.R$anim
+ br.com.classapp.RNSensitiveInfo.R$attr
+ br.com.classapp.RNSensitiveInfo.R$bool
+ br.com.classapp.RNSensitiveInfo.R$color
+ br.com.classapp.RNSensitiveInfo.R$dimen
+ br.com.classapp.RNSensitiveInfo.R$drawable
+ br.com.classapp.RNSensitiveInfo.R$id
+ br.com.classapp.RNSensitiveInfo.R$integer
+ br.com.classapp.RNSensitiveInfo.R$layout
+ br.com.classapp.RNSensitiveInfo.R$string
+ br.com.classapp.RNSensitiveInfo.R$style
+ br.com.classapp.RNSensitiveInfo.R$styleable
+ br.com.classapp.RNSensitiveInfo.R$xml
+com/johnsonsu/rnsoundplayer/R.java
+ com.johnsonsu.rnsoundplayer.R
+ com.johnsonsu.rnsoundplayer.R$anim
+ com.johnsonsu.rnsoundplayer.R$attr
+ com.johnsonsu.rnsoundplayer.R$bool
+ com.johnsonsu.rnsoundplayer.R$color
+ com.johnsonsu.rnsoundplayer.R$dimen
+ com.johnsonsu.rnsoundplayer.R$drawable
+ com.johnsonsu.rnsoundplayer.R$id
+ com.johnsonsu.rnsoundplayer.R$integer
+ com.johnsonsu.rnsoundplayer.R$layout
+ com.johnsonsu.rnsoundplayer.R$string
+ com.johnsonsu.rnsoundplayer.R$style
+ com.johnsonsu.rnsoundplayer.R$styleable
+ com.johnsonsu.rnsoundplayer.R$xml
+com/google/mlkit/vision/barcode/R.java
+ com.google.mlkit.vision.barcode.R
+org/reactnative/camera/R.java
+ org.reactnative.camera.R
+ org.reactnative.camera.R$anim
+ org.reactnative.camera.R$attr
+ org.reactnative.camera.R$bool
+ org.reactnative.camera.R$color
+ org.reactnative.camera.R$dimen
+ org.reactnative.camera.R$drawable
+ org.reactnative.camera.R$id
+ org.reactnative.camera.R$integer
+ org.reactnative.camera.R$layout
+ org.reactnative.camera.R$string
+ org.reactnative.camera.R$style
+ org.reactnative.camera.R$styleable
+ org.reactnative.camera.R$xml
+com/cmb/R.java
+ com.cmb.R
+ com.cmb.R$anim
+ com.cmb.R$attr
+ com.cmb.R$bool
+ com.cmb.R$color
+ com.cmb.R$dimen
+ com.cmb.R$drawable
+ com.cmb.R$id
+ com.cmb.R$integer
+ com.cmb.R$layout
+ com.cmb.R$string
+ com.cmb.R$style
+ com.cmb.R$styleable
+ com.cmb.R$xml
+com/cognex/cmbcrossplatform/R.java
+ com.cognex.cmbcrossplatform.R
+ com.cognex.cmbcrossplatform.R$color
+ com.cognex.cmbcrossplatform.R$drawable
+ com.cognex.cmbcrossplatform.R$id
+ com.cognex.cmbcrossplatform.R$layout
+ com.cognex.cmbcrossplatform.R$string
+com/google/mlkit/vision/face/R.java
+ com.google.mlkit.vision.face.R
+com/google/android/gms/iid/R.java
+ com.google.android.gms.iid.R
+androidx/activity/R.java
+ androidx.activity.R
+ androidx.activity.R$attr
+ androidx.activity.R$color
+ androidx.activity.R$dimen
+ androidx.activity.R$drawable
+ androidx.activity.R$id
+ androidx.activity.R$integer
+ androidx.activity.R$layout
+ androidx.activity.R$string
+ androidx.activity.R$style
+ androidx.activity.R$styleable
+androidx/recyclerview/R.java
+ androidx.recyclerview.R
+ androidx.recyclerview.R$attr
+ androidx.recyclerview.R$color
+ androidx.recyclerview.R$dimen
+ androidx.recyclerview.R$drawable
+ androidx.recyclerview.R$id
+ androidx.recyclerview.R$integer
+ androidx.recyclerview.R$layout
+ androidx.recyclerview.R$string
+ androidx.recyclerview.R$style
+ androidx.recyclerview.R$styleable
+com/google/firebase/firebase_analytics/R.java
+ com.google.firebase.firebase_analytics.R
+com/google/mlkit/common/R.java
+ com.google.mlkit.common.R
+io/sentry/react/R.java
+ io.sentry.react.R
+ io.sentry.react.R$anim
+ io.sentry.react.R$attr
+ io.sentry.react.R$bool
+ io.sentry.react.R$color
+ io.sentry.react.R$dimen
+ io.sentry.react.R$drawable
+ io.sentry.react.R$id
+ io.sentry.react.R$integer
+ io.sentry.react.R$layout
+ io.sentry.react.R$string
+ io.sentry.react.R$style
+ io.sentry.react.R$styleable
+ io.sentry.react.R$xml
+com/microsoft/appcenter/reactnative/crashes/R.java
+ com.microsoft.appcenter.reactnative.crashes.R
+ com.microsoft.appcenter.reactnative.crashes.R$anim
+ com.microsoft.appcenter.reactnative.crashes.R$attr
+ com.microsoft.appcenter.reactnative.crashes.R$bool
+ com.microsoft.appcenter.reactnative.crashes.R$color
+ com.microsoft.appcenter.reactnative.crashes.R$dimen
+ com.microsoft.appcenter.reactnative.crashes.R$drawable
+ com.microsoft.appcenter.reactnative.crashes.R$id
+ com.microsoft.appcenter.reactnative.crashes.R$integer
+ com.microsoft.appcenter.reactnative.crashes.R$layout
+ com.microsoft.appcenter.reactnative.crashes.R$string
+ com.microsoft.appcenter.reactnative.crashes.R$style
+ com.microsoft.appcenter.reactnative.crashes.R$styleable
+ com.microsoft.appcenter.reactnative.crashes.R$xml
+androidx/drawerlayout/R.java
+ androidx.drawerlayout.R
+ androidx.drawerlayout.R$attr
+ androidx.drawerlayout.R$color
+ androidx.drawerlayout.R$dimen
+ androidx.drawerlayout.R$drawable
+ androidx.drawerlayout.R$id
+ androidx.drawerlayout.R$integer
+ androidx.drawerlayout.R$layout
+ androidx.drawerlayout.R$string
+ androidx.drawerlayout.R$style
+ androidx.drawerlayout.R$styleable
+com/uk/tsl/rfid/asciiprotocol/R.java
+ com.uk.tsl.rfid.asciiprotocol.R
+ com.uk.tsl.rfid.asciiprotocol.R$attr
+ com.uk.tsl.rfid.asciiprotocol.R$color
+ com.uk.tsl.rfid.asciiprotocol.R$dimen
+ com.uk.tsl.rfid.asciiprotocol.R$drawable
+ com.uk.tsl.rfid.asciiprotocol.R$id
+ com.uk.tsl.rfid.asciiprotocol.R$integer
+ com.uk.tsl.rfid.asciiprotocol.R$layout
+ com.uk.tsl.rfid.asciiprotocol.R$string
+ com.uk.tsl.rfid.asciiprotocol.R$style
+ com.uk.tsl.rfid.asciiprotocol.R$styleable
+ com.uk.tsl.rfid.asciiprotocol.R$xml
+androidx/versionedparcelable/R.java
+ androidx.versionedparcelable.R
+com/android/installreferrer/R.java
+ com.android.installreferrer.R
+com/rssignaturecapture/R.java
+ com.rssignaturecapture.R
+ com.rssignaturecapture.R$anim
+ com.rssignaturecapture.R$attr
+ com.rssignaturecapture.R$bool
+ com.rssignaturecapture.R$color
+ com.rssignaturecapture.R$dimen
+ com.rssignaturecapture.R$drawable
+ com.rssignaturecapture.R$id
+ com.rssignaturecapture.R$integer
+ com.rssignaturecapture.R$layout
+ com.rssignaturecapture.R$mipmap
+ com.rssignaturecapture.R$string
+ com.rssignaturecapture.R$style
+ com.rssignaturecapture.R$styleable
+ com.rssignaturecapture.R$xml
+com/github/wumke/RNLocalNotifications/R.java
+ com.github.wumke.RNLocalNotifications.R
+ com.github.wumke.RNLocalNotifications.R$anim
+ com.github.wumke.RNLocalNotifications.R$attr
+ com.github.wumke.RNLocalNotifications.R$bool
+ com.github.wumke.RNLocalNotifications.R$color
+ com.github.wumke.RNLocalNotifications.R$dimen
+ com.github.wumke.RNLocalNotifications.R$drawable
+ com.github.wumke.RNLocalNotifications.R$id
+ com.github.wumke.RNLocalNotifications.R$integer
+ com.github.wumke.RNLocalNotifications.R$layout
+ com.github.wumke.RNLocalNotifications.R$string
+ com.github.wumke.RNLocalNotifications.R$style
+ com.github.wumke.RNLocalNotifications.R$styleable
+ com.github.wumke.RNLocalNotifications.R$xml
+com/reactnative/ivpusic/imagepicker/R.java
+ com.reactnative.ivpusic.imagepicker.R
+ com.reactnative.ivpusic.imagepicker.R$anim
+ com.reactnative.ivpusic.imagepicker.R$attr
+ com.reactnative.ivpusic.imagepicker.R$bool
+ com.reactnative.ivpusic.imagepicker.R$color
+ com.reactnative.ivpusic.imagepicker.R$dimen
+ com.reactnative.ivpusic.imagepicker.R$drawable
+ com.reactnative.ivpusic.imagepicker.R$id
+ com.reactnative.ivpusic.imagepicker.R$integer
+ com.reactnative.ivpusic.imagepicker.R$interpolator
+ com.reactnative.ivpusic.imagepicker.R$layout
+ com.reactnative.ivpusic.imagepicker.R$menu
+ com.reactnative.ivpusic.imagepicker.R$string
+ com.reactnative.ivpusic.imagepicker.R$style
+ com.reactnative.ivpusic.imagepicker.R$styleable
+ com.reactnative.ivpusic.imagepicker.R$xml
+com/google/android/odml/image/R.java
+ com.google.android.odml.image.R
+com/cognex/cmbsdk/R.java
+ com.cognex.cmbsdk.R
+ com.cognex.cmbsdk.R$color
+ com.cognex.cmbsdk.R$drawable
+ com.cognex.cmbsdk.R$id
+ com.cognex.cmbsdk.R$layout
+ com.cognex.cmbsdk.R$string
+com/InnovaZones/RNTreeIZHips/UHFRFID/DeviceListActivity.java
+ com.InnovaZones.RNTreeIZHips.UHFRFID.DeviceListActivity
+ com.InnovaZones.RNTreeIZHips.UHFRFID.DeviceListActivity$1
+ com.InnovaZones.RNTreeIZHips.UHFRFID.DeviceListActivity$10
+ com.InnovaZones.RNTreeIZHips.UHFRFID.DeviceListActivity$11
+ com.InnovaZones.RNTreeIZHips.UHFRFID.DeviceListActivity$12
+ com.InnovaZones.RNTreeIZHips.UHFRFID.DeviceListActivity$13
+ com.InnovaZones.RNTreeIZHips.UHFRFID.DeviceListActivity$14
+ com.InnovaZones.RNTreeIZHips.UHFRFID.DeviceListActivity$2
+ com.InnovaZones.RNTreeIZHips.UHFRFID.DeviceListActivity$3
+ com.InnovaZones.RNTreeIZHips.UHFRFID.DeviceListActivity$4
+ com.InnovaZones.RNTreeIZHips.UHFRFID.DeviceListActivity$5
+ com.InnovaZones.RNTreeIZHips.UHFRFID.DeviceListActivity$6
+ com.InnovaZones.RNTreeIZHips.UHFRFID.DeviceListActivity$7
+ com.InnovaZones.RNTreeIZHips.UHFRFID.DeviceListActivity$8
+ com.InnovaZones.RNTreeIZHips.UHFRFID.DeviceListActivity$9
+androidx/lifecycle/viewmodel/R.java
+ androidx.lifecycle.viewmodel.R
+com/RNFetchBlob/R.java
+ com.RNFetchBlob.R
+ com.RNFetchBlob.R$anim
+ com.RNFetchBlob.R$attr
+ com.RNFetchBlob.R$bool
+ com.RNFetchBlob.R$color
+ com.RNFetchBlob.R$dimen
+ com.RNFetchBlob.R$drawable
+ com.RNFetchBlob.R$id
+ com.RNFetchBlob.R$integer
+ com.RNFetchBlob.R$layout
+ com.RNFetchBlob.R$string
+ com.RNFetchBlob.R$style
+ com.RNFetchBlob.R$styleable
+ com.RNFetchBlob.R$xml
+com/corbt/keepawake/R.java
+ com.corbt.keepawake.R
+ com.corbt.keepawake.R$anim
+ com.corbt.keepawake.R$attr
+ com.corbt.keepawake.R$bool
+ com.corbt.keepawake.R$color
+ com.corbt.keepawake.R$dimen
+ com.corbt.keepawake.R$drawable
+ com.corbt.keepawake.R$id
+ com.corbt.keepawake.R$integer
+ com.corbt.keepawake.R$layout
+ com.corbt.keepawake.R$string
+ com.corbt.keepawake.R$style
+ com.corbt.keepawake.R$styleable
+ com.corbt.keepawake.R$xml
+androidx/legacy/v4/R.java
+ androidx.legacy.v4.R
+ androidx.legacy.v4.R$attr
+ androidx.legacy.v4.R$color
+ androidx.legacy.v4.R$dimen
+ androidx.legacy.v4.R$drawable
+ androidx.legacy.v4.R$id
+ androidx.legacy.v4.R$integer
+ androidx.legacy.v4.R$layout
+ androidx.legacy.v4.R$string
+ androidx.legacy.v4.R$style
+ androidx.legacy.v4.R$styleable
+io/sentry/android/core/R.java
+ io.sentry.android.core.R
+ io.sentry.android.core.R$attr
+ io.sentry.android.core.R$color
+ io.sentry.android.core.R$dimen
+ io.sentry.android.core.R$drawable
+ io.sentry.android.core.R$id
+ io.sentry.android.core.R$integer
+ io.sentry.android.core.R$layout
+ io.sentry.android.core.R$string
+ io.sentry.android.core.R$style
+ io.sentry.android.core.R$styleable
+androidx/cursoradapter/R.java
+ androidx.cursoradapter.R
+com/InnovaZones/RNTreeIZHips/Manifest.java
+ com.InnovaZones.RNTreeIZHips.Manifest
+ com.InnovaZones.RNTreeIZHips.Manifest$permission
+androidx/cardview/R.java
+ androidx.cardview.R
+ androidx.cardview.R$attr
+ androidx.cardview.R$color
+ androidx.cardview.R$dimen
+ androidx.cardview.R$style
+ androidx.cardview.R$styleable
+com/InnovaZones/RNTreeIZHips/serialio/DeviceListAdapter.java
+ com.InnovaZones.RNTreeIZHips.serialio.DeviceListAdapter
+ com.InnovaZones.RNTreeIZHips.serialio.DeviceListAdapter$ViewHolder
+androidx/coordinatorlayout/R.java
+ androidx.coordinatorlayout.R
+ androidx.coordinatorlayout.R$attr
+ androidx.coordinatorlayout.R$color
+ androidx.coordinatorlayout.R$dimen
+ androidx.coordinatorlayout.R$drawable
+ androidx.coordinatorlayout.R$id
+ androidx.coordinatorlayout.R$integer
+ androidx.coordinatorlayout.R$layout
+ androidx.coordinatorlayout.R$string
+ androidx.coordinatorlayout.R$style
+ androidx.coordinatorlayout.R$styleable
+androidx/lifecycle/livedata/R.java
+ androidx.lifecycle.livedata.R
+com/google/android/gms/gcm/R.java
+ com.google.android.gms.gcm.R
+ com.google.android.gms.gcm.R$string
+com/rpt/reactnativecheckpackageinstallation/R.java
+ com.rpt.reactnativecheckpackageinstallation.R
+ com.rpt.reactnativecheckpackageinstallation.R$anim
+ com.rpt.reactnativecheckpackageinstallation.R$attr
+ com.rpt.reactnativecheckpackageinstallation.R$bool
+ com.rpt.reactnativecheckpackageinstallation.R$color
+ com.rpt.reactnativecheckpackageinstallation.R$dimen
+ com.rpt.reactnativecheckpackageinstallation.R$drawable
+ com.rpt.reactnativecheckpackageinstallation.R$id
+ com.rpt.reactnativecheckpackageinstallation.R$integer
+ com.rpt.reactnativecheckpackageinstallation.R$layout
+ com.rpt.reactnativecheckpackageinstallation.R$string
+ com.rpt.reactnativecheckpackageinstallation.R$style
+ com.rpt.reactnativecheckpackageinstallation.R$styleable
+ com.rpt.reactnativecheckpackageinstallation.R$xml
+com/reactnativecommunity/asyncstorage/R.java
+ com.reactnativecommunity.asyncstorage.R
+ com.reactnativecommunity.asyncstorage.R$anim
+ com.reactnativecommunity.asyncstorage.R$attr
+ com.reactnativecommunity.asyncstorage.R$bool
+ com.reactnativecommunity.asyncstorage.R$color
+ com.reactnativecommunity.asyncstorage.R$dimen
+ com.reactnativecommunity.asyncstorage.R$drawable
+ com.reactnativecommunity.asyncstorage.R$id
+ com.reactnativecommunity.asyncstorage.R$integer
+ com.reactnativecommunity.asyncstorage.R$layout
+ com.reactnativecommunity.asyncstorage.R$string
+ com.reactnativecommunity.asyncstorage.R$style
+ com.reactnativecommunity.asyncstorage.R$styleable
+ com.reactnativecommunity.asyncstorage.R$xml
+com/google/android/datatransport/R.java
+ com.google.android.datatransport.R
+com/google/android/datatransport/runtime/R.java
+ com.google.android.datatransport.runtime.R
+com/google/firebase/measurement_impl/R.java
+ com.google.firebase.measurement_impl.R
+androidx/lifecycle/R.java
+ androidx.lifecycle.R
+androidx/documentfile/R.java
+ androidx.documentfile.R
+androidx/loader/R.java
+ androidx.loader.R
+ androidx.loader.R$attr
+ androidx.loader.R$color
+ androidx.loader.R$dimen
+ androidx.loader.R$drawable
+ androidx.loader.R$id
+ androidx.loader.R$integer
+ androidx.loader.R$layout
+ androidx.loader.R$string
+ androidx.loader.R$style
+ androidx.loader.R$styleable
+com/google/android/material/R.java
+ com.google.android.material.R
+ com.google.android.material.R$anim
+ com.google.android.material.R$animator
+ com.google.android.material.R$attr
+ com.google.android.material.R$bool
+ com.google.android.material.R$color
+ com.google.android.material.R$dimen
+ com.google.android.material.R$drawable
+ com.google.android.material.R$id
+ com.google.android.material.R$integer
+ com.google.android.material.R$interpolator
+ com.google.android.material.R$layout
+ com.google.android.material.R$plurals
+ com.google.android.material.R$string
+ com.google.android.material.R$style
+ com.google.android.material.R$styleable
+ com.google.android.material.R$xml
+androidx/annotation/experimental/R.java
+ androidx.annotation.experimental.R
+com/InnovaZones/RNTreeIZHips/nativemodules/SocketScannerModule.java
+ com.InnovaZones.RNTreeIZHips.nativemodules.SocketScannerModule
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
+org/webkit/androidjsc/R.java
+ org.webkit.androidjsc.R
+androidx/constraintlayout/widget/R.java
+ androidx.constraintlayout.widget.R
+ androidx.constraintlayout.widget.R$anim
+ androidx.constraintlayout.widget.R$attr
+ androidx.constraintlayout.widget.R$bool
+ androidx.constraintlayout.widget.R$color
+ androidx.constraintlayout.widget.R$dimen
+ androidx.constraintlayout.widget.R$drawable
+ androidx.constraintlayout.widget.R$id
+ androidx.constraintlayout.widget.R$integer
+ androidx.constraintlayout.widget.R$interpolator
+ androidx.constraintlayout.widget.R$layout
+ androidx.constraintlayout.widget.R$string
+ androidx.constraintlayout.widget.R$style
+ androidx.constraintlayout.widget.R$styleable
+com/google/firebase/encoders/json/R.java
+ com.google.firebase.encoders.json.R
+com/dieam/reactnativepushnotification/R.java
+ com.dieam.reactnativepushnotification.R
+ com.dieam.reactnativepushnotification.R$anim
+ com.dieam.reactnativepushnotification.R$attr
+ com.dieam.reactnativepushnotification.R$bool
+ com.dieam.reactnativepushnotification.R$color
+ com.dieam.reactnativepushnotification.R$dimen
+ com.dieam.reactnativepushnotification.R$drawable
+ com.dieam.reactnativepushnotification.R$id
+ com.dieam.reactnativepushnotification.R$integer
+ com.dieam.reactnativepushnotification.R$layout
+ com.dieam.reactnativepushnotification.R$string
+ com.dieam.reactnativepushnotification.R$style
+ com.dieam.reactnativepushnotification.R$styleable
+ com.dieam.reactnativepushnotification.R$xml
+androidx/slidingpanelayout/R.java
+ androidx.slidingpanelayout.R
+ androidx.slidingpanelayout.R$attr
+ androidx.slidingpanelayout.R$color
+ androidx.slidingpanelayout.R$dimen
+ androidx.slidingpanelayout.R$drawable
+ androidx.slidingpanelayout.R$id
+ androidx.slidingpanelayout.R$integer
+ androidx.slidingpanelayout.R$layout
+ androidx.slidingpanelayout.R$string
+ androidx.slidingpanelayout.R$style
+ androidx.slidingpanelayout.R$styleable
+com/facebook/nativeimagetranscoder/R.java
+ com.facebook.nativeimagetranscoder.R
+com/reactnativecommunity/webview/R.java
+ com.reactnativecommunity.webview.R
+ com.reactnativecommunity.webview.R$anim
+ com.reactnativecommunity.webview.R$attr
+ com.reactnativecommunity.webview.R$bool
+ com.reactnativecommunity.webview.R$color
+ com.reactnativecommunity.webview.R$dimen
+ com.reactnativecommunity.webview.R$drawable
+ com.reactnativecommunity.webview.R$id
+ com.reactnativecommunity.webview.R$integer
+ com.reactnativecommunity.webview.R$layout
+ com.reactnativecommunity.webview.R$string
+ com.reactnativecommunity.webview.R$style
+ com.reactnativecommunity.webview.R$styleable
+ com.reactnativecommunity.webview.R$xml
+androidx/lifecycle/process/R.java
+ androidx.lifecycle.process.R
+com/google/firebase/measurement/R.java
+ com.google.firebase.measurement.R
+com/psykar/cookiemanager/R.java
+ com.psykar.cookiemanager.R
+ com.psykar.cookiemanager.R$anim
+ com.psykar.cookiemanager.R$attr
+ com.psykar.cookiemanager.R$bool
+ com.psykar.cookiemanager.R$color
+ com.psykar.cookiemanager.R$dimen
+ com.psykar.cookiemanager.R$drawable
+ com.psykar.cookiemanager.R$id
+ com.psykar.cookiemanager.R$integer
+ com.psykar.cookiemanager.R$layout
+ com.psykar.cookiemanager.R$string
+ com.psykar.cookiemanager.R$style
+ com.psykar.cookiemanager.R$styleable
+ com.psykar.cookiemanager.R$xml
+com/InnovaZones/RNTreeIZHips/serialio/DeviceListRFIDActivity.java
+ com.InnovaZones.RNTreeIZHips.serialio.DeviceListRFIDActivity
+ com.InnovaZones.RNTreeIZHips.serialio.DeviceListRFIDActivity$1
+ com.InnovaZones.RNTreeIZHips.serialio.DeviceListRFIDActivity$2
+ com.InnovaZones.RNTreeIZHips.serialio.DeviceListRFIDActivity$3
+ com.InnovaZones.RNTreeIZHips.serialio.DeviceListRFIDActivity$4
+androidx/viewpager/R.java
+ androidx.viewpager.R
+ androidx.viewpager.R$attr
+ androidx.viewpager.R$color
+ androidx.viewpager.R$dimen
+ androidx.viewpager.R$drawable
+ androidx.viewpager.R$id
+ androidx.viewpager.R$integer
+ androidx.viewpager.R$layout
+ androidx.viewpager.R$string
+ androidx.viewpager.R$style
+ androidx.viewpager.R$styleable
+com/google/firebase/datatransport/R.java
+ com.google.firebase.datatransport.R
+ com.google.firebase.datatransport.R$attr
+ com.google.firebase.datatransport.R$color
+ com.google.firebase.datatransport.R$dimen
+ com.google.firebase.datatransport.R$drawable
+ com.google.firebase.datatransport.R$id
+ com.google.firebase.datatransport.R$integer
+ com.google.firebase.datatransport.R$layout
+ com.google.firebase.datatransport.R$string
+ com.google.firebase.datatransport.R$style
+ com.google.firebase.datatransport.R$styleable
+com/google/android/gms/tasks/R.java
+ com.google.android.gms.tasks.R
+com/microsoft/appcenter/reactnative/analytics/R.java
+ com.microsoft.appcenter.reactnative.analytics.R
+ com.microsoft.appcenter.reactnative.analytics.R$anim
+ com.microsoft.appcenter.reactnative.analytics.R$attr
+ com.microsoft.appcenter.reactnative.analytics.R$bool
+ com.microsoft.appcenter.reactnative.analytics.R$color
+ com.microsoft.appcenter.reactnative.analytics.R$dimen
+ com.microsoft.appcenter.reactnative.analytics.R$drawable
+ com.microsoft.appcenter.reactnative.analytics.R$id
+ com.microsoft.appcenter.reactnative.analytics.R$integer
+ com.microsoft.appcenter.reactnative.analytics.R$layout
+ com.microsoft.appcenter.reactnative.analytics.R$string
+ com.microsoft.appcenter.reactnative.analytics.R$style
+ com.microsoft.appcenter.reactnative.analytics.R$styleable
+ com.microsoft.appcenter.reactnative.analytics.R$xml
+com/microsoft/appcenter/crashes/R.java
+ com.microsoft.appcenter.crashes.R
+com/scandit/reactnative/R.java
+ com.scandit.reactnative.R
+ com.scandit.reactnative.R$anim
+ com.scandit.reactnative.R$attr
+ com.scandit.reactnative.R$bool
+ com.scandit.reactnative.R$color
+ com.scandit.reactnative.R$dimen
+ com.scandit.reactnative.R$drawable
+ com.scandit.reactnative.R$id
+ com.scandit.reactnative.R$integer
+ com.scandit.reactnative.R$layout
+ com.scandit.reactnative.R$raw
+ com.scandit.reactnative.R$string
+ com.scandit.reactnative.R$style
+ com.scandit.reactnative.R$styleable
+ com.scandit.reactnative.R$xml

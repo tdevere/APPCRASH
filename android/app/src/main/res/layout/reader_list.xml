@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ xmlns:app="http://schemas.android.com/apk/res-auto"
+ android:layout_width="match_parent"
+ android:layout_height="match_parent"
+    android:orientation="vertical"
+ android:background="#f8f8f8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/toolbar_top_padding"
+        android:gravity="center_vertical"
+        android:background="#686868"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/back_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="20dp"
+            android:src="@drawable/ic_back"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="UHFRFID SETTINGS"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textColor="#FFFFFF"/>
+
+        <ImageView
+            android:id="@+id/search_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="20dp"
+            android:src="@drawable/ic_search"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONNECTED DEVICE"
+            android:textSize="20dp"/>
+
+        <LinearLayout
+            android:id="@+id/connected_device_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FOUND DEVICES"
+                android:textSize="20dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView                
+                android:id="@+id/reader_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="50dp"
+            android:paddingBottom="50dp"
+            android:paddingTop="20dp"
+            android:gravity="center_horizontal"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Output Power"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingVertical="10dp"
+                android:layout_marginVertical="10dp"
+                android:paddingHorizontal="2dp"
+                android:background="@drawable/power_border">
+
+                <SeekBar
+                    android:id="@+id/seekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:foregroundTint="#E93731"
+                    android:progressTint="#E93731"
+                    android:scrollbarSize="10dp"
+                    android:thumbTint="#E93731"
+                    android:tickMarkTint="#E93731" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/power_output_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Output Power: "
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/save_power_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:textSize="20dp"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="30dp"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/dl_row_normal"
+                android:background="@drawable/button_shape"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

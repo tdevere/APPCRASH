@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.InnovaZones.RNTreeIZHips"
+    android:versionCode="3"
+    android:versionName="4.80.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="32" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION " />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- < Only if you're using GCM or localNotificationSchedule() > -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <permission
+        android:name="com.InnovaZones.RNTreeIZHips.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.InnovaZones.RNTreeIZHips.permission.C2D_MESSAGE" />
+    <!-- < Only if you're using GCM or localNotificationSchedule() > -->
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_SCAN"
+        android:usesPermissionFlags="neverForLocation" />
+
+    <queries>
+        <package android:name="com.epson.tmassistant" />
+
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+    </queries>
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" /> <!-- Required to access Google Play Licensing -->
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.RECEIVE_SCANNER" />
+    <uses-permission android:name="com.trimble.mcs.rfid.ACCESS_RFID" />
+    <uses-permission android:name="com.trimble.mcs.rfid.WRITE_GLOBAL_SETTINGS" />
+    <uses-permission android:name="com.trimble.empower.permission.ACCESS_MODULE_MANAGER" />
+    <uses-permission android:name="com.trimble.empower.permission.CLAIM_MODULE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" /> -->
+    <!-- <uses-feature android:name="android.hardware.usb.accessory"/> -->
+    <!-- <uses-permission android:name="com.trimble.mc.permission.ACCESS_FLASHLIGHT"/> -->
+    <!-- <uses-permission android:name="android.permission.REAL_GET_TASKS"/> -->
+    <!-- <uses-permission android:name="android.permission.READ_PHONE_STATE" /> -->
+    <permission
+        android:name="com.InnovaZones.RNTreeIZHips.permission.BCR"
+        android:protectionLevel="normal" />
+    <permission
+        android:name="com.InnovaZones.RNTreeIZHips.permission.STATUS_BAR_SERVICE"
+        android:protectionLevel="signature" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.bluetooth"
+        android:required="false" />
+
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Required by older versions of Google Play services to create GCM registration tokens -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- for android -->
+    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
+    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
+    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
+    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
+    <!-- for Samsung -->
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name="com.InnovaZones.RNTreeIZHips.MainApplication"
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
+        <activity
+            android:name="com.InnovaZones.RNTreeIZHips.MainActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.InnovaZones.RNTreeIZHips.UHFRFID.DeviceListActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.InnovaZones.RNTreeIZHips.serialio.DeviceListRFIDActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.restock.serialdevicemanager.UsbEventReceiverActivity"
+            android:exported="true"
+            android:label="Serial Device Manager"
+            android:noHistory="true"
+            android:theme="@style/Theme.Transparent" >
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/usb_device_filter" />
+        </activity>
+        <activity
+            android:name="com.facebook.react.devsupport.DevSettingsActivity"
+            android:exported="true" />
+
+        <receiver
+            android:name="com.github.wumke.RNLocalNotifications.AlarmReceiver"
+            android:exported="true"
+            android:process=":remote" />
+
+        <meta-data
+            android:name="com.socketmobile.capture.APP_KEY"
+            android:value="MCwCFBSZJ2MkiG1ZGP6j+g/ivtS9aLBtAhQzmRaT5DkmboqHp6wT2/+2LGGJ3g==" />
+        <meta-data
+            android:name="com.socketmobile.capture.DEVELOPER_ID"
+            android:value="5ea16148-b842-ea11-a812-000d3a378f47" />
+        <meta-data
+            android:name="com.dieam.reactnativepushnotification.notification_channel_name"
+            android:value="Notifications" />
+        <meta-data
+            android:name="com.dieam.reactnativepushnotification.notification_channel_description"
+            android:value="Receive notifications through this channel." />
+        <!-- Change the resource name to your App's accent color - or any other color you want -->
+        <meta-data
+            android:name="com.dieam.reactnativepushnotification.notification_color"
+            android:resource="@android:color/white" />
+
+        <!-- < Only if you're using GCM or localNotificationSchedule() > -->
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.InnovaZones.RNTreeIZHips" />
+            </intent-filter>
+        </receiver>
+        <!-- < Only if you're using GCM or localNotificationSchedule() > -->
+
+        <receiver android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationPublisher" />
+        <receiver
+            android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationBootEventReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationRegistrationService" />
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:directBootAware="true"
+            android:exported="true" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationListenerService"
+            android:exported="false" >
+            <intent-filter>
+
+                <!-- < Only if you're using GCM or localNotificationSchedule() > -->
+                <!-- <action android:name="com.google.android.c2dm.intent.RECEIVE" /> -->
+                <!-- < Only if you're using GCM or localNotificationSchedule() > -->
+
+
+                <!-- <Else> -->
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <!-- </Else> -->
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="io.sentry.auto-init"
+            android:value="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.InnovaZones.RNTreeIZHips.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <provider
+            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+            android:authorities="com.InnovaZones.RNTreeIZHips.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths" />
+        </provider>
+
+        <uses-library
+            android:name="device.sdk"
+            android:required="false" />
+        <uses-library
+            android:name="com.trimble.mcs"
+            android:required="false" />
+
+        <activity
+            android:name="com.restock.serialdevicemanager.DeviceManagerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:finishOnTaskLaunch="true"
+            android:label="Device Manager"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.restock.serialdevicemanager.DeviceListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/select_device_sdm" />
+        <activity
+            android:name="com.restock.serialdevicemanager.DeviceSettingsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/device_settings_sdm" />
+        <activity
+            android:name="com.restock.serialdevicemanager.BuildInReaderSettingsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/built_in_reader_settings_sdm" />
+        <activity
+            android:name="com.restock.serialdevicemanager.settings.CommonSettingsActivitySDM"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/title_activity_common_settings_sdm" />
+        <activity
+            android:name="com.restock.serialdevicemanager.WriteTagActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/write_tag_title_sdm"
+            android:theme="@style/MyDialogTheme" />
+        <activity
+            android:name="com.restock.serialdevicemanager.WriteAfiActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/write_afi_title_sdm"
+            android:theme="@style/MyDialogTheme" />
+        <activity
+            android:name="com.restock.serialdevicemanager.WriteForDX1FDXHDXActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:finishOnTaskLaunch="true"
+            android:label="FDX-B/HDX writer"
+            android:theme="@style/MyDialogTheme" />
+        <activity
+            android:name="com.restock.serialdevicemanager.SendCommandActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/send_command_sdm"
+            android:theme="@style/MyDialogTheme" />
+        <activity
+            android:name="com.restock.serialdevicemanager.WriteUserDataActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/write_userdata_title_sdm"
+            android:theme="@style/MyDialogTheme" />
+        <!--
+        <activity
+            android:name=".NewWriteUserDataActivity"
+            android:finishOnTaskLaunch="true"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/write_userdata_title_sdm"
+            android:theme="@style/MyDialogTheme"/>
+        -->
+        <activity
+            android:name="com.restock.serialdevicemanager.LockTagActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/lock_tag_sdm"
+            android:theme="@style/MyDialogTheme" />
+        <activity
+            android:name="com.restock.serialdevicemanager.WriteNDEFActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/write_ndef_sdm"
+            android:theme="@style/MyDialogTheme" />
+        <activity
+            android:name="com.restock.serialdevicemanager.ndef.CloneIDNDEFActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/clone_id"
+            android:theme="@style/MyDialogTheme" />
+        <activity
+            android:name="com.restock.serialdevicemanager.NF4PacWizardActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:finishOnTaskLaunch="true"
+            android:label="NF4 PAC Wizard Settings"
+            android:theme="@style/MyDialogTheme" />
+        <activity
+            android:name="com.restock.serialdevicemanager.settings.NF4FACWizardActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:finishOnTaskLaunch="true"
+            android:label="NF4 FAC Wizard Settings"
+            android:theme="@style/MyDialogTheme" />
+        <activity
+            android:name="com.restock.serialdevicemanager.settings.NF4PreferedDataTypeActivitySDM"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:finishOnTaskLaunch="true"
+            android:label="Preferred Data Type" />
+        <activity
+            android:name="com.restock.serialdevicemanager.RegisterActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/register_title_sdm"
+            android:theme="@style/MyDialogTheme" />
+        <activity
+            android:name="com.restock.serialdevicemanager.RegisterViaWebActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:finishOnTaskLaunch="true"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity
+            android:name="com.restock.serialdevicemanager.SetupBluesnapActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/setup_bluesnap_title"
+            android:theme="@style/MyDialogTheme" />
+        <activity
+            android:name="com.restock.serialdevicemanager.MonitorEPCActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/title_activity_monitor_scan_data_sdm"
+            android:theme="@style/MyDialogTheme" />
+        <activity
+            android:name="com.restock.serialdevicemanager.settings.DataFilterSettingsActivitySDM"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/scan_filter_settings_sdm" />
+        <activity
+            android:name="com.restock.serialdevicemanager.settings.ScanModificationSettingsActivitySDM"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/scan_data_modification" />
+        <activity
+            android:name="com.restock.serialdevicemanager.settings.TriggerSettingsActivitySDM"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/triggers_sdm" />
+        <activity
+            android:name="com.restock.serialdevicemanager.settings.NF4PAcSettingsActivitySDM"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:finishOnTaskLaunch="true"
+            android:label="PAC Profile" />
+        <activity
+            android:name="com.restock.serialdevicemanager.settings.NF4FACSettingsActivitySDM"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:finishOnTaskLaunch="true"
+            android:label="FAC Settings" />
+        <activity
+            android:name="com.restock.serialdevicemanager.settings.TableFiltersSettingsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/tag_filters_mode" />
+        <activity
+            android:name="com.restock.serialdevicemanager.settings.filtertablemanager.FilterTableManagerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/filter_table_manager_sdm" />
+        <activity
+            android:name="com.restock.serialdevicemanager.settings.RS4ContactlessConfigSettingsActivitySDM"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/rs4_contactless_config" />
+        <activity
+            android:name="com.restock.serialdevicemanager.settings.NF4ContactlessConfigSettingsActivitySDM"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/nf4_contactless_config" />
+        <activity
+            android:name="com.restock.serialdevicemanager.utilssio.MessageDialogActivitySDM"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/sdm_name_sdm"
+            android:launchMode="singleTask"
+            android:theme="@style/MyDialogTheme" />
+        <activity
+            android:name="com.restock.serialdevicemanager.utilssio.MessageDialogWithOpenSettingsActivitySDM"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/sdm_name_sdm"
+            android:launchMode="singleTask"
+            android:theme="@style/MyDialogTheme" />
+        <activity
+            android:name="com.restock.serialdevicemanager.utilssio.MessageDialogActivityToStartSearchTagByOkTapSDM"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/sdm_name_sdm"
+            android:launchMode="singleTask"
+            android:theme="@style/MyDialogTheme" />
+        <activity
+            android:name="com.restock.serialdevicemanager.utilssio.DisableUserDataPostDialogActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/sdm_name_sdm"
+            android:launchMode="singleTask"
+            android:theme="@style/MyDialogTheme" />
+        <!--
+        <activity
+            android:name=".devicemanager.SdmHandler"></activity>
+        -->
+        <activity
+            android:name="com.restock.serialdevicemanager.NFCBLEConnectSetup"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/connect_ble_via_nfc_chip_setup" />
+        <activity
+            android:name="com.restock.serialdevicemanager.NFCBLEConnect"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/connect_ble_via_nfc_chip" />
+        <activity
+            android:name="com.restock.serialdevicemanager.ThresholdLlrpRSSI"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/title_threshold_rssi_sdm" />
+        <activity
+            android:name="com.restock.serialdevicemanager.OctaneLlrpSettingsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/title_octane_llrp_settings_sdm" />
+        <activity
+            android:name="com.restock.serialdevicemanager.LlrpLocationActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/show_location_llrp_sdm" />
+        <activity
+            android:name="com.restock.serialdevicemanager.settings.ITagSettingActivitySDM"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/title_itag_settings_sdm" />
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:stateNotNeeded="true" /> <!-- tools:replace="android:screenOrientation" -->
+        <activity
+            android:name="com.restock.serialdevicemanager.UnpairActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/title_unpair_sdm"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.restock.serialdevicemanager.IgnoredDevicesListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/title_ignored_devices_list_sdm"
+            android:launchMode="singleTask" />
+        <!--
+                <activity
+                    android:name=".UsbEventReceiverActivity"
+                    android:excludeFromRecents="true"
+                    android:exported="false"
+                    android:label="Serial Device Manager"
+                    android:noHistory="true"
+                    android:process=":UsbEventReceiverActivityProcess"
+                    android:taskAffinity="com.restock.serialdevicemanager.taskAffinityUsbEventReceiver"
+                    android:theme="@style/Theme.Transparent">
+                    <intent-filter>
+                        <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"/>
+                    </intent-filter>
+                    <meta-data
+                        android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                        android:resource="@xml/usb_device_filter"/>
+                </activity>
+        -->
+        <!--
+                           <service
+                               android:name="com.restock.serialdevicemanager.devicemanager.BixbyInterceptService"
+                               android:enabled="true"
+                               android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+
+                               <intent-filter>
+                                   <action android:name="android.accessibilityservice.AccessibilityService" />
+                               </intent-filter>
+                               <meta-data
+                                   android:name="android.accessibilityservice"
+                                   android:resource="@xml/bixby_service_config" />
+                           </service>
+        -->
+        <service
+            android:name="com.restock.serialdevicemanager.bluetoothspp.BluetoothService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.restock.blelib.BLEService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="location" />
+        <service
+            android:name="com.restock.serialdevicemanager.builtinreaders.SeuicKeyService"
+            android:enabled="true" />
+
+        <receiver
+            android:name="com.restock.serialdevicemanager.builtinreaders.BatteryLevelTimerBroadcastReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="battery_level_checking_timer" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:directBootAware="true"
+            android:exported="false" >
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <!--
+                This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
+                clients to use it as well, by defining this registrar in their own core/common library.
+            -->
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+            android:directBootAware="true"
+            android:exported="false" >
+            <meta-data
+                android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <provider
+            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+            android:authorities="com.InnovaZones.RNTreeIZHips.mlkitinitprovider"
+            android:exported="false"
+            android:initOrder="99" />
+
+        <service
+            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+            android:exported="false" >
+            <meta-data
+                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+                android:value="cct" />
+        </service>
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.InnovaZones.RNTreeIZHips.firebaseinitprovider"
+            android:directBootAware="true"
+            android:exported="false"
+            android:initOrder="100" />
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" /> <!-- 'android:authorities' must be unique in the device, across all apps -->
+        <provider
+            android:name="io.sentry.android.core.SentryInitProvider"
+            android:authorities="com.InnovaZones.RNTreeIZHips.SentryInitProvider"
+            android:exported="false" />
+        <provider
+            android:name="io.sentry.android.core.SentryPerformanceProvider"
+            android:authorities="com.InnovaZones.RNTreeIZHips.SentryPerformanceProvider"
+            android:exported="false"
+            android:initOrder="200" />
+
+        <service
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" >
+        </service>
+
+        <receiver
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:authorities="com.InnovaZones.RNTreeIZHips.lifecycle-process"
+            android:exported="false"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>

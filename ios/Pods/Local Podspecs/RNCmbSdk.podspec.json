@@ -1,0 +1,26 @@
+{
+  "name": "RNCmbSdk",
+  "version": "1.2.261",
+  "summary": "CMB Scanner React-Native component",
+  "license": "MIT",
+  "authors": "Cognex",
+  "homepage": "https://cmbdn.cognex.com/knowledge/react-nat",
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source": {
+    "git": "https://github.com/Cognex-ID/cmbsdk-react.git",
+    "tag": "1.2.261"
+  },
+  "source_files": "ios/*.{h,m}",
+  "public_header_files": "ios/*.h",
+  "vendored_frameworks": [
+    "ios/SDK/cmbsdk-ios-binary/framework/cmbSDK/device_simulator/cmbSDK.xcframework",
+    "ios/SDK/cmbsdk-crossplatform-ios-binary/CMBCrossPlatform.xcframework"
+  ],
+  "dependencies": {
+    "React": [
+
+    ]
+  }
+}

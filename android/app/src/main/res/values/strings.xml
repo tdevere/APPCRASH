@@ -1,0 +1,7 @@
+<resources>
+  <string name="CodePushDeploymentKey" moduleConfig="true">cXrdY-5IJVqjFGCmvDVSwhLIYe9F7xi885wQz</string>
+    <!-- <string name="app_name">RN Qaizhips</string> -->
+    <string name="appCenterAnalytics_whenToEnableAnalytics" moduleConfig="true" translatable="false">ALWAYS_SEND</string>
+    <string name="appCenterCrashes_whenToSendCrashes" moduleConfig="true" translatable="false">ALWAYS_SEND</string>
+
+</resources>

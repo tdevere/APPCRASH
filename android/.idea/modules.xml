@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Innova_Zones.iml" filepath="$PROJECT_DIR$/.idea/modules/Innova_Zones.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1286665569/Innova_Zones.@react-native-community_async-storage.iml" filepath="$PROJECT_DIR$/.idea/modules/1286665569/Innova_Zones.@react-native-community_async-storage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1853242128/Innova_Zones.@sentry_react-native.iml" filepath="$PROJECT_DIR$/.idea/modules/-1853242128/Innova_Zones.@sentry_react-native.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Rfid.AsciiProtocol-Library/Innova_Zones.Rfid.AsciiProtocol-Library.iml" filepath="$PROJECT_DIR$/.idea/modules/Rfid.AsciiProtocol-Library/Innova_Zones.Rfid.AsciiProtocol-Library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Innova_Zones.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Innova_Zones.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-259242117/Innova_Zones.appcenter.iml" filepath="$PROJECT_DIR$/.idea/modules/-259242117/Innova_Zones.appcenter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1198823092/Innova_Zones.appcenter-analytics.iml" filepath="$PROJECT_DIR$/.idea/modules/1198823092/Innova_Zones.appcenter-analytics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1006942787/Innova_Zones.appcenter-crashes.iml" filepath="$PROJECT_DIR$/.idea/modules/1006942787/Innova_Zones.appcenter-crashes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/878253461/Innova_Zones.cmbsdk-react-native.iml" filepath="$PROJECT_DIR$/.idea/modules/878253461/Innova_Zones.cmbsdk-react-native.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1525458112/Innova_Zones.react-native-appstore-version-checker.iml" filepath="$PROJECT_DIR$/.idea/modules/-1525458112/Innova_Zones.react-native-appstore-version-checker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-461007774/Innova_Zones.react-native-async-storage_async-storage.iml" filepath="$PROJECT_DIR$/.idea/modules/-461007774/Innova_Zones.react-native-async-storage_async-storage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1287683502/Innova_Zones.react-native-camera.iml" filepath="$PROJECT_DIR$/.idea/modules/-1287683502/Innova_Zones.react-native-camera.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1855771421/Innova_Zones.react-native-check-app-install.iml" filepath="$PROJECT_DIR$/.idea/modules/1855771421/Innova_Zones.react-native-check-app-install.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1598124415/Innova_Zones.react-native-code-push.iml" filepath="$PROJECT_DIR$/.idea/modules/1598124415/Innova_Zones.react-native-code-push.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1746088242/Innova_Zones.react-native-community_datetimepicker.iml" filepath="$PROJECT_DIR$/.idea/modules/1746088242/Innova_Zones.react-native-community_datetimepicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1587756354/Innova_Zones.react-native-community_netinfo.iml" filepath="$PROJECT_DIR$/.idea/modules/1587756354/Innova_Zones.react-native-community_netinfo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/410529610/Innova_Zones.react-native-community_slider.iml" filepath="$PROJECT_DIR$/.idea/modules/410529610/Innova_Zones.react-native-community_slider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/669749186/Innova_Zones.react-native-cookies.iml" filepath="$PROJECT_DIR$/.idea/modules/669749186/Innova_Zones.react-native-cookies.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1634993016/Innova_Zones.react-native-device-info.iml" filepath="$PROJECT_DIR$/.idea/modules/1634993016/Innova_Zones.react-native-device-info.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1732369283/Innova_Zones.react-native-fetch-blob.iml" filepath="$PROJECT_DIR$/.idea/modules/-1732369283/Innova_Zones.react-native-fetch-blob.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1686639226/Innova_Zones.react-native-fs.iml" filepath="$PROJECT_DIR$/.idea/modules/1686639226/Innova_Zones.react-native-fs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1936250988/Innova_Zones.react-native-image-crop-picker.iml" filepath="$PROJECT_DIR$/.idea/modules/1936250988/Innova_Zones.react-native-image-crop-picker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1410742762/Innova_Zones.react-native-keep-awake.iml" filepath="$PROJECT_DIR$/.idea/modules/1410742762/Innova_Zones.react-native-keep-awake.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1896525895/Innova_Zones.react-native-local-notifications.iml" filepath="$PROJECT_DIR$/.idea/modules/-1896525895/Innova_Zones.react-native-local-notifications.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1636807515/Innova_Zones.react-native-pdf.iml" filepath="$PROJECT_DIR$/.idea/modules/-1636807515/Innova_Zones.react-native-pdf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2120997687/Innova_Zones.react-native-permissions.iml" filepath="$PROJECT_DIR$/.idea/modules/2120997687/Innova_Zones.react-native-permissions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-323036367/Innova_Zones.react-native-push-notification.iml" filepath="$PROJECT_DIR$/.idea/modules/-323036367/Innova_Zones.react-native-push-notification.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-373282894/Innova_Zones.react-native-sensitive-info.iml" filepath="$PROJECT_DIR$/.idea/modules/-373282894/Innova_Zones.react-native-sensitive-info.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1255192111/Innova_Zones.react-native-shared-group-preferences.iml" filepath="$PROJECT_DIR$/.idea/modules/1255192111/Innova_Zones.react-native-shared-group-preferences.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-610538844/Innova_Zones.react-native-signature-capture.iml" filepath="$PROJECT_DIR$/.idea/modules/-610538844/Innova_Zones.react-native-signature-capture.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1538659532/Innova_Zones.react-native-sound-player.iml" filepath="$PROJECT_DIR$/.idea/modules/1538659532/Innova_Zones.react-native-sound-player.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1229561977/Innova_Zones.react-native-spinkit.iml" filepath="$PROJECT_DIR$/.idea/modules/-1229561977/Innova_Zones.react-native-spinkit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1795310648/Innova_Zones.react-native-sqlite-storage.iml" filepath="$PROJECT_DIR$/.idea/modules/1795310648/Innova_Zones.react-native-sqlite-storage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-2041605142/Innova_Zones.react-native-toast-native.iml" filepath="$PROJECT_DIR$/.idea/modules/-2041605142/Innova_Zones.react-native-toast-native.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1127841007/Innova_Zones.react-native-torch.iml" filepath="$PROJECT_DIR$/.idea/modules/1127841007/Innova_Zones.react-native-torch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1983641234/Innova_Zones.react-native-uuid-generator.iml" filepath="$PROJECT_DIR$/.idea/modules/-1983641234/Innova_Zones.react-native-uuid-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1006252434/Innova_Zones.react-native-video.iml" filepath="$PROJECT_DIR$/.idea/modules/-1006252434/Innova_Zones.react-native-video.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-479035604/Innova_Zones.react-native-webview.iml" filepath="$PROJECT_DIR$/.idea/modules/-479035604/Innova_Zones.react-native-webview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-64610615/Innova_Zones.react-native-zip-archive.iml" filepath="$PROJECT_DIR$/.idea/modules/-64610615/Innova_Zones.react-native-zip-archive.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1758824634/Innova_Zones.rn-fetch-blob.iml" filepath="$PROJECT_DIR$/.idea/modules/-1758824634/Innova_Zones.rn-fetch-blob.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-653131013/Innova_Zones.scandit-react-native.iml" filepath="$PROJECT_DIR$/.idea/modules/-653131013/Innova_Zones.scandit-react-native.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1853242128/Innova_Zones.sentry_react-native.iml" filepath="$PROJECT_DIR$/.idea/modules/-1853242128/Innova_Zones.sentry_react-native.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,6 @@
+module ScanditDataCaptureCore {
+  umbrella header "scandit-react-native-datacapture-core-umbrella.h"
+
+  export *
+  module * { export * }
+}

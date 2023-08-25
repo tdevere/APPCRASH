@@ -1,0 +1,29 @@
+{
+  "name": "react-native-torch",
+  "version": "1.2.0",
+  "summary": "Torch/flashlight for react-native",
+  "description": "Torch/flashlight for react-native",
+  "license": "MIT",
+  "authors": "Ludo van den Boom <ludo@cubicphuse.nl> (https://github.com/ludo)",
+  "homepage": "https://github.com/ludo/react-native-torch#readme",
+  "source": {
+    "git": "https://github.com/ludo/react-native-torch"
+  },
+  "requires_arc": true,
+  "platforms": {
+    "ios": "8.0"
+  },
+  "preserve_paths": [
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md",
+    "package.json",
+    "index.js"
+  ],
+  "source_files": "ios/*.{h,m}",
+  "dependencies": {
+    "React": [
+
+    ]
+  }
+}

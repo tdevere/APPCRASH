@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/RNCmbSdk/RNCmbSdk-xcframeworks.sh
+${PODS_ROOT}/../../node_modules/cmbsdk-react-native/ios/SDK/cmbsdk-ios-binary/framework/cmbSDK/device_simulator/cmbSDK.xcframework
+${PODS_ROOT}/../../node_modules/cmbsdk-react-native/ios/SDK/cmbsdk-crossplatform-ios-binary/CMBCrossPlatform.xcframework
